@@ -1,0 +1,5 @@
+#!/usr/bin/env tt++
+#config {charset}{gbk1toutf8}
+#nop config charset utf8
+#split
+#ses pku mud.pkuxkx.com 8080;
