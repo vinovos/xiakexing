@@ -524,7 +524,7 @@
 };
 
 #alias {xiaoyao.loadData} {
-    #read {data/xiaoyao.tin};
+    #read {plugins/xiaoyao-data.tin};
     #nop 设置节点定位触发器。;
     xiaoyao.setupTrigger;
 };

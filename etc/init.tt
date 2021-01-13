@@ -1,5 +1,7 @@
 #!/usr/bin/env tt++
 #config {charset}{gbk1toutf8}
 #nop config charset utf8
-#split
-#ses pku mud.pkuxkx.com 8080;
+
+#class tmp open;
+#alias pku {#class tmp kill;#re utils/pku.tt};
+#class tmp close;
