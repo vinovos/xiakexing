@@ -2,6 +2,8 @@
 #config {charset}{gbk1toutf8}
 #nop config charset utf8
 
+#re plugins/xiaoyao.tin
+
 #class tmp open;
 #alias pku {#class tmp kill;#re utils/pku.tt};
 #class tmp close;
