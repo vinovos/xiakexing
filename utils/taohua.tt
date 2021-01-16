@@ -1,0 +1,18 @@
+#class taohua open
+#var {taohuashuji} {    {河图}{he tu}    {洛书}{luo shu}    {易经}{yi jing}    {推背图}{tuibei tu}    {奇门遁甲}{qimen dunjia}}
+#var shu_taohua {luo shu}
+
+#act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay {3} {sleep}}
+#act {你现在过于疲倦，无法专心下来研读新知} {do 3 n;e;sleep;}
+#act {你一觉醒来，精神抖擞地活动了几下手脚}{
+    w;do 3 s;du $shu_taohua for 1;
+}
+#act {你身上没有%*这种东西} {zhao}
+#act {你在这里找了半天，却什么都没有找到}{zhao}
+#act {你找到了一本%1，欣喜若狂} {
+    #var shu_taohua $taohuashuji[%1];
+    #delay {2} {du $shu_taohua for 1;}
+}
+#act {你研读了一次有关奇门八卦的技巧，似乎有点心得}{du $shu_taohua for 1;}
+
+#class taohua close
