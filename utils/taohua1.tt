@@ -6,7 +6,6 @@
 #var shu_taohua {luo shu}
 
 #act {你刚刚睡过一觉, 多睡对身体有害无益} {
-    du $shu_taohua for 1;
     #delay {3} {sleep}
 }
 #act {你现在过于疲倦，无法专心下来研读新知} {sleep;}
