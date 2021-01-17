@@ -1,0 +1,19 @@
+#nop 打坐任务，需要条件1、读书任务已完成 2、去休息室睡觉触发
+
+#class taohua_dazuo kill
+#nop 关闭读书任务，避免冲突
+#class taohua_du kill
+#class taohua_dazuo open
+#nop 激发内功
+jifa force bihai-shengong
+#delay 1 dazuo 10;
+
+#act {你现在的气太少了，无法产生内息运行全身经脉}{sleep}
+#act {你刚刚睡过一觉, 多睡对身体有害无益} {
+    #delay {3} {sleep}
+}
+#act {你一觉醒来，精神抖擞地活动了几下手脚}{
+    dazuo 10;
+}
+#act {你运功完毕，深深吸了口气，站了起来}{dazuo 10;}
+#class taohua_dazuo close
