@@ -4,10 +4,10 @@
 
 #nop 桃花新手任务
 #alias {taohua_newbie} {
-    #if ("%1" == "du") {
+    #if ｛"%1" == "du"｝ {
         #read "utils/taohua_newbie/taohua_du.tt"
     };
-    #elseif ("%1" == "dazuo"){
+    #elseif ｛"%1" == "dazuo"｝{
         #read "utils/taohua_newbie/taohua_dazuo.tt"
     };
     #else {
