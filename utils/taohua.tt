@@ -4,10 +4,13 @@
 
 #nop 桃花新手任务
 #alias {taohua_newbie} {
-    #if ｛"%1" == "du"｝ {
+    #echo %1;
+    #echo %0;
+    #if {"%1" == "du"} {
         #read "utils/taohua_newbie/taohua_du.tt"
     };
-    #elseif ｛"%1" == "dazuo"｝{
+    #elseif {"%1" == "dazuo"}{
+        #echo %1;
         #read "utils/taohua_newbie/taohua_dazuo.tt"
     };
     #else {
@@ -15,7 +18,7 @@
         #echo {%c%+2s 说明：接取任务之后，请在归云庄休息厅，使用sleep开始} {light yellow};
         #echo {%c%+8s taohua_newbie du：从读书任务开始} {light yellow};
         #echo {%c%+8s taohua_newbie dazuo：从打坐任务开始} {light yellow};
-    }
+    };
 }
 
 
