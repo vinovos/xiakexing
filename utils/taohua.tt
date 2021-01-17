@@ -4,12 +4,12 @@
 
 #nop 桃花新手任务
 #alias {taohua_newbie} {
-    #if (%1 == "du") {
+    #if ("%1" == "du") {
         #read "utils/taohua_newbie/taohua_du.tt"
     };
-    #elseif (%1 == "dazuo"){
+    #elseif ("%1" == "dazuo"){
         #read "utils/taohua_newbie/taohua_dazuo.tt"
-    }
+    };
     #else {
         #echo {%c%+2s 使用方法：taohua_newbie [du|dazuo|]} {light yellow};
         #echo {%c%+2s 说明：接取任务之后，请在归云庄休息厅，使用sleep开始} {light yellow};
