@@ -1,5 +1,6 @@
 #nop 读书任务，需要条件1、领取任务 2、去休息室睡觉触发
 #nop 拿到书之后不一定需要在书房读书，所以在休息室读书
+#class taohua kill
 #class taohua open
 #var {taohuashuji} {    {河图}{he tu}    {洛书}{luo shu}    {易经}{yi jing}    {推背图}{tuibei tu}    {奇门遁甲}{qimen dunjia}}
 #var shu_taohua {luo shu}
