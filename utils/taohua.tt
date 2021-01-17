@@ -1,17 +1,15 @@
 #nop 接取任务后，去休息室睡觉触发
 #class taohua kill
-#class taohua open
+#class taohua_newbie open
 
 #nop 桃花新手任务
 #alias {taohua_newbie} {
-    #echo %1;
-    #echo %0;
     #if {"%1" == "du"} {
-        #read "utils/taohua_newbie/taohua_du.tt"
+        #read utils/taohua_newbie/taohua_du.tt
     };
     #elseif {"%1" == "dazuo"}{
         #echo %1;
-        #read "utils/taohua_newbie/taohua_dazuo.tt"
+        #read utils/taohua_newbie/taohua_dazuo.tt
     };
     #else {
         #echo {%c%+2s 使用方法：taohua_newbie [du|dazuo|]} {light yellow};
@@ -22,4 +20,4 @@
 }
 
 
-#class taohua close
+#class taohua_newbie close
