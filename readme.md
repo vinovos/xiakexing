@@ -24,6 +24,9 @@ set termencoding=utf-8
 set encoding=utf-8
 "set number
 ```
+## 快速启动
+在.bashrc中添加alias可以快速启动
+`alias tt='cd ~/xiakexing && tt++ etc/init.tt'`
 ##
 脚本中文乱码转换编码
 1.vim按ESC键退出编辑模式后输入下列命令：
