@@ -33,3 +33,11 @@ set encoding=utf-8
 使用 gbktoutf8 工具进行转换。
 ## vim语法高亮
 `cd ~ && git clone https://github.com/LokiChaos/vim-tintin.git .vim`
+
+## 目录结构
+framework 放框架
+etc 放用户配置，用户配置其实也是主程序，脚本入口
+data 放数据（为了脱敏脚本）
+utils 放一些常用触发和别名
+plugins 放插件，插件分全局插件，增强插件，机器人，任务等等
+log 放日志，日志分类，加时间戳，分用户

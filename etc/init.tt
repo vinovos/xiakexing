@@ -2,6 +2,7 @@
 #config {charset}{gbk1toutf8}
 #nop config charset utf8
 
+#read etc/macro.tt
 #nop re plugins/xiaoyao.tin
 
 #class tmp open;
