@@ -12,11 +12,11 @@
         #default        {
             #format xiaoyao.currentPosition {};
             #class tmp open;
-            #action {^Äã±§Ï¥¶ø×ø£¬Ó­·çºôÎü£¬Ö»¾õĞØ¸¹¼äÇåÆø³äÈû£¬¾¹ËÆÓû³Ë·ç·ÉÈ¥¡£$} {
+            #action {^ä½ æŠ±è†è€Œåï¼Œè¿é£å‘¼å¸ï¼Œåªè§‰èƒ¸è…¹é—´æ¸…æ°”å……å¡ï¼Œç«Ÿä¼¼æ¬²ä¹˜é£é£å»ã€‚$} {
                 #class tmp kill;
                 #delay 0 {xiaoyao.goto {%1} {%2}}
             };
-            #action {^·ç¾°ÒªÂıÂıµÄ¿´¡£$} {
+            #action {^é£æ™¯è¦æ…¢æ…¢çš„çœ‹ã€‚$} {
                 #delay 1 {look};
                 #delay ready2go {unme} 2;
             };
@@ -30,11 +30,11 @@
 #alias {xiaoyao.help} {
     #echo {%c%h} {light yellow};
     #echo ;
-    #echo {%c%+2sÃüÁî¸ñÊ½£ºgt [½Úµãid|here|list]} {light yellow};
-    #echo {%c%+2sËµÃ÷£ºgt ½Úµãid£ºÇ°ÍùÖ¸¶¨½Úµã} {light yellow};
-    #echo {%c%+8sgt here£ºÏÔÊ¾µ±Ç°½ÚµãĞÅÏ¢} {light yellow};
-    #echo {%c%+8sgt list£ºÏÔÊ¾ËùÓĞ¿ÉÍ¨ĞĞ½ÚµãµÄÃû³Æ} {light yellow};
-    #echo {%c%+8sgt£ºÏÔÊ¾±¾ËµÃ÷} {light yellow};
+    #echo {%c%+2så‘½ä»¤æ ¼å¼ï¼šgt [èŠ‚ç‚¹id|here|list]} {light yellow};
+    #echo {%c%+2sè¯´æ˜ï¼šgt èŠ‚ç‚¹idï¼šå‰å¾€æŒ‡å®šèŠ‚ç‚¹} {light yellow};
+    #echo {%c%+8sgt hereï¼šæ˜¾ç¤ºå½“å‰èŠ‚ç‚¹ä¿¡æ¯} {light yellow};
+    #echo {%c%+8sgt listï¼šæ˜¾ç¤ºæ‰€æœ‰å¯é€šè¡ŒèŠ‚ç‚¹çš„åç§°} {light yellow};
+    #echo {%c%+8sgtï¼šæ˜¾ç¤ºæœ¬è¯´æ˜} {light yellow};
     #echo ;
     #echo {%c%h} {light yellow};
     #return;
@@ -46,12 +46,12 @@
 
     #if { "$hereId" == "" || "$hereInfo" == "" } {
         #echo {%c%h} {light yellow};
-        #echo {%c  ²»ÄÜÈ·¶¨µ±Ç°Î»ÖÃ} {light yellow};
+        #echo {%c  ä¸èƒ½ç¡®å®šå½“å‰ä½ç½®} {light yellow};
         #echo {%c%h} {light yellow};
     };
     #else {
         #echo {%c%h} {light yellow};
-        #echo {%c  µ±Ç°Î»ÖÃ£º$hereId($hereInfo[long], $hereInfo[name])} {light yellow};
+        #echo {%c  å½“å‰ä½ç½®ï¼š$hereId($hereInfo[long], $hereInfo[name])} {light yellow};
         #echo {%c%h} {light yellow};
     };
 };
@@ -90,7 +90,7 @@
     #local hereInfo {${xiaoyao-map}[$hereId]};
     #if { "$hereId" == "" || "$hereInfo" == "" } {
         #echo {%c%h} {light yellow};
-        #echo {%c  ²»ÄÜÈ·¶¨µ±Ç°Î»ÖÃ} {light yellow};
+        #echo {%c  ä¸èƒ½ç¡®å®šå½“å‰ä½ç½®} {light yellow};
         #echo {%c%h} {light yellow};
         #return;
     };
@@ -98,20 +98,20 @@
     #local targetInfo {${xiaoyao-map}[$targetId]};
     #if { "$targetInfo" == "" } {
         #echo {%c%h} {light yellow};
-        #echo {%c  Ã»ÓĞ$targetIdÕâ¸öµØÇø} {light yellow};
+        #echo {%c  æ²¡æœ‰$targetIdè¿™ä¸ªåœ°åŒº} {light yellow};
         #echo {%c%h} {light yellow};
         #return;
     };
 
     #if { "$hereId" == "$targetId" } {
         #echo {%c%h} {light yellow};
-        #echo {%c  ÄãÏ²»¶Ô­µØ¹ä¹äÃ´£¿} {light yellow};
+        #echo {%c  ä½ å–œæ¬¢åŸåœ°é€›é€›ä¹ˆï¼Ÿ} {light yellow};
         #echo {%c%h} {light yellow};
         #return;
     };
 
     #echo {%c%h} {light yellow};
-    #echo {%c  ÄãÒªÇ°ÍùµÄµØÇøÊÇ£º$targetInfo[name] ($targetInfo[long], $targetId)} {light yellow};
+    #echo {%c  ä½ è¦å‰å¾€çš„åœ°åŒºæ˜¯ï¼š$targetInfo[name] ($targetInfo[long], $targetId)} {light yellow};
 
     mark $user[id];
 
@@ -121,7 +121,7 @@
 
 #alias {gt stop} {#class xiaoyao-walk kill};
 
-#nop ==Â·¾¶¼ÆËã==;
+#nop ==è·¯å¾„è®¡ç®—==;
 #function {__xiaoyao_findPath__} {
     #local src  {%1};
     #local dst  {%2};
@@ -136,7 +136,7 @@
             #break;
         };
 
-        #nop ±éÀúËùÓĞĞÂ·¢ÏÖµÄ½Úµã;
+        #nop éå†æ‰€æœ‰æ–°å‘ç°çš„èŠ‚ç‚¹;
         #local todo     {$todoList};
         #list todoList  create {};
         #foreach $todo[] {index} {
@@ -152,7 +152,7 @@
     };
 
     #if { "$routeMap[$dst]" == "" } {
-        #echo <110>ÕÒ²»µ½¿ÉÓÃµÄÂ·¾¶¡£<070>;
+        #echo <110>æ‰¾ä¸åˆ°å¯ç”¨çš„è·¯å¾„ã€‚<070>;
         #return;
     };
 
@@ -168,8 +168,8 @@
         #format {allSteps} {%s} {@joinCmds{{$steps}; {$allSteps}}};
     };
 
-    #echo {<120>½Úµã:<070> $route};
-    #echo {<120>Â·¾¶:<070> @list2string{{$allSteps}}};
+    #echo {<120>èŠ‚ç‚¹:<070> $route};
+    #echo {<120>è·¯å¾„:<070> @list2string{{$allSteps}}};
 
     #return {$allSteps};
 };
@@ -202,7 +202,7 @@
     #return {$right};
 };
 
-#nop ==ĞĞ×ßÃüÁî==;
+#nop ==è¡Œèµ°å‘½ä»¤==;
 
 #alias {script.Play} {
     #local cmds     {%1};
@@ -221,9 +221,9 @@
 
     #class xiaoyao-walk open;
 
-    #action {^ÄãË«ÊÖ±§È­£¬×÷ÁË¸öÒ¾µÀ£º¸÷Î»Ó¢ĞÛÇëÁË£¡$} {
+    #action {^ä½ åŒæ‰‹æŠ±æ‹³ï¼Œä½œäº†ä¸ªæ–é“ï¼šå„ä½è‹±é›„è¯·äº†ï¼$} {
         #class xiaoyao-walk kill;
-        #echo {%cĞĞ×ßÍê³É¡£} {light green};
+        #echo {%cè¡Œèµ°å®Œæˆã€‚} {light green};
 
         #if { "${xiaoyao-walk-callback}" != "" } {
             ${xiaoyao-walk-callback};
@@ -231,25 +231,25 @@
     };
 
     #alias walk {
-        #nop ×îºóÒ»²½»Ö¸´ brief£¬ÕâÑù¿ÉÒÔ¿´µ½·¿¼äÃèÊö£¬²¢¾İ´Ë´¥·¢¶¨Î»¡£;
+        #nop æœ€åä¸€æ­¥æ¢å¤ briefï¼Œè¿™æ ·å¯ä»¥çœ‹åˆ°æˆ¿é—´æè¿°ï¼Œå¹¶æ®æ­¤è§¦å‘å®šä½ã€‚;
         #if { ${xiaoyao.step} == ${xiaoyao.stepmax} }   { set brief 0; map.WatchRoom };
-        #nop È«²¿×ßÍêÖ®ºó£¬·¢³ö±§È­Ö¸Áî´¥·¢»Øµ÷£¬½ÓÁ¦ÏÂÒ»²½¶¯×÷¡£;
+        #nop å…¨éƒ¨èµ°å®Œä¹‹åï¼Œå‘å‡ºæŠ±æ‹³æŒ‡ä»¤è§¦å‘å›è°ƒï¼Œæ¥åŠ›ä¸‹ä¸€æ­¥åŠ¨ä½œã€‚;
         #if { ${xiaoyao.step} > ${xiaoyao.stepmax} }    { hi; #return };
 
         #local cmd {};
         #list {xiaoyao-walk-cmds} get {${xiaoyao.step}} cmd;
         #math {xiaoyao.step} {${xiaoyao.step} + 1};
-        #nop ´Ë´¦¿ÉÒÔÀûÓÃÄ£Ê½Æ¥ÅäÊ¶±ğ×Ô¶¨ÒåÖ¸Áî£¬ÒÑÊµÏÖ DSL¡£;
+        #nop æ­¤å¤„å¯ä»¥åˆ©ç”¨æ¨¡å¼åŒ¹é…è¯†åˆ«è‡ªå®šä¹‰æŒ‡ä»¤ï¼Œå·²å®ç° DSLã€‚;
         #switch {"$cmd"} {
             #case {"stop"} {
             };
-            #case {"cr%*"} {    #nop ÕâÀïÓÃÀ´´¦Àí cross*/crush_* ÃüÁî;
+            #case {"cr%*"} {    #nop è¿™é‡Œç”¨æ¥å¤„ç† cross*/crush_* å‘½ä»¤;
                 $cmd;
             };
             #case {"SlowWalk"} {
                 #delay {2} {walk};
             };
-            #case {"{[A-Z].*}"} {    #nop ¹æ¶¨´óĞ´×ÖÄ¸´òÍ·µÄÃüÁîÎª²å¼şÃüÁî;
+            #case {"{[A-Z].*}"} {    #nop è§„å®šå¤§å†™å­—æ¯æ‰“å¤´çš„å‘½ä»¤ä¸ºæ’ä»¶å‘½ä»¤;
                 map.$cmd;
             };
             #case {"wait%s%d"} {
@@ -275,11 +275,11 @@
                 #local cmd {
                     #class xiaoyao-walk-tmp kill;
                     #class xiaoyao-walk-tmp open;
-                    #echo {%s} {µÈ´ıÊÂ¼ş¡¸$waitFor¡¹³öÏÖ¡£};
+                    #echo {%s} {ç­‰å¾…äº‹ä»¶ã€Œ$waitForã€å‡ºç°ã€‚};
                     #action {$waitFor} {
                         #class xiaoyao-walk-tmp kill;
                         #delay 1 walk;
-                    }
+                    };
                     #class xiaoyao-walk-tmp close;
                 };
                 $cmd;
@@ -310,15 +310,15 @@
     #alias tiandihui_andao  {knock guancai 3;ed;s;s;s;w;e;n;n;n;n;e};
     #alias tiandihui_andaob {w;#4 s;w;n;n;e;n;s;wu};
 
-    #alias gb_andao         {enter shudong;say ÌìÌÃÓĞÂ·Äã²»×ßÑ½;d;%%1;};
+    #alias gb_andao         {enter shudong;say å¤©å ‚æœ‰è·¯ä½ ä¸èµ°å‘€;d;%%1;};
 
-    #alias guohe3s2n        {#if {"$char[menpai]"=="Ã÷½Ì"} {sw;n;ban stone;you;#alias guohe3 {n;ne}} {xiaoyao.askGuoHe}};
-    #alias guohe3n2s        {#if {"$char[menpai]"=="Ã÷½Ì"} {sw;s;ban stone;you;#alias guohe3 {s;ne}} {xiaoyao.askGuoHe}};
+    #alias guohe3s2n        {#if {"$char[menpai]"=="æ˜æ•™"} {sw;n;ban stone;you;#alias guohe3 {n;ne}} {xiaoyao.askGuoHe}};
+    #alias guohe3n2s        {#if {"$char[menpai]"=="æ˜æ•™"} {sw;s;ban stone;you;#alias guohe3 {s;ne}} {xiaoyao.askGuoHe}};
     #alias guohe3           {n;ne};
-    #alias taohuadao        {#if {"$char[menpai]"=="ÌÒ»¨µº"} {ride diao} {enter boat}};
-    #alias baituofufei      {#if {"$char[menpai]"=="°×ÍÕÉ½"} {give qian 30 silver} {give qian 1 gold}};
-    #alias murongboat       {#if {"$char[menpai]"=="¹ÃËÕÄ½Èİ"} {find boat} {enter boat}};
-    #alias shenlongboat     {#if {"$char[menpai]"=="ÉñÁú½Ì"} {find boat} {enter boat}};
+    #alias taohuadao        {#if {"$char[menpai]"=="æ¡ƒèŠ±å²›"} {ride diao} {enter boat}};
+    #alias baituofufei      {#if {"$char[menpai]"=="ç™½é©¼å±±"} {give qian 30 silver} {give qian 1 gold}};
+    #alias murongboat       {#if {"$char[menpai]"=="å§‘è‹æ…•å®¹"} {find boat} {enter boat}};
+    #alias shenlongboat     {#if {"$char[menpai]"=="ç¥é¾™æ•™"} {find boat} {enter boat}};
     #alias qytoyzw          {#if {$char[skills][dodge][lv]>120} {e;cai yanziwu} {#3 n;tan qin;row yanziwu}};
     #alias qytotx           {#if {$char[skills][dodge][lv]>120} {e;cai tingxiang} {#3 n;tan qin;row tingxiang}};
     #alias gotoqinyun       {#if {$char[skills][dodge][lv]>120} {cai qinyun} {enter boat;row qinyun}};
@@ -327,35 +327,35 @@
 
     #alias {xiaoyao.RetryLastStep} {#math {xiaoyao.step} {${xiaoyao.step} - 2}};
 
-    #action {^ÄãĞ¡ĞÄÒíÒíÍùÇ°Å²¶¯£¬Óöµ½¼èÏÕÄÑĞĞ´¦£¬Ö»ºÃ·ÅÂı½Å²½¡£$}      {xiaoyao.RetryLastStep};
-    #action {^Çàº£ºşÅÏÃÀ²»Ê¤ÊÕ£¬Äã²»ÓÉÍ£ÏÂ½Å²½£¬ĞÀÉÍÆğÁË·ç¾°¡£$}        {xiaoyao.RetryLastStep};
-    #action {^Äã»¹ÔÚÉ½ÖĞ°ÏÉæ£¬Ò»Ê±°ë»á¿ÖÅÂ×ß²»³öÕâ²Ø±ßÈºÉ½£¡$}          {xiaoyao.RetryLastStep};
-    #action {^Äã»¹ÔÚÉ½ÖĞ°ÏÉæ£¬Ò»Ê±°ë»á¿ÖÅÂ×ß²»³öÕâÎ÷ÄÏµØÃàÃàÈºÉ½£¡$}    {xiaoyao.RetryLastStep};
-    #action {^Äã»¹ÔÚÉ½ÖĞ°ÏÉæ£¬Ò»Ê±°ë»á¿ÖÅÂ×ß²»³öÕâÁùÅÌÉ½£¡$}            {xiaoyao.RetryLastStep};
-    #action {^Äã×ß×Å×ß×Å¾ÍÏİ½øÁËÒ»´¦ÕÓÔóµ±ÖĞ£¬¼èÄÑµØ´ÓÕÓÔóÖĞ°Î³öÀ´¡£$}  {xiaoyao.RetryLastStep};
+    #action {^ä½ å°å¿ƒç¿¼ç¿¼å¾€å‰æŒªåŠ¨ï¼Œé‡åˆ°è‰°é™©éš¾è¡Œå¤„ï¼Œåªå¥½æ”¾æ…¢è„šæ­¥ã€‚$}      {xiaoyao.RetryLastStep};
+    #action {^é’æµ·æ¹–ç•”ç¾ä¸èƒœæ”¶ï¼Œä½ ä¸ç”±åœä¸‹è„šæ­¥ï¼Œæ¬£èµèµ·äº†é£æ™¯ã€‚$}        {xiaoyao.RetryLastStep};
+    #action {^ä½ è¿˜åœ¨å±±ä¸­è·‹æ¶‰ï¼Œä¸€æ—¶åŠä¼šææ€•èµ°ä¸å‡ºè¿™è—è¾¹ç¾¤å±±ï¼$}          {xiaoyao.RetryLastStep};
+    #action {^ä½ è¿˜åœ¨å±±ä¸­è·‹æ¶‰ï¼Œä¸€æ—¶åŠä¼šææ€•èµ°ä¸å‡ºè¿™è¥¿å—åœ°ç»µç»µç¾¤å±±ï¼$}    {xiaoyao.RetryLastStep};
+    #action {^ä½ è¿˜åœ¨å±±ä¸­è·‹æ¶‰ï¼Œä¸€æ—¶åŠä¼šææ€•èµ°ä¸å‡ºè¿™å…­ç›˜å±±ï¼$}            {xiaoyao.RetryLastStep};
+    #action {^ä½ èµ°ç€èµ°ç€å°±é™·è¿›äº†ä¸€å¤„æ²¼æ³½å½“ä¸­ï¼Œè‰°éš¾åœ°ä»æ²¼æ³½ä¸­æ‹”å‡ºæ¥ã€‚$}  {xiaoyao.RetryLastStep};
 
-    #action {^ÄãÑØ×ÅÌ¤°å×ßÁËÉÏÈ¥¡£$}                                    {walk};
-    #action {^²»Öª¹ıÁË¶à¾Ã£¬´¬ÖÕÓÚ¿¿°¶ÁË£¬ÄãÀÛµÃÂúÍ·´óº¹¡£$}            {walk};
-    #action {^Ğ¡ÖÛÖÕÓÚ»®µ½½ü°¶£¬Äã´Ó´¬ÉÏ×ßÁË³öÀ´¡£$}                    {walk};
-    #action {^ÂÌÒÂÉÙÅ®½«Ğ¡´¬ÏµÔÚÊ÷Ö¦Ö®ÉÏ£¬Äã¿çÉÏ°¶È¥¡£$}                {walk};
-    #action {^Äã¶¨ÁË¶¨Éñ£¬×ßÁË³öÀ´¡£$}                                  {walk};
-    #action {^ÄãÖÕÓÚÒ»²½²½µÄÖÕÓÚ°¤µ½ÁËÇÅÍ·$}                            {walk};
-    #action {^Äã³¯´¬·ò»ÓÁË»ÓÊÖ±ã¿çÉÏ°¶È¥¡£$}                            {walk};     #nop ÉñÁúµº;
-    #action {^ÄãÖÕÓÚÀ´µ½ÁË¶ÔÃæ£¬ĞÄÀïµÄÊ¯Í·ÖÕÓÚÂäµØ¡£$}                  {walk};     #nop ÁéğÕ¹¬;
-    #action {^°ëÉÎ£¬ÄãÖÕÓÚÓÎµ½ÁË¶Ô°¶£¬ËæÊÖÈÓµôÁËÊ¯¿é¡£}                 {guohe3; walk};
-    #action {^ÄãÖÕÓÚ·Éµ½ÁË%*£¬°×µñÂäÁËÏÂÀ´¡£$}                          {walk};
-    #action {^²»Ò»»á¶ù£¬ÄãÀ´µ½²ÎºÏ×¯¡£$}                                {walk};
-    #action {^²»Ò»»á¶ù£¬Ğ¡´¬»®µ½ÁË°¶±ß¡£$}                              {walk};
-    #action {^²»Ò»»á¶ù¾Íµ½ÁËÉñÁúµº£¬Äã×İÉíÔ¾ÉÏÂëÍ·¡£$}                  {walk};
-    #action {^²»Ò»»á¶ù¾Íµ½ÁËÌì½òÌÁ¹Á¿Ú£¬Äã×ßÉÏÂëÍ·¡£$}                  {walk};
-    #action {^Äã½¡²½Èç·É£¬²»Ò»»á¾Í×ßµ½}                                 {walk};
-    #action {^ÁùÃûÑ©É½µÜ×ÓÒ»Æë×ª¶¯»ú¹Ø£¬µõÇÅ±ãÓÖÉıÁËÆğÀ´¡£$}            {walk};
-    #action {^ô¹¹«°ÑÌ¤½Å°åÊÕÁËÆğÀ´£¬Öñ¸İÒ»µã£¬±âÖÛÏò½­ĞÄÊ»È¥¡£$}        {yell boat};
-    #action {^´ó³µÍ£ÎÈÁËÏÂÀ´£¬Äã¿ÉÒÔÏÂ³µ(xia)ÁË¡£$}                     {walk};
+    #action {^ä½ æ²¿ç€è¸æ¿èµ°äº†ä¸Šå»ã€‚$}                                    {walk};
+    #action {^ä¸çŸ¥è¿‡äº†å¤šä¹…ï¼Œèˆ¹ç»ˆäºé å²¸äº†ï¼Œä½ ç´¯å¾—æ»¡å¤´å¤§æ±—ã€‚$}            {walk};
+    #action {^å°èˆŸç»ˆäºåˆ’åˆ°è¿‘å²¸ï¼Œä½ ä»èˆ¹ä¸Šèµ°äº†å‡ºæ¥ã€‚$}                    {walk};
+    #action {^ç»¿è¡£å°‘å¥³å°†å°èˆ¹ç³»åœ¨æ ‘æä¹‹ä¸Šï¼Œä½ è·¨ä¸Šå²¸å»ã€‚$}                {walk};
+    #action {^ä½ å®šäº†å®šç¥ï¼Œèµ°äº†å‡ºæ¥ã€‚$}                                  {walk};
+    #action {^ä½ ç»ˆäºä¸€æ­¥æ­¥çš„ç»ˆäºæŒ¨åˆ°äº†æ¡¥å¤´$}                            {walk};
+    #action {^ä½ æœèˆ¹å¤«æŒ¥äº†æŒ¥æ‰‹ä¾¿è·¨ä¸Šå²¸å»ã€‚$}                            {walk};     #nop ç¥é¾™å²›;
+    #action {^ä½ ç»ˆäºæ¥åˆ°äº†å¯¹é¢ï¼Œå¿ƒé‡Œçš„çŸ³å¤´ç»ˆäºè½åœ°ã€‚$}                  {walk};     #nop çµé¹«å®«;
+    #action {^åŠæ™Œï¼Œä½ ç»ˆäºæ¸¸åˆ°äº†å¯¹å²¸ï¼Œéšæ‰‹æ‰”æ‰äº†çŸ³å—ã€‚}                 {guohe3; walk};
+    #action {^ä½ ç»ˆäºé£åˆ°äº†%*ï¼Œç™½é›•è½äº†ä¸‹æ¥ã€‚$}                          {walk};
+    #action {^ä¸ä¸€ä¼šå„¿ï¼Œä½ æ¥åˆ°å‚åˆåº„ã€‚$}                                {walk};
+    #action {^ä¸ä¸€ä¼šå„¿ï¼Œå°èˆ¹åˆ’åˆ°äº†å²¸è¾¹ã€‚$}                              {walk};
+    #action {^ä¸ä¸€ä¼šå„¿å°±åˆ°äº†ç¥é¾™å²›ï¼Œä½ çºµèº«è·ƒä¸Šç å¤´ã€‚$}                  {walk};
+    #action {^ä¸ä¸€ä¼šå„¿å°±åˆ°äº†å¤©æ´¥å¡˜æ²½å£ï¼Œä½ èµ°ä¸Šç å¤´ã€‚$}                  {walk};
+    #action {^ä½ å¥æ­¥å¦‚é£ï¼Œä¸ä¸€ä¼šå°±èµ°åˆ°}                                 {walk};
+    #action {^å…­åé›ªå±±å¼Ÿå­ä¸€é½è½¬åŠ¨æœºå…³ï¼ŒåŠæ¡¥ä¾¿åˆå‡äº†èµ·æ¥ã€‚$}            {walk};
+    #action {^è‰„å…¬æŠŠè¸è„šæ¿æ”¶äº†èµ·æ¥ï¼Œç«¹ç¯™ä¸€ç‚¹ï¼Œæ‰èˆŸå‘æ±Ÿå¿ƒé©¶å»ã€‚$}        {yell boat};
+    #action {^å¤§è½¦åœç¨³äº†ä¸‹æ¥ï¼Œä½ å¯ä»¥ä¸‹è½¦(xia)äº†ã€‚$}                     {walk};
 
-    #action {^ÄãÉíÔÚ°ë¿Õ£¬Ë«ÊÖÂÒ»Ó£¬Ö»ÅÎÄÜ×¥µ½Ê²Ã´¶«Î÷£¬ÕâÃ´ÂÒ»ÓÒ»Õó£¬ÓÖÏÂ¶éÏÂ°ÙâÅÕÉ¡£$}    {walk};
-    #action {^Äã·´Ó¦Ñ¸ËÙ£¬¼±Ã¦Ë«ÊÖ±§Í·£¬ÉíÌåòéÇú¡£ÑÛÇ°»èÌìºÚµØ£¬Ë³×ÅÉ½Â·Ö±¹öÁËÏÂÈ¥¡£$}      {falldown to qbl};
-    #action {^Äã´ÓÉ½ÉÏ¹öÁËÏÂÀ´£¬Ö»¾õµÃ»ëÉíÎŞ´¦²»ÌÛ£¬»¹ÊÜÁË¼¸´¦ÉË¡£$}                        {falldown to dzf};
+    #action {^ä½ èº«åœ¨åŠç©ºï¼ŒåŒæ‰‹ä¹±æŒ¥ï¼Œåªç›¼èƒ½æŠ“åˆ°ä»€ä¹ˆä¸œè¥¿ï¼Œè¿™ä¹ˆä¹±æŒ¥ä¸€é˜µï¼Œåˆä¸‹å •ä¸‹ç™¾é¦€ä¸ˆã€‚$}    {walk};
+    #action {^ä½ ååº”è¿…é€Ÿï¼Œæ€¥å¿™åŒæ‰‹æŠ±å¤´ï¼Œèº«ä½“èœ·æ›²ã€‚çœ¼å‰æ˜å¤©é»‘åœ°ï¼Œé¡ºç€å±±è·¯ç›´æ»šäº†ä¸‹å»ã€‚$}      {falldown to qbl};
+    #action {^ä½ ä»å±±ä¸Šæ»šäº†ä¸‹æ¥ï¼Œåªè§‰å¾—æµ‘èº«æ— å¤„ä¸ç–¼ï¼Œè¿˜å—äº†å‡ å¤„ä¼¤ã€‚$}                        {falldown to dzf};
 
     #alias {falldown to %1} {#class xiaoyao-walk kill; #var xiaoyao.currentPosition %1};
 
@@ -368,9 +368,9 @@
     walk;
 };
 
-#alias {xiaoyao.GuoJiang}   {xiaoyao.shaogong ¹ı½­};
-#alias {xiaoyao.GuoHe}      {xiaoyao.shaogong ¹ıºÓ};
-#alias {xiaoyao.YellBoat}   {xiaoyao.shaogong ×ÔÖú};
+#alias {xiaoyao.GuoJiang}   {xiaoyao.shaogong è¿‡æ±Ÿ};
+#alias {xiaoyao.GuoHe}      {xiaoyao.shaogong è¿‡æ²³};
+#alias {xiaoyao.YellBoat}   {xiaoyao.shaogong è‡ªåŠ©};
 
 #alias {xiaoyao.shaogong} {
     #local words {%1};
@@ -379,29 +379,29 @@
 
     #alias {xiaoyao.waitBoat} { #var xiaoyao.waitBoat {true} };
 
-    #action {^Ö»ÌıµÃ½­ÃæÉÏÒşÒş´«À´£º¡°±ğ¼±Âï£¬Õâ¶ùÕıÃ¦×ÅÄÅ¡­¡­¡±$} {
+    #action {^åªå¬å¾—æ±Ÿé¢ä¸Šéšéšä¼ æ¥ï¼šâ€œåˆ«æ€¥å˜›ï¼Œè¿™å„¿æ­£å¿™ç€å‘â€¦â€¦â€$} {
         #nop;
     };
-    #action {^°¶±ßÒ»Ö»¶É´¬ÉÏµÄÀÏô¹¹«ËµµÀ£ºÕıµÈ×ÅÄãÄØ£¬ÉÏÀ´°É¡£$} {
+    #action {^å²¸è¾¹ä¸€åªæ¸¡èˆ¹ä¸Šçš„è€è‰„å…¬è¯´é“ï¼šæ­£ç­‰ç€ä½ å‘¢ï¼Œä¸Šæ¥å§ã€‚$} {
         #var xiaoyao.waitBoat {false};
         #untick xiaoyao.yellboat;
         enter
     };
-    #action {^Ò»Ò¶±âÖÛ»º»ºµØÊ»ÁË¹ıÀ´£¬ô¹¹«½«Ò»¿éÌ¤½Å°å´îÉÏµÌ°¶£¬ÒÔ±ã³Ë¿Í$} {
+    #action {^ä¸€å¶æ‰èˆŸç¼“ç¼“åœ°é©¶äº†è¿‡æ¥ï¼Œè‰„å…¬å°†ä¸€å—è¸è„šæ¿æ­ä¸Šå ¤å²¸ï¼Œä»¥ä¾¿ä¹˜å®¢$} {
         #var xiaoyao.waitBoat {false};
         #untick xiaoyao.yellboat;
         enter
     };
 
-    #action {^%*½Ó¹ıÄãµİ¸øµÄ´¬×Ê%S¡£$}                                  {xiaoyao.waitBoat};
-    #action {^ÄãµÄ³µ´¬Í¨ÕËÉÏ»¹Ê£%S£¬ÕâÒ»ÌËµÄ´¬×ÊÊÇ%S¡£$}                {xiaoyao.waitBoat};
-    #action {^%SµÀ£ºÔ­À´ÊÇ%SµÄÈË£¬¿ìÇëÉÏ´¬¡£$}                          {xiaoyao.waitBoat};
-    #action {^ÄãÎüÁË¿ÚÆø£¬Ò»Éù¡°´¬¼Ò¡±£¬ÉùÒôÖĞÕıÆ½ºÍµØÔ¶Ô¶´«ÁË³öÈ¥¡£$}  {xiaoyao.waitBoat};
-    #action {^ÄãÊ¹³ö³ÔÄÌµÄÁ¦Æøº°ÁËÒ»Éù£º¡°´¬¼Ò¡±$}                      {xiaoyao.waitBoat};
+    #action {^%*æ¥è¿‡ä½ é€’ç»™çš„èˆ¹èµ„%Sã€‚$}                                  {xiaoyao.waitBoat};
+    #action {^ä½ çš„è½¦èˆ¹é€šè´¦ä¸Šè¿˜å‰©%Sï¼Œè¿™ä¸€è¶Ÿçš„èˆ¹èµ„æ˜¯%Sã€‚$}                {xiaoyao.waitBoat};
+    #action {^%Sé“ï¼šåŸæ¥æ˜¯%Sçš„äººï¼Œå¿«è¯·ä¸Šèˆ¹ã€‚$}                          {xiaoyao.waitBoat};
+    #action {^ä½ å¸äº†å£æ°”ï¼Œä¸€å£°â€œèˆ¹å®¶â€ï¼Œå£°éŸ³ä¸­æ­£å¹³å’Œåœ°è¿œè¿œä¼ äº†å‡ºå»ã€‚$}  {xiaoyao.waitBoat};
+    #action {^ä½ ä½¿å‡ºåƒå¥¶çš„åŠ›æ°”å–Šäº†ä¸€å£°ï¼šâ€œèˆ¹å®¶â€$}                      {xiaoyao.waitBoat};
 
-    #action {^½­ĞÄÊ»È¥¡£$} {
+    #action {^æ±Ÿå¿ƒé©¶å»ã€‚$} {
         #class xiaoyao.shaogong open;
-        #action {^ô¹¹«Ëµ¡°µ½À²£¬ÉÏ°¶°É¡±£¬Ëæ¼´°ÑÒ»¿éÌ¤½Å°å´îÉÏµÌ°¶¡£$} {
+        #action {^è‰„å…¬è¯´â€œåˆ°å•¦ï¼Œä¸Šå²¸å§â€ï¼Œéšå³æŠŠä¸€å—è¸è„šæ¿æ­ä¸Šå ¤å²¸ã€‚$} {
             #var xiaoyao.stepaccu 1;
             #class xiaoyao.shaogong kill;
             out; walk;
@@ -413,7 +413,7 @@
 
     #class xiaoyao.shaogong close;
 
-    #if { "$words" == "×ÔÖú" } {
+    #if { "$words" == "è‡ªåŠ©" } {
         yell boat;
     };
     #else {
@@ -424,18 +424,18 @@
 #alias {xiaoyao.jqg} {
     #class xiaoyao-jqg-walk open;
 
-    #action {^{(Ç°|ºó|×ó|ÓÒ| )+}$} {
+    #action {^{(å‰|å|å·¦|å³| )+}$} {
         #local path {};
         #format path {%p} {%%0};
         #replace path { } {;};
-        #replace path {Ç°} {move qian};
-        #replace path {ºó} {move hou};
-        #replace path {×ó} {move zuo};
-        #replace path {ÓÒ} {move you};
+        #replace path {å‰} {move qian};
+        #replace path {å} {move hou};
+        #replace path {å·¦} {move zuo};
+        #replace path {å³} {move you};
         enter;enter;$path;
     };
 
-    #action {^ÄãÖÕÓÚ×ß³öÁËÕâ¶ÎºÚ°µµÄÉ½¶´¡£$} {
+    #action {^ä½ ç»ˆäºèµ°å‡ºäº†è¿™æ®µé»‘æš—çš„å±±æ´ã€‚$} {
         #class xiaoyao-jqg-walk kill;
         out; #delay 1 walk;
     };
@@ -450,7 +450,7 @@
 
     #var xiaoyao-sibao-id {};
 
-    #action {^ÄãÒª½øÈëÄÄ¼ä´¢Îï¹ñ£¿$} {
+    #action {^ä½ è¦è¿›å…¥å“ªé—´å‚¨ç‰©æŸœï¼Ÿ$} {
         score;
         #delay 1 {
             enter $user[id];
@@ -458,23 +458,23 @@
         };
     };
 
-    #action {^%d%s¡¶{¹ãÁêÉ¢|ÂÊÒâÌû|ÏªÉ½ĞĞÂÃÍ¼|Å»ÑªÆ×}¡·$} {
+    #action {^%d%sã€Š{å¹¿é™µæ•£|ç‡æ„å¸–|æºªå±±è¡Œæ—…å›¾|å‘•è¡€è°±}ã€‹$} {
         #var xiaoyao-sibao-id { ${xiaoyao-sibao-id} {%%3}{%%1} };
     };
 
-    #action {^¹ñ×ÓÀïÄ¿Ç°´æ·ÅµÄÎïÆ·ÓĞ£º$} {
+    #action {^æŸœå­é‡Œç›®å‰å­˜æ”¾çš„ç‰©å“æœ‰ï¼š$} {
         #delay {1} {
             #local sibaoIndex {${xiaoyao-sibao-id}};
             #class xiaoyao.getSibao kill;
             #if { &sibaoIndex[] == 4 } {
                 #local book {};
-                #foreach {¹ãÁêÉ¢;ÂÊÒâÌû;ÏªÉ½ĞĞÂÃÍ¼;Å»ÑªÆ×} {book} {
+                #foreach {å¹¿é™µæ•£;ç‡æ„å¸–;æºªå±±è¡Œæ—…å›¾;å‘•è¡€è°±} {book} {
                     getout $sibaoIndex[$book];
                 };
                 #delay 1 {walk};
             };
             #else {
-                #showme ÄãµÄ¹ñ×ÓÀïËÄ±¦²»Æë»òÓĞ¶àÓà£¬ÎŞ·¨×Ô¶¯Ç°ÍùÃ·×¯¡£;
+                #showme ä½ çš„æŸœå­é‡Œå››å®ä¸é½æˆ–æœ‰å¤šä½™ï¼Œæ— æ³•è‡ªåŠ¨å‰å¾€æ¢…åº„ã€‚;
                 set brief 0;
             };
         };
@@ -491,7 +491,7 @@
 
     #if { "${xiaoyao-map}[$nodeId]" == "" } {
         #echo {%c%h} {light yellow};
-        #echo {%c  Ã»ÓĞ%1Õâ¸öµØÇø} {light yellow};
+        #echo {%c  æ²¡æœ‰%1è¿™ä¸ªåœ°åŒº} {light yellow};
         #echo {%c%h} {light yellow};
         #return;
     };
@@ -501,11 +501,11 @@
         #format neighbourList {%s %s} {$neighbourList} {${xiaoyao-map}[$link][name]($link)};
     };
 
-    #showme {<130>µ±Ç°Î»ÖÃ£º${xiaoyao-map}[$nodeId][name](${xiaoyao.currentPosition}) <170>>>$neighbourList<070>};
+    #showme {<130>å½“å‰ä½ç½®ï¼š${xiaoyao-map}[$nodeId][name](${xiaoyao.currentPosition}) <170>>>$neighbourList<070>};
 };
 
 #alias {xiaoyao.setupTrigger} {
-    #local END {%s-%s{\[´ó.*¹ú\][ ]*|}{\[(³ÇÄÚ|ÃÅÅÉ|Ò°Íâ|.*ÊÆÁ¦·¶Î§)\][ ]*(|\[´æÅÌµã\])(|\[Íæ¼Ò´¢Îï¹ñ\])|}%s};
+    #local END {%s-%s{\[å¤§.*å›½\][ ]*|}{\[(åŸå†…|é—¨æ´¾|é‡å¤–|.*åŠ¿åŠ›èŒƒå›´)\][ ]*(|\[å­˜ç›˜ç‚¹\])(|\[ç©å®¶å‚¨ç‰©æŸœ\])|}%s};
 
     #local position {};
     #foreach ${xiaoyao-map}[] {position} {
@@ -525,7 +525,7 @@
 
 #alias {xiaoyao.loadData} {
     #read {data/xiaoyao.tin};
-    #nop ÉèÖÃ½Úµã¶¨Î»´¥·¢Æ÷¡£;
+    #nop è®¾ç½®èŠ‚ç‚¹å®šä½è§¦å‘å™¨ã€‚;
     xiaoyao.setupTrigger;
 };
 

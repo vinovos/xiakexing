@@ -1,11 +1,11 @@
 #class xiaoyao-data open;
 
 #var xiaoyao-map {
-{bt}        {{long}{baituo}             {name}{°×ÍÕ}        {room}{¸ê±Ú}           {links}{
-    {yz}{nw;s;ask zhang about ÑïÖİ;e;s}}}
-{bxs}       {{long}{baixiaosheng}       {name}{°ÙÏşÉú}      {room}{×íÏÉÂ¥¶şÂ¥}     {links}{
+{bt}        {{long}{baituo}             {name}{ç™½é©¼}        {room}{æˆˆå£}           {links}{
+    {yz}{nw;s;ask zhang about æ‰¬å·;e;s}}}
+{bxs}       {{long}{baixiaosheng}       {name}{ç™¾æ™“ç”Ÿ}      {room}{é†‰ä»™æ¥¼äºŒæ¥¼}     {links}{
     {yz}{d;w;s;s}}}
-{bj}        {{long}{beijing}            {name}{±±¾©}        {room}{ÓÀ°²ÃÅ}         {links}{
+{bj}        {{long}{beijing}            {name}{åŒ—äº¬}        {room}{æ°¸å®‰é—¨}         {links}{
     {shg}{e;e;e;e;e;n;n;n;n;n;n;n;n;n;n;n;w;w;n;n;n;ne;ne;ne;ne;nw}
     {py}{s;sw;sw;s}
     {zf}{e;e;e;e;e;n;n;n;n;n;n;n;e;ne;n;n}
@@ -15,7 +15,7 @@
     {jy}{w;w;w;w;n;n;sw;sw;w;w;w;w;w;w;w;sw;w}
     {ry}{w;w;w;w;n;n;sw;sw;nu;n;ne;nu;nu}
     {zjc}{n;n;n;n;n;n;n;n}}}
-{cd}        {{long}{chengdu}            {name}{³É¶¼}        {room}{×Ü¶½¸®ÃÅÇ°}     {links}{
+{cd}        {{long}{chengdu}            {name}{æˆéƒ½}        {room}{æ€»ç£åºœé—¨å‰}     {links}{
     {yj}{enter}
     {em}{s;s;s;s;su;su;su;w;nw;n;nu;unwield all;nu;wield all;n;e;eu;nu;nu}
     {tls}{s;s;s;s;su;sw;sw;s;SlowWalk;sw;SlowWalk;sw;sw;wu}
@@ -23,70 +23,70 @@
     {sdn}{se;se;e;e}
     {jmg}{n;n;n;n;nu}
     {yy}{nw;nw;n;hire;qu yueyang;stop;xia;w;s;s}}}
-{cz}        {{long}{chongzi}            {name}{³æ×Ó}        {room}{Àö´ºÔºÃÜÊÒ}     {links}{
+{cz}        {{long}{chongzi}            {name}{è™«å­}        {room}{ä¸½æ˜¥é™¢å¯†å®¤}     {links}{
     {yz}{u;w;n;n}}}
-{dl}        {{long}{dali}               {name}{´óÀí}        {room}{Ê®×ÖÂ·¿Ú}       {links}{
+{dl}        {{long}{dali}               {name}{å¤§ç†}        {room}{åå­—è·¯å£}       {links}{
     {tls}{n;n;n;n;n;n;n;ne;ne;ne;n;sw;wu}
     {km}{s;s;s;e;se;e;se;e;e;n}}}
-{qbl}       {{long}{qianbuling}         {name}{´óÂÖÇ§²½Áë}  {room}{Ç§²½Áë}         {links}{
+{qbl}       {{long}{qianbuling}         {name}{å¤§è½®åƒæ­¥å²­}  {room}{åƒæ­¥å²­}         {links}{
     {dls}{wu;wd;wu;nu;ne;se;eu;nw}
     {zp}{se;e;sw;se;e;e;e}}}
-{dls}       {{long}{dalunsi}            {name}{´óÂÖËÂ}      {room}{´óÂÖËÂÉ½ÃÅ}     {links}{
+{dls}       {{long}{dalunsi}            {name}{å¤§è½®å¯º}      {room}{å¤§è½®å¯ºå±±é—¨}     {links}{
     {qbl}{se;wd;nw;sw;sd;ed;eu;ed}
     {xs}{se;ed;ne;enter dong;ne;nw;out;n;w;nu;nu;n;w;w}
     {yz}{se;ed;ne;enter dong;ne;ne;ne;n;ne;e;u;out}
     {xkt}{knock gate;SlowWalk;nu;nu;n;n;nd}}}
-{xkt}       {{long}{xieketing}          {name}{´óÂÖĞ»¿ÍÍ¤}  {room}{Ğ»¿ÍÍ¤}         {links}{
+{xkt}       {{long}{xieketing}          {name}{å¤§è½®è°¢å®¢äº­}  {room}{è°¢å®¢äº­}         {links}{
     {lhs}{su}
     {dls}{su;s;s;sd;pull gate;sd}
     {bofu}{su;s;s;sd}}}
-{lhs}       {{long}{lianhuasheng}       {name}{Á«»¨Éú´óÊ¿}  {room}{Öé¶¼°Íµî}       {links}{
+{lhs}       {{long}{lianhuasheng}       {name}{è²èŠ±ç”Ÿå¤§å£«}  {room}{ç éƒ½å·´æ®¿}       {links}{
     {xkt}{nd}}}
-{ddj}       {{long}{dudajin}            {name}{¶¼´ó½õ}      {room}{ÁúÃÅïÚ¾Ö}       {links}{
+{ddj}       {{long}{dudajin}            {name}{éƒ½å¤§é”¦}      {room}{é¾™é—¨é•–å±€}       {links}{
     {ly}{out;s;e}}}
-{yj}        {{long}{yujie}              {name}{Óà«d}        {room}{ËÄ´¨×Ü¶½¸®}     {links}{
+{yj}        {{long}{yujie}              {name}{ä½™ç }        {room}{å››å·æ€»ç£åºœ}     {links}{
     {cd}{out}}}
-{em}        {{long}{emei}               {name}{¶ëáÒ}        {room}{ÓñÅ®³Ø}         {links}{
+{em}        {{long}{emei}               {name}{å³¨åµ‹}        {room}{ç‰å¥³æ± }         {links}{
     {cd}{sd;sd;wd;w;s;sd;sd;s;se;e;nd;nd;nd;n;n;n;n}
     {qfa}{eu;n;nu;nu;nu;wu;nu;n;n}}}
-{qfa}       {{long}{qianfuoan}          {name}{¶ëáÒÇ§·ğâÖ}  {room}{Ç§·ğâÖ´óµî}     {links}{
+{qfa}       {{long}{qianfuoan}          {name}{å³¨åµ‹åƒä½›åºµ}  {room}{åƒä½›åºµå¤§æ®¿}     {links}{
     {miej}{n;n;n;n;n;n;ne;ne;n}
     {em}{s;s;sd;ed;sd;sd;sd;s;wd}}}
-{fds}       {{long}{fadaishi}           {name}{·¢´ôÊÒ}      {room}{·¢´ôÊÒ}         {links}{
+{fds}       {{long}{fadaishi}           {name}{å‘å‘†å®¤}      {room}{å‘å‘†å®¤}         {links}{
     {yz}{enter;u}}}
-{fz}        {{long}{fuzhou}             {name}{¸£Öİ}        {room}{¸£ÍşïÚ¾Ö}       {links}{
+{fz}        {{long}{fuzhou}             {name}{ç¦å·}        {room}{ç¦å¨é•–å±€}       {links}{
     {qz}{s;w;w;w;w;sw;sw;s;s;sw;sw;sw}
     {wys}{s;w;n;n;n;nu;nw;nw;s}}}
-{gb}        {{long}{gaibang}            {name}{Ø¤°ï}        {room}{ÍÁµØÃí}         {links}{
+{gb}        {{long}{gaibang}            {name}{ä¸å¸®}        {room}{åœŸåœ°åº™}         {links}{
     {yz}{s;s;w;w;w;w}}}
-{gm}        {{long}{gumu}               {name}{¹ÅÄ¹}        {room}{¶ÏÁúÊ¯}         {links}{
+{gm}        {{long}{gumu}               {name}{å¤å¢“}        {room}{æ–­é¾™çŸ³}         {links}{
     {qzh}{s;s;s;wu;eu;su;s;s;s;s;s;s;s;s;s;s;s}
     {ca}{e;ne;ne;nd;nw;n;n;n;n;n;n;n}
     {ha}{e;ne;ne;e;swim river;n;n;e;n;n;w;w;n;n}}}
-{ha}        {{long}{hean}               {name}{¹ÅÄ¹ºÓ°¶}    {room}{ºÓ°¶}           {links}{
+{ha}        {{long}{hean}               {name}{å¤å¢“æ²³å²¸}    {room}{æ²³å²¸}           {links}{
     {gm}{s;s;s;s;out;w;sw;sw;w}
     {ms}{e;n;w;ban stone;w;w}}}
-{ms}        {{long}{mishi}              {name}{¹ÅÄ¹ÃÜÊÒ}    {room}{ÃÜÊÒ}           {links}{
+{ms}        {{long}{mishi}              {name}{å¤å¢“å¯†å®¤}    {room}{å¯†å®¤}           {links}{
     {xt}{u;out;juan picture;s;s;e;n;n;n;n}}}
-{xt}        {{long}{xiaoting}           {name}{¹ÅÄ¹Ğ¡Ìü}    {room}{Ğ¡Ìü}           {links}{
+{xt}        {{long}{xiaoting}           {name}{å¤å¢“å°å…}    {room}{å°å…}           {links}{
     {gm}{s;s;s;s;s;ban stone;s}}}
-{gjc}       {{long}{guajianci}          {name}{¹Ò½£ìô}      {room}{¹Ò½£ìô}         {links}{
+{gjc}       {{long}{guajianci}          {name}{æŒ‚å‰‘ç¥ }      {room}{æŒ‚å‰‘ç¥ }         {links}{
     {jx}{nw;sd;sd;su;w}}}
-{gw}        {{long}{guanwai}            {name}{¹ØÍâ}        {room}{¼¯ÊĞ}           {links}{
+{gw}        {{long}{guanwai}            {name}{å…³å¤–}        {room}{é›†å¸‚}           {links}{
     {ych}{s;s;s;s;s;s;sw;s}}}
-{ych}       {{long}{ningyuan}           {name}{Ô¬³ç»À}      {room}{ÄşÔ¶}           {links}{
+{ych}       {{long}{ningyuan}           {name}{è¢å´‡ç„•}      {room}{å®è¿œ}           {links}{
     {gw}{n;ne;n;n;n;n;n;n}
-    {shg}{sw;sw;sw;sw;ask jiang about Èë¹Ø}}}
-{yinz}      {{long}{yinzhe}             {name}{¹éÔÆÒşÕß}    {room}{ÒşÕß¾Ó}         {links}{
+    {shg}{sw;sw;sw;sw;ask jiang about å…¥å…³}}}
+{yinz}      {{long}{yinzhe}             {name}{å½’äº‘éšè€…}    {room}{éšè€…å±…}         {links}{
     {taih}{n;n;n;n;n;n}}}
-{gy}        {{long}{guiyun}             {name}{¹éÔÆ×¯}      {room}{¹éÔÆÍ¤}         {links}{
+{gy}        {{long}{guiyun}             {name}{å½’äº‘åº„}      {room}{å½’äº‘äº­}         {links}{
     {taih}{sd;sd;out;w;w;w;w}
     {lcf}{e;e}}}
-{hanz}      {{long}{hanzhong}           {name}{ººÖĞ}        {room}{ººÖĞ}           {links}{
+{hanz}      {{long}{hanzhong}           {name}{æ±‰ä¸­}        {room}{æ±‰ä¸­}           {links}{
     {jmg}{su;SlowWalk;sw;SlowWalk;se;SlowWalk;su;SlowWalk}
     {ca}{e;e;ne;ne;ne;ne;n;n;n;n;n;n;n}
     {xz}{nw;nu;nd;ne;nu;ne;SlowWalk;nw;SlowWalk;nw;SlowWalk}}}
-{hz}        {{long}{hangzhou}           {name}{º¼Öİ}        {room}{´óÀíËÂ}         {links}{
+{hz}        {{long}{hangzhou}           {name}{æ­å·}        {room}{å¤§ç†å¯º}         {links}{
     {tms}{se;s;s;s;w;sw;w;jump west}
     {hzsj}{w;n}
     {hzyp}{e;e;e;e;n;n;n;e}
@@ -99,124 +99,124 @@
     {hsz}{e;e;n;enter;n}
     {hzbs}{se;s;s;w;n;enter $user[id]}
     {jnqz}{e;e;s;enter;s}}}
-{hmy}       {{long}{heimuya}            {name}{ºÚÄ¾ÑÂ}      {room}{³ÉµÂµîÃÅ}       {links}{
+{hmy}       {{long}{heimuya}            {name}{é»‘æœ¨å´–}      {room}{æˆå¾·æ®¿é—¨}       {links}{
     {ry}{s;out;s;enter lou;stop;s;s;s;s}}}
-{hhh}       {{long}{honghuahui}         {name}{ºì»¨»á}      {room}{º¼Öİ·Ö¶æ´óÃÅ}   {links}{
+{hhh}       {{long}{honghuahui}         {name}{çº¢èŠ±ä¼š}      {room}{æ­å·åˆ†èˆµå¤§é—¨}   {links}{
     {xh}{e;e;e;enter boat;stop;w;nw;n;e;s;se}
     {hz}{e;e;e;enter boat;stop;w;s;se;e;ne;e;n;e;nw}}}
-{hyd}       {{long}{huyidao}            {name}{ºúÒ»µ¶}      {room}{¸ßÁ»µØ}         {links}{
+{hyd}       {{long}{huyidao}            {name}{èƒ¡ä¸€åˆ€}      {room}{é«˜ç²±åœ°}         {links}{
     {py}{s;sw;s}
     {bj}{s;ne;n}}}
-{bs}        {{long}{bieshu}             {name}{Íæ¼Ò´¢Îï¹ñ}  {room}{Ê¢²ı×ÜĞĞ}       {links}{
+{bs}        {{long}{bieshu}             {name}{ç©å®¶å‚¨ç‰©æŸœ}  {room}{ç››æ˜Œæ€»è¡Œ}       {links}{
     {yz}{out;e;n;n;n}}}
-{hs}        {{long}{huashan}            {name}{»ªÉ½}        {trigger}{^%sÕâÀïÊÇ»ªÉ½ÅÉÕÆÃÅÈË¡¸¾ı×Ó½£¡¹ÔÀ²»ÈºµÄÊé·¿£¬Æ½Ê±ÔÀÏÈÉúÔÚ´Ë»á¼ûÊìÈË¡£·¿ÀïÖ»ÓĞ¼¸ÅÅÊé¼Ü¡£$}         {links}{
+{hs}        {{long}{huashan}            {name}{åå±±}        {trigger}{^%sè¿™é‡Œæ˜¯åå±±æ´¾æŒé—¨äººã€Œå›å­å‰‘ã€å²³ä¸ç¾¤çš„ä¹¦æˆ¿ï¼Œå¹³æ—¶å²³å…ˆç”Ÿåœ¨æ­¤ä¼šè§ç†Ÿäººã€‚æˆ¿é‡Œåªæœ‰å‡ æ’ä¹¦æ¶ã€‚$}         {links}{
     {cll}{e;e;n;n;n;nd;nu}}}
-{cll}       {{long}{canglongling}       {name}{»ªÉ½²ÔÁúÁë}  {room}{²ÔÁúÁë}         {links}{
+{cll}       {{long}{canglongling}       {name}{åå±±è‹é¾™å²­}  {room}{è‹é¾™å²­}         {links}{
     {xc}{nd;nd;wd;nd;wd;nd;nw;w;w;w;w;w}
     {hs}{sd;su;s;s;s;w;w}
     {ca}{n;nd;nd;nd;nd;n;w;w;w;w;w;w;n}
     {ly}{n;nd;nd;nd;nd;n;n;se;e;e;e;e;e;ed;e;e;e}}}
-{xc}        {{long}{xiaocun}            {name}{»ªÉ½´å}      {room}{´ò¹È³¡}         {links}{
+{xc}        {{long}{xiaocun}            {name}{åå±±æ‘}      {room}{æ‰“è°·åœº}         {links}{
     {cll}{e;e;e;e;e;se;su;eu;su;eu;su;su}
     {ny}{s;s;s;s;s;se}
     {qzh}{nw;nw;w;nw;nw;n;nw;nu;nu;n;nu;n;n}}}
-{hb}        {{long}{huaibei}            {name}{»´±±}        {room}{»´±±}           {links}{
+{hb}        {{long}{huaibei}            {name}{æ·®åŒ—}        {room}{æ·®åŒ—}           {links}{
     {qf}{ne;ne;ne;ne;ne;e;e;s;e}
     {yz}{se;se;se;s;s;s;s}
     {xch}{w;nw;w}}}
-{hb1}       {{long}{huanghedukoubei1}   {name}{»ÆºÓ¶É¿Ú±±1} {trigger}{^%sÕâÀïÊÇ»ÆºÓ±±°¶µÄ¶É¿Ú£¬Íù±±Í¨Ïòå§Ñô¡£¶É¹ıºÓÈ¥¾ÍÊÇÉ½¶«µØ½çÁË}    {links}{
+{hb1}       {{long}{huanghedukoubei1}   {name}{é»„æ²³æ¸¡å£åŒ—1} {trigger}{^%sè¿™é‡Œæ˜¯é»„æ²³åŒ—å²¸çš„æ¸¡å£ï¼Œå¾€åŒ—é€šå‘æ¿®é˜³ã€‚æ¸¡è¿‡æ²³å»å°±æ˜¯å±±ä¸œåœ°ç•Œäº†}    {links}{
     {hb2}{w;nw;w;n}
     {py}{w;ne;nw}
     {hn1}{xiaoyao.GuoHe;stop}}}
-{hb2}       {{long}{huanghedukoubei2}   {name}{»ÆºÓ¶É¿Ú±±2} {trigger}{^%sÕâÀïÊÇ»ÆºÓ±±°¶µÄ¶É¿Ú£¬¶«±±Í¨Ïò½úÑô¡£¶É¹ı»ÆºÓ¾ÍÊÇÂåÑôÁË}        {links}{
+{hb2}       {{long}{huanghedukoubei2}   {name}{é»„æ²³æ¸¡å£åŒ—2} {trigger}{^%sè¿™é‡Œæ˜¯é»„æ²³åŒ—å²¸çš„æ¸¡å£ï¼Œä¸œåŒ—é€šå‘æ™‹é˜³ã€‚æ¸¡è¿‡é»„æ²³å°±æ˜¯æ´›é˜³äº†}        {links}{
     {hb1}{s;e;se;e}
     {hb3}{nw;nw;nw;n;n;ne;n;nw;w;sw;sw;sw}
     {jy}{n;ne;ne;ne;e;n;n;w}
     {hn2}{xiaoyao.GuoHe;stop}}}
-{hb3}       {{long}{huanghedukoubei3}   {name}{»ÆºÓ¶É¿Ú±±3} {trigger}{^%sÕâÀïÊÇ»ÆºÓ±±°¶µÄ¶É¿Ú£¬¶É¹ıºÓÈ¥Í¨ÏòÁéÖİ}                        {links}{
+{hb3}       {{long}{huanghedukoubei3}   {name}{é»„æ²³æ¸¡å£åŒ—3} {trigger}{^%sè¿™é‡Œæ˜¯é»„æ²³åŒ—å²¸çš„æ¸¡å£ï¼Œæ¸¡è¿‡æ²³å»é€šå‘çµå·}                        {links}{
     {hb2}{ne;ne;ne;e;se;s;sw;s;s;se;se;se}
     {hb4}{sw;sw;sw}
     {mj}{nw;w;w;w;n;n;w;w;w;n;n;w;w;nw;n;nw;nu}
     {hn3}{guohe3n2s;stop}}}
-{hb4}       {{long}{huanghedukoubei4}   {name}{»ÆºÓ¶É¿Ú±±4} {trigger}{^%sÕâÀïÊÇ»ÆºÓ±±°¶µÄ¶É¿Ú£¬Î÷±±Í¨ÏòÀ¼Öİ}                            {links}{
+{hb4}       {{long}{huanghedukoubei4}   {name}{é»„æ²³æ¸¡å£åŒ—4} {trigger}{^%sè¿™é‡Œæ˜¯é»„æ²³åŒ—å²¸çš„æ¸¡å£ï¼Œè¥¿åŒ—é€šå‘å…°å·}                            {links}{
     {hb3}{ne;ne;ne}
     {jyg}{sw;w;w;nw;w;nw}
     {mgk}{sw;w;w;nw;climb mount;w;enter hole}
     {lanz}{nw;nw;e;e;e;e}
     {hn4}{xiaoyao.GuoHe;stop}}}
-{hn1}       {{long}{huanghedukounan1}   {name}{»ÆºÓ¶É¿ÚÄÏ1} {trigger}{^%sÕâÀïÊÇ»ÆºÓÄÏ°¶µÄ¶É¿Ú£¬ÍùÄÏÍ¨ÏòÇú¸·¡£¶É¹ı»ÆºÓÏò±±¾ÍÊÇå§Ñô}      {links}{
+{hn1}       {{long}{huanghedukounan1}   {name}{é»„æ²³æ¸¡å£å—1} {trigger}{^%sè¿™é‡Œæ˜¯é»„æ²³å—å²¸çš„æ¸¡å£ï¼Œå¾€å—é€šå‘æ›²é˜œã€‚æ¸¡è¿‡é»„æ²³å‘åŒ—å°±æ˜¯æ¿®é˜³}      {links}{
     {hn2}{w;nw;w}
     {qf}{se;se;se;s;s;s;s;w}
     {dzf}{se;se;se;ne;e;ne;n;n}
     {yz}{w;enter hole;s;sw;sw;s;s;u;out}
     {hb1}{xiaoyao.GuoHe;stop}}}
-{hn2}       {{long}{huanghedukounan2}   {name}{»ÆºÓ¶É¿ÚÄÏ2} {trigger}{^%sÕâÀïÊÇ»ÆºÓÄÏ°¶µÄ¶É¿Ú£¬ÄÏÃæÍ¨ÏòÂåÑô¡£¶É¹ıºÓ¾Í½øÈë½úÑôÁË}        {links}{
+{hn2}       {{long}{huanghedukounan2}   {name}{é»„æ²³æ¸¡å£å—2} {trigger}{^%sè¿™é‡Œæ˜¯é»„æ²³å—å²¸çš„æ¸¡å£ï¼Œå—é¢é€šå‘æ´›é˜³ã€‚æ¸¡è¿‡æ²³å°±è¿›å…¥æ™‹é˜³äº†}        {links}{
     {hn1}{e;se;e}
     {hn3}{w;nw;nw;nw;n;n;ne;n;nw;w;sw;sw;sw}
     {ly}{sd;s;s;su;sd;s;s;s}
     {ca}{w;nw;sw;s;e;e;e;s;s;s;s;w;w;w;s;s;w;w;n}
     {hb2}{xiaoyao.GuoHe;stop}}}
-{hn3}       {{long}{huanghedukounan3}   {name}{»ÆºÓ¶É¿ÚÄÏ3} {trigger}{^%sÕâÀïÊÇ»ÆºÓÄÏ°¶µÄ¶É¿Ú£¬¶«ÄÏÃæÍ¨ÏòÁéÖİ}                          {links}{
+{hn3}       {{long}{huanghedukounan3}   {name}{é»„æ²³æ¸¡å£å—3} {trigger}{^%sè¿™é‡Œæ˜¯é»„æ²³å—å²¸çš„æ¸¡å£ï¼Œä¸œå—é¢é€šå‘çµå·}                          {links}{
     {hn2}{ne;ne;ne;e;se;s;sw;s;s;se;se;se;e}
     {lz}{se;se;e;e;n;n}
     {hn4}{sw;sw;sw}
     {hb3}{guohe3s2n;stop}}}
-{hn4}       {{long}{huanghedukounan4}   {name}{»ÆºÓ¶É¿ÚÄÏ4} {trigger}{^%sÕâÀïÊÇ»ÆºÓÄÏ°¶µÄ¶É¿Ú£¬Íù¶«ÄÏÍ¨Ïò³¤°²¡£¶É¹ıºÓÈ¥¾ÍÊÇÀ¼ÖİÁË}      {links}{
+{hn4}       {{long}{huanghedukounan4}   {name}{é»„æ²³æ¸¡å£å—4} {trigger}{^%sè¿™é‡Œæ˜¯é»„æ²³å—å²¸çš„æ¸¡å£ï¼Œå¾€ä¸œå—é€šå‘é•¿å®‰ã€‚æ¸¡è¿‡æ²³å»å°±æ˜¯å…°å·äº†}      {links}{
     {hn3}{ne;ne;ne}
     {hb4}{xiaoyao.GuoHe;stop}}}
-{jx}        {{long}{jiaxing}            {name}{¼ÎĞË}        {room}{¼ÎĞË³Ç}         {links}{
+{jx}        {{long}{jiaxing}            {name}{å˜‰å…´}        {room}{å˜‰å…´åŸ}         {links}{
     {zym}{w;nu;nw;nw;n;nw;w;nw;nw;n}
     {sz}{n;n;n;n;n}
     {ljz}{s;sw;sw;s}
     {ys}{e;se;ne;e;ne;ne;e;e;e;e;e;e;e}
     {th}{e;nd;e;e;e;e;n;taohuadao;stop}
     {wys}{s;s;s}
-    {gjc}{e;nd;ask chou diao about ¶À¹ÂÇó°Ü;nu;se}}}
-{jyg}       {{long}{jiayuguan}          {name}{¼ÎÓø¹Ø}      {room}{¼ÎÓø¹Ø}         {links}{
+    {gjc}{e;nd;ask chou diao about ç‹¬å­¤æ±‚è´¥;nu;se}}}
+{jyg}       {{long}{jiayuguan}          {name}{å˜‰å³ªå…³}      {room}{å˜‰å³ªå…³}         {links}{
     {hb4}{se;e;se;e;e;ne}}}
-{jmg}       {{long}{jianmenguan}        {name}{½£ÃÅ¹Ø}      {room}{½£ÃÅ¹Ø}         {links}{
+{jmg}       {{long}{jianmenguan}        {name}{å‰‘é—¨å…³}      {room}{å‰‘é—¨å…³}         {links}{
     {hanz}{nd;SlowWalk;nw;SlowWalk;ne;SlowWalk;nd;SlowWalk}
     {cd}{sd;s;s;s;s}}}
-{jz}        {{long}{jiangzhou}          {name}{½­Öİ}        {room}{º«¼Ò}           {links}{
+{jz}        {{long}{jiangzhou}          {name}{æ±Ÿå·}        {room}{éŸ©å®¶}           {links}{
     {jn3}{w;w;n;ne;ne;ne;ne;n;nw;nw}
     {yy}{w;w;n;sw;sw;sw;w;wu;nw;wu;w;w;w;s}
     {nc}{w;w;s;s;s;s;su;se;s;s;s;e;n}
     {pyh}{w;w;s;s;s;s;e}
     {tf}{w;w;n;ne;s}}}
-{jy}        {{long}{jinyang}            {name}{½úÑô}        {room}{Ïô¸®}           {links}{
+{jy}        {{long}{jinyang}            {name}{æ™‹é˜³}        {room}{è§åºœ}           {links}{
     {bj}{e;ne;e;e;e;e;e;e;e;ne;ne;s;s;e;e;e;e}
     {zjk}{e;n;n;e;n;n;nu;nu;ne;n;ne;e;e;e;n;n}
     {ry}{e;ne;e;e;e;e;e;e;e;nu;n;ne;nu;nu}
     {hb2}{e;s;s;w;sw;sw;sw;s}}}
-{jzh}       {{long}{jingzhou}           {name}{¾£Öİ}        {room}{¾£Öİ}           {links}{
+{jzh}       {{long}{jingzhou}           {name}{è†å·}        {room}{è†å·}           {links}{
     {xy}{n;n;n;n;n;n;n;n;n;n;n;w;w;n}
     {jb4}{s;se;s;w}}}
-{km}        {{long}{kunming}            {name}{À¥Ã÷}        {room}{ÉñÍşïÚ¾Ö}       {links}{
+{km}        {{long}{kunming}            {name}{æ˜†æ˜}        {room}{ç¥å¨é•–å±€}       {links}{
     {dl}{s;w;w;nw;w;nw;w;n;n;n}
-    {px}{s;e;n;n;n;n;n;n;n;ask tou about ×ÔÁ¢ÎªÍõ}
+    {px}{s;e;n;n;n;n;n;n;n;ask tou about è‡ªç«‹ä¸ºç‹}
     {mlx}{s;e;e;e;e;ne;eu;eu}}}
-{fd}        {{long}{fudi}               {name}{ÀÅçÙ¸£µØ}    {room}{ÀÅçÙ¸£µØ}       {links}{
+{fd}        {{long}{fudi}               {name}{ç…ç¼³ç¦åœ°}    {room}{ç…ç¼³ç¦åœ°}       {links}{
     {wjg}{w;s;out;guo qiao;stop}}}
-{lld}       {{long}{laolindong}         {name}{ÀÏÁÖ¶«}      {room}{ÀÏÁÖ¾¡Í·}       {links}{
+{lld}       {{long}{laolindong}         {name}{è€æ—ä¸œ}      {room}{è€æ—å°½å¤´}       {links}{
     {tdf}{ed;nd;w}}}
-{llx}       {{long}{laolinxi}           {name}{ÀÏÁÖÎ÷}      {room}{ÀÏÁÖ±ßÔµ}       {links}{
+{llx}       {{long}{laolinxi}           {name}{è€æ—è¥¿}      {room}{è€æ—è¾¹ç¼˜}       {links}{
     {nc}{wd;wd;w;w;n}}}
-{lj}        {{long}{lingjiu}            {name}{ÁéğÕ}        {room}{°ÙÕÉ½§}         {links}{
+{lj}        {{long}{lingjiu}            {name}{çµé¹«}        {room}{ç™¾ä¸ˆæ¶§}         {links}{
     {lz}{sd;sd;s;w;w;w;w;w;n;n}
     {xz}{sd;sd;s;s;sd}
     {dzt}{zou tiesuo;stop;nw;ne;nu;nu;n;n}}}
-{dzt}       {{long}{duzunting}          {name}{ÁéğÕ¶À×ğÌü}  {room}{¶À×ğÌü´óÃÅ}     {links}{
+{dzt}       {{long}{duzunting}          {name}{çµé¹«ç‹¬å°Šå…}  {room}{ç‹¬å°Šå…å¤§é—¨}     {links}{
     {lj}{s;s;sd;sd;sw;se;zou tiesuo;stop}}}
-{lz}        {{long}{lingzhou}           {name}{ÁéÖİ}        {room}{»Ê¹¬´óÃÅ}       {links}{
+{lz}        {{long}{lingzhou}           {name}{çµå·}        {room}{çš‡å®«å¤§é—¨}       {links}{
     {lj}{s;s;e;e;e;e;e;n;nu;nu}
     {xz}{s;s;e;e;e;e;e;s;sd}
     {qhb}{s;s;s;s;s;s;s}
     {hn3}{s;s;w;w;nw;nw}}}
-{lxc}       {{long}{lingxiaocheng}      {name}{ÁèÏö³Ç}      {room}{ÁèÏö´óÌü}       {links}{
+{lxc}       {{long}{lingxiaocheng}      {name}{å‡Œéœ„åŸ}      {room}{å‡Œéœ„å¤§å…}       {links}{
     {xs}{s;sd;s;s;s;s;jiang bridge;s}}}
-{ljz}       {{long}{lujiazhuang}        {name}{Â½¼Ò×¯}      {room}{Â½¼Ò×¯}         {links}{
+{ljz}       {{long}{lujiazhuang}        {name}{é™†å®¶åº„}      {room}{é™†å®¶åº„}         {links}{
     {jx}{n;ne;ne;n}}}
-{ly}        {{long}{luoyang}            {name}{ÂåÑô}        {room}{ÂåÑôÖĞĞÄ¹ã³¡}   {links}{
+{ly}        {{long}{luoyang}            {name}{æ´›é˜³}        {room}{æ´›é˜³ä¸­å¿ƒå¹¿åœº}   {links}{
     {ca}{w;w;w;wu;w;w;w;w;w;nw;s;w;w;w;w;w;w;n}
     {qlc}{e;e;e;eu;ed;e;e;e;e;se;ne;n;w;s;w}
     {cll}{w;w;w;wu;w;w;w;w;w;nw;s;s;su;su;su;su;s}
@@ -227,91 +227,91 @@
     {tdh}{s;s;s;e;e;e;n;e;e;SlowWalk;tiandihui_andao}
     {ddj}{w;n;enter}
     {ny}{s;s;s;s;s;s;s}}}
-{ll}        {{long}{lvliu}              {name}{ÂÌÁøÉ½×¯}    {room}{ÂÌÁøÉ½×¯´óÃÅ}   {links}{
+{ll}        {{long}{lvliu}              {name}{ç»¿æŸ³å±±åº„}    {room}{ç»¿æŸ³å±±åº„å¤§é—¨}   {links}{
     {mj}{nw;e;ne;nw;n;nw;nu}}}
-{mt}        {{long}{mantuo}             {name}{ÂüÍÓÉ½×¯}    {room}{Ğ¡ÇÅ}           {links}{
+{mt}        {{long}{mantuo}             {name}{æ›¼é™€å±±åº„}    {room}{å°æ¡¥}           {links}{
     {qy}{e;e;e;s;n;w;n;n;e;s;e;enter boat;stop;w;w;w;s}}}
-{mz}        {{long}{meizhuang}          {name}{Ã·×¯}        {room}{Ã·×¯Ìì¾®}       {links}{
+{mz}        {{long}{meizhuang}          {name}{æ¢…åº„}        {room}{æ¢…åº„å¤©äº•}       {links}{
     {hz}{open gate;s;ne;ne;ne;ne;n;e;e;e;se;s;s;w;n;enter $user[id];store ouxue pu;store xishan tu;store shuaiyi tie;store guangling san;out;s;e;n;n;nw}}}
-{mlb}       {{long}{miaolingbei}        {name}{ÃçÁë±±}      {trigger}{^%sÕâÀïÊÇÃçÁëµÄ±ßÔµ£¬ÄÏÃæÊÇÁ¬³ÉÆ¬µÄÉ­ÁÖ£¬ËÆºõÓĞÕÎÆø£¬Ã»ÊÂ²»ÒªÇáÒ×½øÈë¡£$} {links}{
+{mlb}       {{long}{miaolingbei}        {name}{è‹—å²­åŒ—}      {trigger}{^%sè¿™é‡Œæ˜¯è‹—å²­çš„è¾¹ç¼˜ï¼Œå—é¢æ˜¯è¿æˆç‰‡çš„æ£®æ—ï¼Œä¼¼ä¹æœ‰ç˜´æ°”ï¼Œæ²¡äº‹ä¸è¦è½»æ˜“è¿›å…¥ã€‚$} {links}{
     {nc}{ed;ed;ed;e;e;e;e;n}
     {yy}{nd;nd;nd;n;n}}}
-{mlx}       {{long}{miaolingxi}         {name}{ÃçÁëÎ÷}      {trigger}{^%sÕâÀïÊÇÃçÁëµÄ±ßÔµ£¬¶«ÃæÊÇÁ¬³ÉÆ¬µÄÉ­ÁÖ£¬ËÆºõÓĞÕÎÆø£¬Ã»ÊÂ²»ÒªÇáÒ×½øÈë¡£$} {links}{
+{mlx}       {{long}{miaolingxi}         {name}{è‹—å²­è¥¿}      {trigger}{^%sè¿™é‡Œæ˜¯è‹—å²­çš„è¾¹ç¼˜ï¼Œä¸œé¢æ˜¯è¿æˆç‰‡çš„æ£®æ—ï¼Œä¼¼ä¹æœ‰ç˜´æ°”ï¼Œæ²¡äº‹ä¸è¦è½»æ˜“è¿›å…¥ã€‚$} {links}{
     {km}{wd;wd;sw;w;w;w;w;n}}}
-{mj}        {{long}{mingjiao}           {name}{Ã÷½Ì}        {room}{°ëÉ½ÃÅ}         {links}{
+{mj}        {{long}{mingjiao}           {name}{æ˜æ•™}        {room}{åŠå±±é—¨}         {links}{
     {ll}{sd;se;s;se;sw;w;se}
     {hb3}{sd;se;s;se;e;e;e;e;s;s;s;e;e;e;e;se}
     {htt}{nu;nu;nu}}}
-{mgk}       {{long}{mogaoku}            {name}{Äª¸ß¿ß}      {room}{Äª¸ß¿ß}         {links}{
+{mgk}       {{long}{mogaoku}            {name}{è«é«˜çªŸ}      {room}{è«é«˜çªŸ}         {links}{
     {hb4}{n;e;ne;se;e;e;ne}}}
-{mr}        {{long}{murong}             {name}{Ä½Èİ}        {trigger}{^%sÄã×ßµ½ºş±ß£¬Ç°Ãæ»íÈ»Ò»¸ö´óºş²´(hu)£¬Ë®Ãæ¹â»¬Èç¾µ£¬ºşÉÏÍ£×ÅËÒĞ¡´¬(boat)£¬$}        {links}{
+{mr}        {{long}{murong}             {name}{æ…•å®¹}        {trigger}{^%sä½ èµ°åˆ°æ¹–è¾¹ï¼Œå‰é¢è±ç„¶ä¸€ä¸ªå¤§æ¹–æ³Š(hu)ï¼Œæ°´é¢å…‰æ»‘å¦‚é•œï¼Œæ¹–ä¸Šåœç€è‰˜å°èˆ¹(boat)ï¼Œ$}        {links}{
     {sz}{n;e;e;e;e;e;se}
     {taih}{n;w;nw;ne;se;n;w;n;e;e;e;e;e}
-    {qy}{ask girl about °İ×¯;murongboat;stop;w;w;w;s}}}
-{mrf}       {{long}{murongfu}           {name}{Ä½Èİ¸´}      {room}{²è¹İ}           {links}{
+    {qy}{ask girl about æ‹œåº„;murongboat;stop;w;w;w;s}}}
+{mrf}       {{long}{murongfu}           {name}{æ…•å®¹å¤}      {room}{èŒ¶é¦†}           {links}{
     {sz}{sw;n}}}
-{nc}        {{long}{nanchang}           {name}{ÄÏ²ı}        {room}{°×¼Ò}           {links}{
+{nc}        {{long}{nanchang}           {name}{å—æ˜Œ}        {room}{ç™½å®¶}           {links}{
     {jz}{s;w;n;n;n;nw;nd;n;n;n;n;e;e}
     {mlb}{s;w;w;w;w;wu;wu;wu}
     {wys}{s;w;s;s;s;s;se;s;se}
     {llx}{s;e;e;eu;eu}
     {zx}{s;w;w;w;w;wu;wu;nu;enter}
     {fh}{s;w;n;e}}}
-{ny}        {{long}{nanyang}            {name}{ÄÏÑô}        {room}{ÄÏÑô³Ç}         {links}{
+{ny}        {{long}{nanyang}            {name}{å—é˜³}        {room}{å—é˜³åŸ}         {links}{
     {rz}{ne;ne;nw;nw}
     {ly}{n;n;n;n;n;n;n}
     {xch}{ne;ne}
     {xc}{nw;n;n;n;n;n}
     {xy}{sw;s;s;s;s;s;s;w;w;n}}}
-{px}        {{long}{pingxi}             {name}{Æ½Î÷Íõ¸®}    {room}{Æ½Î÷Íõ¸®´óÃÅ}   {links}{
+{px}        {{long}{pingxi}             {name}{å¹³è¥¿ç‹åºœ}    {room}{å¹³è¥¿ç‹åºœå¤§é—¨}   {links}{
     {km}{s;s;s;s;s;s;s;w;n}}}
-{pyh}       {{long}{poyanghu}           {name}{Û¶Ñôºş}      {room}{Û¶Ñôºş±ß}       {links}{
+{pyh}       {{long}{poyanghu}           {name}{é„±é˜³æ¹–}      {room}{é„±é˜³æ¹–è¾¹}       {links}{
     {jz}{w;n;n;n;n;e;e}}}
-{py}        {{long}{puyang}             {name}{å§Ñô}        {room}{å§Ñô}           {links}{
+{py}        {{long}{puyang}             {name}{æ¿®é˜³}        {room}{æ¿®é˜³}           {links}{
     {hb1}{se;sw;e}
     {hyd}{n;ne;n}
     {bj}{n;ne;ne;n}}}
-{qlc}       {{long}{qilingcun}          {name}{÷è÷ë´å}      {room}{ÔÀ·É¼Ò}         {links}{
+{qlc}       {{long}{qilingcun}          {name}{éº’éºŸæ‘}      {room}{å²³é£å®¶}         {links}{
     {ly}{e;n;e;s;sw;nw;w;w;w;w;wu;wd;w;w;w}
     {rz}{e;n;e;s;sw;sw;sw}
     {yz}{e;n;w;enter dong;se;s;se;se;se;s;s;u;out}}}
-{qy}        {{long}{qinyun}             {name}{ÇÙÔÏĞ¡Öş}    {room}{ÇÙÔÏĞ¡¾Ó}       {links}{
+{qy}        {{long}{qinyun}             {name}{ç´éŸµå°ç­‘}    {room}{ç´éŸµå°å±…}       {links}{
     {mr}{n;e;e;e;murongboat;stop}
     {tx}{n;e;e;qytotx;stop;w;n;w;nw;n;n;w}
     {yzw}{n;e;e;qytoyzw;stop;w;n;n;n;n}
     {mt}{n;e;e;n;n;n;play qin;row mantuo;stop;w;n;w;s;s;e;e;w;w;w}}}
-{qhb}       {{long}{qinghaihubei}       {name}{Çàº£ºş±±}    {room}{»ÆÑòÌ²}         {links}{
+{qhb}       {{long}{qinghaihubei}       {name}{é’æµ·æ¹–åŒ—}    {room}{é»„ç¾Šæ»©}         {links}{
     {lz}{n;n;n;n;n;n;n}
     {qhn}{sw;SlowWalk;s;SlowWalk;sw;SlowWalk;s;w;s}}}
-{qhn}       {{long}{qinghaihunan}       {name}{Çàº£ºşÄÏ}    {room}{²ØÃñ²¿Âä}       {links}{
+{qhn}       {{long}{qinghaihunan}       {name}{é’æµ·æ¹–å—}    {room}{è—æ°‘éƒ¨è½}       {links}{
     {zp}{su;w;sw;s;s}
     {qhb}{n;e;n;ne;SlowWalk;n;SlowWalk;ne;SlowWalk}}}
-{qf}        {{long}{qufu}               {name}{Çú²º}        {room}{¿×Ãí}           {links}{
+{qf}        {{long}{qufu}               {name}{æ›²åŸ }        {room}{å­”åº™}           {links}{
     {hb}{w;n;w;w;sw;sw;sw;sw;sw}
     {yz}{e;s;s;s;s;s;s;s;s;s
 }
     {dzf}{e;n;n;n;n;ne;e;ne;n;n}
     {hn1}{e;n;n;n;n;nw;nw;nw}}}
-{qq}        {{long}{quqing}             {name}{ÇúÇå}        {room}{ÈÙ²ı½»Ò×ĞĞ}     {links}{
+{qq}        {{long}{quqing}             {name}{æ›²æ¸…}        {room}{è£æ˜Œäº¤æ˜“è¡Œ}     {links}{
     {yz}{s;s;w;w;w}}}
-{qzh}       {{long}{quanzhen}           {name}{È«Õæ½Ì}      {room}{³çĞşÌ¨}         {links}{
+{qzh}       {{long}{quanzhen}           {name}{å…¨çœŸæ•™}      {room}{å´‡ç„å°}         {links}{
     {gm}{n;n;n;n;n;n;n;n;n;n;n;nd;wd;ed;n;n;n}
     {xc}{s;s;sd;s;sd;sd;se;s;se;se;e;se;se}}}
-{qz}        {{long}{quanzhou}           {name}{ÈªÖİ}        {room}{ÈªÖİ¸Û}         {links}{
+{qz}        {{long}{quanzhou}           {name}{æ³‰å·}        {room}{æ³‰å·æ¸¯}         {links}{
     {fz}{ne;ne;ne;n;n;ne;ne;e;e;e;e;n}
     {wys}{w;n;n}}}
-{ry}        {{long}{riyue}              {name}{ÈÕÔÂÉñ½Ì}    {room}{Ğ¡´å×¯}         {links}{
+{ry}        {{long}{riyue}              {name}{æ—¥æœˆç¥æ•™}    {room}{å°æ‘åº„}         {links}{
     {bj}{sd;sd;sw;s;sd;ne;ne;s;s;e;e;e;e}
     {jy}{sd;sd;sw;s;sd;w;w;w;w;w;w;w;sw;w}
     {hmy}{n;n;n;n;enter lou;stop;n;enter;n}}}
-{dp}        {{long}{yangzhoudangpu}     {name}{ÑïÖİµ±ÆÌ}    {trigger}{^{°Ú×ÅÒ»¸öÅÆ×Ó(paizi)|}£¬¹ñÌ¨ºó×ø×ÅÌÆÀÏ°å£¬Ò»Ë«¾«Ã÷µÄÑÛ¾¦ÉÏÉÏÏÂÏÂ´òÁ¿×ÅÄã¡£$} {links}{
+{dp}        {{long}{yangzhoudangpu}     {name}{æ‰¬å·å½“é“º}    {trigger}{^{æ‘†ç€ä¸€ä¸ªç‰Œå­(paizi)|}ï¼ŒæŸœå°ååç€å”è€æ¿ï¼Œä¸€åŒç²¾æ˜çš„çœ¼ç›ä¸Šä¸Šä¸‹ä¸‹æ‰“é‡ç€ä½ ã€‚$} {links}{
     {yz}{w;n}
     {rbz}{s}}}
-{sj}        {{long}{yangzhouÊĞ¼¯}       {name}{ÑïÖİÊĞ¼¯}    {trigger}{^%sÕâÀïÊÇÑïÖİ³ÇÄÚÒ»¸ö·±Ã¦µÄÊĞ¼¯£¬ÀïÃæÈËÁ÷ÎõÎõÈÁÈÁ£¬$} {links}{
+{sj}        {{long}{yangzhouå¸‚é›†}       {name}{æ‰¬å·å¸‚é›†}    {trigger}{^%sè¿™é‡Œæ˜¯æ‰¬å·åŸå†…ä¸€ä¸ªç¹å¿™çš„å¸‚é›†ï¼Œé‡Œé¢äººæµç†™ç†™æ”˜æ”˜ï¼Œ$} {links}{
     {yz}{s;w;w;w}}}
-{rbz}       {{long}{rongbaozhai}        {name}{ÈÙ±¦Õ«}      {room}{ÈÙ±¦Õ«}         {links}{
+{rbz}       {{long}{rongbaozhai}        {name}{è£å®æ–‹}      {room}{è£å®æ–‹}         {links}{
     {dp}{n}}}
-{rz}        {{long}{ruzhou}             {name}{ÈêÖİ}        {room}{ÈêÖİ³Ç}         {links}{
+{rz}        {{long}{ruzhou}             {name}{æ±å·}        {room}{æ±å·åŸ}         {links}{
     {hm}{w;nu;nu;wu}
     {ny}{se;se;sw;sw}
     {yz}{w;w;nu;w;ne;enter dong;sw;sw;sw;u;out}
@@ -319,39 +319,39 @@
     {sl}{w;nu;nu;wu;nu;nu;nu;e}
     {qlc}{ne;ne;ne;n;w;s;w}
     {xch}{se;se}}}
-{ssb}       {{long}{shashoubang}        {name}{É±ÊÖ°ï}      {room}{ÍòÂÚÌ¨}         {links}{
+{ssb}       {{long}{shashoubang}        {name}{æ€æ‰‹å¸®}      {room}{ä¸‡çº¶å°}         {links}{
     {yz}{s;s;s;ed;ed;nd;n;n;n;n}
     {jb1}{s;s;s;ed;ed;se;su;e}}}
-{lvz}       {{long}{lvzhou}             {name}{É³Ä®ÂÌÖŞ}    {room}{É³Ä®ÂÌÖŞ}       {links}{
+{lvz}       {{long}{lvzhou}             {name}{æ²™æ¼ ç»¿æ´²}    {room}{æ²™æ¼ ç»¿æ´²}       {links}{
     {xz}{ne;nw}}}
-{shg}       {{long}{shanhaiguan}        {name}{É½º£¹Ø}      {room}{É½º£¹ØÄÏÃÅ}     {links}{
-    {ych}{ask jiang about ³ö¹Ø;ne;ne;ne;ne}
+{shg}       {{long}{shanhaiguan}        {name}{å±±æµ·å…³}      {room}{å±±æµ·å…³å—é—¨}     {links}{
+    {ych}{ask jiang about å‡ºå…³;ne;ne;ne;ne}
     {bj}{se;sw;sw;sw;sw;s;s;s;e;e;s;s;s;s;s;s;s;s;s;s;s;w;w;w;w;w}}}
-{fzl}       {{long}{fangzhanglou}       {name}{ÉÙÁÖ·½ÕÉÂ¥}  {room}{·½ÕÉÂ¥}         {links}{
+{fzl}       {{long}{fangzhanglou}       {name}{å°‘æ—æ–¹ä¸ˆæ¥¼}  {room}{æ–¹ä¸ˆæ¥¼}         {links}{
     {cza}{n;n;nu;n;ne;n;nw;w;nw;n;ne;e;nu;nw;wu;sw;wu;nw;nu;ne;u;ed;ne;nd;nw;nd;ne;ed;se;d;enter}
     {dmy}{n;nu;u}
     {sl}{s;s;sd;s;s;s;sd;s;open gate;s;s;sd;sd;sd;wd}}}
-{sl}        {{long}{shaolinsi}          {name}{ÉÙÁÖËÂ}      {room}{ÉÙÁÖËÂ}         {links}{
+{sl}        {{long}{shaolinsi}          {name}{å°‘æ—å¯º}      {room}{å°‘æ—å¯º}         {links}{
     {hm}{w;sd;sd;sd}
     {rz}{w;sd;sd;sd;ed;sd;sd;e}
     {fzl}{unwield all;eu;wield all;nu;nu;nu;n;knock gate;n;n;nu;n;n;n;nu;n;n}}}
-{sld}       {{long}{shenlongdao}        {name}{ÉñÁúµº}      {trigger}{^%s³¤³¤µÄº£Ì²Íû²»µ½¾¡Í·£¬¾¡ÊÇÑ©°×Ï¸É³¡£²»Ô¶´¦ÓĞÆ¬Ê÷ÁÖ£¬´«À´ÕóÕó»¨Ïã£¬ÈÃÈË¾õµÃµ½ÁËÏÉ¾³¡£$}        {links}{
+{sld}       {{long}{shenlongdao}        {name}{ç¥é¾™å²›}      {trigger}{^%sé•¿é•¿çš„æµ·æ»©æœ›ä¸åˆ°å°½å¤´ï¼Œå°½æ˜¯é›ªç™½ç»†æ²™ã€‚ä¸è¿œå¤„æœ‰ç‰‡æ ‘æ—ï¼Œä¼ æ¥é˜µé˜µèŠ±é¦™ï¼Œè®©äººè§‰å¾—åˆ°äº†ä»™å¢ƒã€‚$}        {links}{
     {tgk}{s;shenlongboat;stop}
     {sy}{e;e;e;e;e;e;e;e;e;e;e;nu;nu;eu;n;se;n}}}
-{fengd}     {{long}{fengding}           {name}{ÉñÁú·å¶¥}    {room}{·å¶¥}           {links}{
+{fengd}     {{long}{fengding}           {name}{ç¥é¾™å³°é¡¶}    {room}{å³°é¡¶}           {links}{
     {sy}{sd;ed;sd;sd;sd;s;wd;sd;s;s;sd;se;n}}}
-{sy}        {{long}{shanyao}            {name}{ÉñÁúÉ½Ñü}    {room}{Ğ¡»ØÀÈ}         {links}{
+{sy}        {{long}{shanyao}            {name}{ç¥é¾™å±±è…°}    {room}{å°å›å»Š}         {links}{
     {sld}{s;nw;s;wd;sd;sd;SlowWalk;w;w;w;w;w;w}
     {fengd}{s;nw;SlowWalk;nu;n;n;nu;eu;n;nu;nu;nu;wu;nu}}}
-{skf}       {{long}{shikefa}            {name}{Ê·¿É·¨}      {room}{³Ç±±¾üÓª}       {links}{
+{skf}       {{long}{shikefa}            {name}{å²å¯æ³•}      {room}{åŸåŒ—å†›è¥}       {links}{
     {yz}{w;s;s;s}}}
-{sdb}       {{long}{shudaobei}          {name}{ÊñµÀ±±}      {trigger}{^¶«Ãæ¾ÍÊÇÔÀÑô³ÇÁË¡£Î÷ÄÏ¾ÍÊÇÖøÃûµÄÊñµÀÁË¡£$}   {links}{
+{sdb}       {{long}{shudaobei}          {name}{èœ€é“åŒ—}      {trigger}{^ä¸œé¢å°±æ˜¯å²³é˜³åŸäº†ã€‚è¥¿å—å°±æ˜¯è‘—åçš„èœ€é“äº†ã€‚$}   {links}{
     {sdn}{sw;SlowWalk;se;SlowWalk;se;SlowWalk;sw;SlowWalk;sw;SlowWalk}
     {yy}{ed;e;n;e;e;e;s}}}
-{sdn}       {{long}{shudaonan}          {name}{ÊñµÀÄÏ}      {trigger}{^Î÷ÃæÊÇ³É¶¼³Ç£¬Íù¶«±±·½Ïò¾ÍÊÇÖøÃûµÄÊñµÀÁË¡£$} {links}{
+{sdn}       {{long}{shudaonan}          {name}{èœ€é“å—}      {trigger}{^è¥¿é¢æ˜¯æˆéƒ½åŸï¼Œå¾€ä¸œåŒ—æ–¹å‘å°±æ˜¯è‘—åçš„èœ€é“äº†ã€‚$} {links}{
     {sdb}{ne;SlowWalk;ne;SlowWalk;nw;SlowWalk;nw;SlowWalk;ne;SlowWalk}
     {cd}{w;w;nw;nw}}}
-{sz}        {{long}{suzhou}             {name}{ËÕÖİ}        {room}{±¦´øÇÅ}         {links}{
+{sz}        {{long}{suzhou}             {name}{è‹å·}        {room}{å®å¸¦æ¡¥}         {links}{
     {szdp}{ne;s}
     {cym}{n;n;n;n;n;n;nw;n;nw;nw;nw;nw;wu;w}
     {zuo}{ne;n;n}
@@ -360,136 +360,136 @@
     {mr}{nw;w;w;w;w;w;s}
     {jx}{s;s;s;s;s}
     {mrf}{s;ne}}}
-{szdp}      {{long}{suzhoudangpu}       {name}{ËÕÖİµ±ÆÌ}    {room}{±¦ºÍ¼Ç}         {links}{
+{szdp}      {{long}{suzhoudangpu}       {name}{è‹å·å½“é“º}    {room}{å®å’Œè®°}         {links}{
     {sz}{n;sw}}}
-{taih}      {{long}{taihu}              {name}{Ì«ºş}        {room}{Ì«ºş±ß}         {links}{
+{taih}      {{long}{taihu}              {name}{å¤ªæ¹–}        {room}{å¤ªæ¹–è¾¹}         {links}{
     {gy}{e;e;e;e;enter;nu;nu}
     {mr}{w;w;w;w;w;s;e;s;nw;sw;se;e;s}
     {yinz}{s;s;w;w;e;s}}}
-{tais}      {{long}{taishan}            {name}{Ì©É½}        {room}{ÄÏÌìÃÅ}         {links}{
+{tais}      {{long}{taishan}            {name}{æ³°å±±}        {room}{å—å¤©é—¨}         {links}{
     {dzf}{sd;sd;sd;sd;sd;sd;wd;sd;sd;sd}}}
-{dzf}       {{long}{daizongfang}        {name}{Ì©É½á·×Ú·»}  {room}{á·×Ú·»}         {links}{
+{dzf}       {{long}{daizongfang}        {name}{æ³°å±±å²±å®—åŠ}  {room}{å²±å®—åŠ}         {links}{
     {tais}{nu;nu;nu;eu;nu;nu;nu;nu;nu;nu}
     {qf}{s;s;sw;w;sw;s;s;s;s;w}
     {hn1}{s;s;sw;w;sw;nw;nw;nw}}}
-{tgk}       {{long}{tanggukou}          {name}{ÌÁ¹Á¿Ú}      {room}{ÌÁ¹Á¿Ú}         {links}{
+{tgk}       {{long}{tanggukou}          {name}{å¡˜æ²½å£}      {room}{å¡˜æ²½å£}         {links}{
     {bj}{nw;n}
-    {sld}{ask chuan fu about ³öº£;shenlongboat;stop;n}}}
-{th}        {{long}{taohua}             {name}{ÌÒ»¨µº}      {trigger}{^%sÕâÊÇÌÒ»¨µºµÄ³öº£¿Ú}{links}{
+    {sld}{ask chuan fu about å‡ºæµ·;shenlongboat;stop;n}}}
+{th}        {{long}{taohua}             {name}{æ¡ƒèŠ±å²›}      {trigger}{^%sè¿™æ˜¯æ¡ƒèŠ±å²›çš„å‡ºæµ·å£}{links}{
     {jx}{taohuadao;stop;s;w;w;w;w;su;w}}}
-{tyc}       {{long}{taoyuancun}         {name}{ÌÒÔ°´å}      {room}{ÌÒÔ°Ğ¡Â·}       {links}{
+{tyc}       {{long}{taoyuancun}         {name}{æ¡ƒå›­æ‘}      {room}{æ¡ƒå›­å°è·¯}       {links}{
     {wd}{w;w;wu;nu;wu;nu;wu;w;w;wu}}}
-{ty}        {{long}{taoyuan}            {name}{ÌÒÔ´}        {room}{ÌÒÔ´æäÕ¾}       {links}{
+{ty}        {{long}{taoyuan}            {name}{æ¡ƒæº}        {room}{æ¡ƒæºé©¿ç«™}       {links}{
     {yy}{ne;nd;n;e;e;e;s}
     {tzfx}{sw;s;sw;w;nw}
     {heiz}{e;sw;s}}}
-{heiz}      {{long}{heizhao}            {name}{ºÚÕÓ}        {room}{ºÚÕÓ}           {links}{
+{heiz}      {{long}{heizhao}            {name}{é»‘æ²¼}        {room}{é»‘æ²¼}           {links}{
     {yg}{e;n;w;s;s;w}}}
-{tdh}       {{long}{tiandihui}          {name}{ÌìµØ»á}      {room}{²àÌü}           {links}{
+{tdh}       {{long}{tiandihui}          {name}{å¤©åœ°ä¼š}      {room}{ä¾§å…}           {links}{
     {ly}{tiandihui_andaob;SlowWalk;w;w;s;w;w;w;n;n;n}}}
-{tls}       {{long}{tianlongsi}         {name}{ÌìÁúËÂ}      {room}{Èğº×ÃÅ}         {links}{
+{tls}       {{long}{tianlongsi}         {name}{å¤©é¾™å¯º}      {room}{ç‘é¹¤é—¨}         {links}{
     {cd}{ed;ne;ne;SlowWalk;ne;SlowWalk;n;SlowWalk;ne;ne;nd;n;n;n;n}
     {dl}{ed;ne;s;sw;sw;sw;s;s;s;s;s;s;s}
     {wl}{ed;nw;nu;nu;nu;climb cliff;stop}
     {wjg}{ed;nw;n}}}
-{tzfx}        {{long}{tiezhangfeng}     {name}{ÌúÕÆ·åÏÂ}    {room}{É½½ÅÏÂ}         {links}{
+{tzfx}        {{long}{tiezhangfeng}     {name}{é“æŒå³°ä¸‹}    {room}{å±±è„šä¸‹}         {links}{
     {tz}{nu;nu;nu;nu}
     {ty}{se;e;ne;n;ne}}}
-{tz}        {{long}{tiezhangfeng}       {name}{ÌúÕÆ·å}      {room}{Ğ¡Í¤}           {links}{
+{tz}        {{long}{tiezhangfeng}       {name}{é“æŒå³°}      {room}{å°äº­}           {links}{
     {tzfx}{sd;sd;sd;sd}}}
-{tx}        {{long}{tingxiang}          {name}{ÌıÏãË®é¿}    {room}{ÌıÏãË®é¿}       {links}{
+{tx}        {{long}{tingxiang}          {name}{å¬é¦™æ°´æ¦­}    {room}{å¬é¦™æ°´æ¦­}       {links}{
     {yzw}{e;s;s;se;e;s;e;gotoyanziwu;stop;w;n;n;n;n}
     {qy}{e;s;s;se;e;s;e;gotoqinyun;stop;w;w;w;s}}}
-{wat}       {{long}{wananta}            {name}{Íò°²Ëş}      {room}{Íò°²Ëş}         {links}{
+{wat}       {{long}{wananta}            {name}{ä¸‡å®‰å¡”}      {room}{ä¸‡å®‰å¡”}         {links}{
     {ly}{se;se;su;s;s;s;s;s;se;se;se;e;e;e;n;n;n}}}
-{wjg}       {{long}{wanjiegu}           {name}{Íò½Ù¹È}      {room}{Íò½Ù¹È}         {links}{
+{wjg}       {{long}{wanjiegu}           {name}{ä¸‡åŠ«è°·}      {room}{ä¸‡åŠ«è°·}         {links}{
     {tls}{s;se;wu}}}
-{gd}        {{long}{gudi}               {name}{ÎŞÁ¿¹Èµ×}    {room}{¹Èµ×}           {links}{
+{gd}        {{long}{gudi}               {name}{æ— é‡è°·åº•}    {room}{è°·åº•}           {links}{
     {yb}{s;s;sw;sw;sw;s;e;n;w;n}
     {fd}{s;s;s;push stone;s;e;ed;ed;push men;e;e}}}
-{wl}        {{long}{wuliang}            {name}{ÎŞÁ¿É½}      {room}{ÑÂ¼ä¹ÅËÉ}       {links}{
+{wl}        {{long}{wuliang}            {name}{æ— é‡å±±}      {room}{å´–é—´å¤æ¾}       {links}{
     {gd}{climb yafeng}}}
-{yb}        {{long}{yubi}               {name}{ÎŞÁ¿Óñèµ}    {room}{ÎŞÁ¿Óñèµ}       {links}{
+{yb}        {{long}{yubi}               {name}{æ— é‡ç‰ç’§}    {room}{æ— é‡ç‰ç’§}       {links}{
     {gd}{s;ne;ne;ne;n;n}}}
-{wd}        {{long}{wudang}             {name}{Îäµ±}        {room}{Îäµ±¹ã³¡}       {links}{
-    {zxg}{n;ask song about ÏÂÉ½;s;sd}
+{wd}        {{long}{wudang}             {name}{æ­¦å½“}        {room}{æ­¦å½“å¹¿åœº}       {links}{
+    {zxg}{n;ask song about ä¸‹å±±;s;sd}
     {tyc}{ed;e;e;ed;sd;ed;sd;ed;e;e}
     {ht}{n;n}}}
-{zxg}       {{long}{zixiaogong}         {name}{×ÏÏö¹¬}      {room}{×ÏÏö¹¬}         {links}{
+{zxg}       {{long}{zixiaogong}         {name}{ç´«éœ„å®«}      {room}{ç´«éœ„å®«}         {links}{
     {tzy}{eu;e;e;e;eu;eu;eu;e;e;e;eu}
     {wdc}{sd;sd;wd;wd;sd;sd;e;sd;sd;sd;ed}}}
-{tzy}       {{long}{taiziyan}           {name}{Ì«×ÓÑÒ}      {room}{Ì«×ÓÑÒ}         {links}{
+{tzy}       {{long}{taiziyan}           {name}{å¤ªå­å²©}      {room}{å¤ªå­å²©}         {links}{
     {lsd}{eu;eu;ne;nu;nw;nu;ne;eu;se;u;nu;eu;su;wu;u;eu}
     {zxg}{wd;w;w;w;wd;wd;wd;w;w;w;wd}}}
-{lsd}       {{long}{leishendong}        {name}{À×Éñ¶´}      {room}{À×Éñ¶´}         {links}{
+{lsd}       {{long}{leishendong}        {name}{é›·ç¥æ´}      {room}{é›·ç¥æ´}         {links}{
     {nyf}{nu;eu;ne;nu;nw;nu;ne;eu;se;u;nu;eu;su;wu;u;nu;nu}
     {tzy}{wd;d;ed;nd;wd;sd;d;nw;wd;sw;sd;se;sd;sw;wd;wd}}}
-{nyf}       {{long}{nanyanfeng}         {name}{ÄÏÑÒ·å}      {room}{ÄÏÑÒ·å}         {links}{
+{nyf}       {{long}{nanyanfeng}         {name}{å—å²©å³°}      {room}{å—å²©å³°}         {links}{
     {psd}{wu;nu;nw;wu;sw;nu;eu;su;wu;u;nu;nw;wu;sw;nu;eu;su;wu;u;nu;nw;wu;sw;nu;eu;su;wu;u;wu}
     {szy}{ed;sd;se;ed;ne;ed;sd;wd;nd;d;sd;se;ed;ne;sd;wd;nd;ed;d;sd;se;ed;ne;eu;su;wu;nu;u;eu;ne;nu;nw;nu;eu;su;wu;u;eu;su;wu;nu;u;u}
     {lsd}{sd;sd;d;ed;nd;wd;sd;d;nw;wd;sw;sd;se;sd;sw;wd;sd}}}
-{psd}       {{long}{panshendong}        {name}{ÅËÉñ¶´}      {room}{ÅËÉñ¶´}         {links}{
+{psd}       {{long}{panshendong}        {name}{æ½˜ç¥æ´}      {room}{æ½˜ç¥æ´}         {links}{
     {tzf}{sw;nu;nu;nu;nu;nu;nu;nu;nu}
     {nyf}{ed;d;ed;nd;wd;sd;ne;ed;se;sd;d;ed;nd;wd;sd;ne;ed;se;sd;d;ed;nd;wd;sd;ne;ed;se;sd;ed}}}
-{tzf}       {{long}{yitianmen}          {name}{ÌìÖù·åÏÂ}    {room}{ÌìÖù·åÏÂ}       {links}{
+{tzf}       {{long}{yitianmen}          {name}{å¤©æŸ±å³°ä¸‹}    {room}{å¤©æŸ±å³°ä¸‹}       {links}{
     {psd}{sd;sd;sd;sd;sd;sd;sd;sd;ne}}}
-{szy}       {{long}{shengzhenyan}       {name}{ÉıÕæÑÒ}      {room}{ÉıÕæÑÒ}         {links}{
+{szy}       {{long}{shengzhenyan}       {name}{å‡çœŸå²©}      {room}{å‡çœŸå²©}         {links}{
     {nyf}{d;d;sd;ed;nd;wd;d;ed;nd;wd;sd;se;sd;sw;wd;d;sd;ed;nd;wd;sw;wu;nw;nu;u;wu;su;eu;nu;sw;wu;nw;nu;u;su;eu;nu;wu;sw;wu;nw;nu;wu}}}
-{wdc}       {{long}{wudangcun}          {name}{Îäµ±´å}      {room}{Îäµ±É½ÃÅ}       {links}{
+{wdc}       {{long}{wudangcun}          {name}{æ­¦å½“æ‘}      {room}{æ­¦å½“å±±é—¨}       {links}{
     {zz}{e;e;e;se;e;e;ne;n;e;e;n}
     {wd}{wu;nu;nu;nu;w;nu;nu;eu;eu;nu;nu}}}
-{wm}        {{long}{wumiao}             {name}{ÎäÃí}        {room}{ÎäÃí}           {links}{
+{wm}        {{long}{wumiao}             {name}{æ­¦åº™}        {room}{æ­¦åº™}           {links}{
     {yz}{e;s;s}}}
-{wys}       {{long}{wuyishan}           {name}{ÎäÒÄÉ½}      {room}{ÎäÒÄÉ½Â·}       {links}{
+{wys}       {{long}{wuyishan}           {name}{æ­¦å¤·å±±}      {room}{æ­¦å¤·å±±è·¯}       {links}{
     {fz}{n;se;se;sd;s;s;s;e;n}
     {hz}{n;sw;w;sw;w;w;w;w;w;w;w;w}
     {jx}{n;n;n}
     {nc}{nw;n;nw;n;n;n;n;e;n}
     {qz}{s;s;e}
     {ywm}{n;e;n;e;ne;n}}}
-{xyz}       {{long}{xiyuanzi}           {name}{Ï·Ô°×Ó}      {room}{Ï·Ô°×Ó}         {links}{
+{xyz}       {{long}{xiyuanzi}           {name}{æˆå›­å­}      {room}{æˆå›­å­}         {links}{
     {sz}{ne;s;s}}}
-{xy}        {{long}{xiangyang}          {name}{ÏåÑô}        {room}{ÏåÑôµ±ÆÌ}       {links}{
+{xy}        {{long}{xiangyang}          {name}{è¥„é˜³}        {room}{è¥„é˜³å½“é“º}       {links}{
     {gsz}{s;w;w;w;w;w;w;northwest;xiaoyao.jqg;stop;e;n;n;n;n;n}
     {ny}{s;e;e;n;n;n;n;n;n;bo xiaolu;ne}
     {zz}{s;w;w;w;w;w;w;w;w;w;n}
     {xiny}{s;e;e;e;e;e;e;e;se;e;e;e;n}
     {jzh}{s;e;e;s;s;s;s;s;s;s;s;s;s;s}}}
-{xf}        {{long}{xiaofeng}           {name}{Ïô·å}        {room}{ÍûĞÇÂ¥¶ş²ã}     {links}{
+{xf}        {{long}{xiaofeng}           {name}{è§å³°}        {room}{æœ›æ˜Ÿæ¥¼äºŒå±‚}     {links}{
     {ly}{d;e;s}}}
-{xz}        {{long}{xiaozhen}           {name}{Ğ¡Õò}        {room}{Ğ¡Õò}           {links}{
+{xz}        {{long}{xiaozhen}           {name}{å°é•‡}        {room}{å°é•‡}           {links}{
     {lvz}{se;sw;nw;nw;sw;se;ne}
     {ca}{se;se;sw;SlowWalk;sd;e;e;e;e;e;e;n}
     {lj}{nu;n;n;nu;nu}
     {lz}{nu;n;w;w;w;w;w;n;n}
     {hanz}{se;se;sw;SlowWalk;sd;sw;su;sd;se}}}
-{xiny}      {{long}{xinyang}            {name}{ĞÅÑô}        {room}{Õò»´ÇÅ}         {links}{
+{xiny}      {{long}{xinyang}            {name}{ä¿¡é˜³}        {room}{é•‡æ·®æ¡¥}         {links}{
     {xy}{s;w;w;w;nw;w;w;w;w;w;w;w;n}
     {yz}{s;e;e;e;e;e;se;e;e;e;e}
     {jb3}{s;s;s;s;sd;se;s}
     {xch}{n;n;n;n;n}}}
-{xx}        {{long}{xingxiu}            {name}{ĞÇËŞ}        {trigger}{^%sÕâÀïÊÇĞÇËŞÅÉµÄÊÆÁ¦·¶Î§ÁË}  {links}{
+{xx}        {{long}{xingxiu}            {name}{æ˜Ÿå®¿}        {trigger}{^%sè¿™é‡Œæ˜¯æ˜Ÿå®¿æ´¾çš„åŠ¿åŠ›èŒƒå›´äº†}  {links}{
     {huangz}{eu;eu;e;se;s;s}
     {txg}{n;nd;n;n;juan zhulian;e;eu;ed;e;ne;e;s}}}
-{txg}       {{long}{tianxiugong}        {name}{ĞÇËŞÌìĞã¹¬}  {room}{ÌìĞã¹¬}         {links}{
+{txg}       {{long}{tianxiugong}        {name}{æ˜Ÿå®¿å¤©ç§€å®«}  {room}{å¤©ç§€å®«}         {links}{
     {xx}{n;w;sw;w;wu;wd;w;s;s;s;su;s}}}
-{xch}       {{long}{xuchang}            {name}{Ğí²ı}        {room}{Ğí²ı³Ç}         {links}{
+{xch}       {{long}{xuchang}            {name}{è®¸æ˜Œ}        {room}{è®¸æ˜ŒåŸ}         {links}{
     {hb}{e;se;e}
     {ny}{sw;sw}
     {rz}{nw;nw}
     {xiny}{s;s;s;s;s}}}
-{xs}        {{long}{xueshan}            {name}{Ñ©É½ÅÉ}      {room}{ÇÅÍ·}           {links}{
+{xs}        {{long}{xueshan}            {name}{é›ªå±±æ´¾}      {room}{æ¡¥å¤´}           {links}{
     {zp}{e;e;s;sd;sd;sw;sd;s;s;s}
     {dls}{e;e;s;sd;sd;e;s;enter dong;se;sw;out;sw;wu;nw}
     {yz}{e;e;s;sd;sd;e;s;enter dong;se;ne;ne;n;ne;e;u;out}
     {lxc}{yell bridge;n;sheng bridge;stop;n;n;n;n;nu;n}}}
-{ys}        {{long}{yashan}             {name}{ÑÀÉ½}        {room}{ÑÀÉ½ÍåÖĞĞÄ}     {links}{
+{ys}        {{long}{yashan}             {name}{ç‰™å±±}        {room}{ç‰™å±±æ¹¾ä¸­å¿ƒ}     {links}{
     {jx}{w;w;w;w;w;w;w;sw;sw;w;sw;nw;w}}}
-{yzw}       {{long}{yanziwu}            {name}{Ñà×ÓÎë}      {room}{Ñà×ÓÎë´óÃÅ}     {links}{
+{yzw}       {{long}{yanziwu}            {name}{ç‡•å­å}      {room}{ç‡•å­åå¤§é—¨}     {links}{
     {tx}{s;s;s;s;e;gototingxiang;stop;w;n;w;nw;n;n;w}
     {qy}{s;s;s;s;e;gotoqinyun;stop;w;w;w;s}}}
-{yz}        {{long}{yangzhou}           {name}{ÑïÖİ}        {trigger}{^%s´óéÅÊ÷(Rong shu)$} {links}{
-    {bt}{n;w;ask qian about °×ÍÕÉ½;baituofufei}
+{yz}        {{long}{yangzhou}           {name}{æ‰¬å·}        {trigger}{^%så¤§æ¦•æ ‘(Rong shu)$} {links}{
+    {bt}{n;w;ask qian about ç™½é©¼å±±;baituofufei}
     {hb}{n;n;n;n;nw;nw;nw}
     {qf}{n;n;n;n;n;n;n;n;w;n}
     {ssb}{s;s;s;s;su;wu;wu;n;n;n;ask liang about visit}
@@ -513,35 +513,35 @@
     {wm}{n;n;w}
     {qq}{e;e;e;n;n}
     {yiz}{s;s;s;w;s}
-    {sd}{enter shudong;say ÌìÌÃÓĞÂ·Äã²»×ßÑ½}
+    {sd}{enter shudong;say å¤©å ‚æœ‰è·¯ä½ ä¸èµ°å‘€}
     {kd}{n;e}}}
-{yiz}       {{long}{yizhan}             {name}{æäÕ¾}        {room}{æäÕ¾}           {links}{
+{yiz}       {{long}{yizhan}             {name}{é©¿ç«™}        {room}{é©¿ç«™}           {links}{
     {yz}{n;e;n;n;n}}}
-{yg}        {{long}{yinggu}             {name}{çø¹Ã}        {room}{ºÚÕÓĞ¡Îİ}       {links}{
+{yg}        {{long}{yinggu}             {name}{ç‘›å§‘}        {room}{é»‘æ²¼å°å±‹}       {links}{
     {ty}{out;ne;w}}}
-{ywm}       {{long}{yuewangmu}          {name}{ÔÀÍõÄ¹}      {room}{Ä¹Ç°¹ã³¡}       {links}{
+{ywm}       {{long}{yuewangmu}          {name}{å²³ç‹å¢“}      {room}{å¢“å‰å¹¿åœº}       {links}{
     {wys}{s;sw;w;s;w;s}}}
-{yy}        {{long}{yueyang}            {name}{ÔÀÑô}        {room}{ÄÏÃÅÄÚ´ó½Ö}     {links}{
+{yy}        {{long}{yueyang}            {name}{å²³é˜³}        {room}{å—é—¨å†…å¤§è¡—}     {links}{
     {sdb}{n;w;w;w;s;w;wu}
     {jz}{n;e;e;e;ed;se;ed;e;ne;ne;ne;s;e;e}
     {mlb}{s;s;su;su;su}
     {ty}{n;w;w;w;s;su;sw}
     {jn4}{n;n;n;n;w;w}
     {cd}{n;n;e;hire;qu chengdu;stop;xia;s;se;se}}}
-{zp}        {{long}{zanpu}              {name}{ÔŞÆÕ}        {room}{ÔŞÆÕ¹ã³¡}       {links}{
+{zp}        {{long}{zanpu}              {name}{èµæ™®}        {room}{èµæ™®å¹¿åœº}       {links}{
     {cd}{s;s;s;e;se;SlowWalk;se;SlowWalk;ed;SlowWalk;ed;SlowWalk;ed;SlowWalk;e;e;se;se}
     {qbl}{w;w;w;nw;ne;w;nw}
     {qhn}{n;n;ne;e;nd}
     {xs}{n;n;n;nu;ne;nu;nu;n;w;w}}}
-{zjk}       {{long}{zhangjiakou}        {name}{ÕÅ¼Ò¿Ú}      {room}{´ó¾³ÃÅ}         {links}{
+{zjk}       {{long}{zhangjiakou}        {name}{å¼ å®¶å£}      {room}{å¤§å¢ƒé—¨}         {links}{
     {bj}{s;s;e;e;e;se;se;se;sw;s;s;s;s;s;s;s;s;s;s;s;s;s;e;e;e;e}
     {jy}{s;s;w;w;w;sw;s;sw;sd;sd;s;s;w;s;s;w}
     {ct}{s;s;s;s;s;w;hire;qu beijing;stop;xia;s;e;e;e;e;n;n;n;n;n;n;n}
     {kf}{s;s;s;s;s;w;hire;qu beijing;stop;xia;s;w;w;w;n;se;s}}}
-{zz}        {{long}{zhangzhi}           {name}{ÕÅÖ¾}        {room}{¾£Î÷ïÚ¾Ö}       {links}{
+{zz}        {{long}{zhangzhi}           {name}{å¼ å¿—}        {room}{è†è¥¿é•–å±€}       {links}{
     {xy}{s;e;e;e;e;e;e;e;e;e;n}
     {wdc}{s;w;w;s;sw;w;w;nw;w;w;w}}}
-{ca}        {{long}{changan}            {name}{³¤°²}        {room}{ÖìÈ¸ÃÅ}         {links}{
+{ca}        {{long}{changan}            {name}{é•¿å®‰}        {room}{æœ±é›€é—¨}         {links}{
     {ly}{s;e;e;e;e;e;e;n;se;e;e;e;e;e;ed;e;e;e}
     {cll}{s;e;e;e;e;e;e;s;su;su;su;su;s}
     {gm}{s;s;s;s;s;s;s;se;su;sw;sw;w}
@@ -549,152 +549,152 @@
     {hanz}{s;s;s;s;s;s;s;sw;sw;sw;sw;w;w}
     {hn2}{s;e;e;n;n;e;e;e;n;n;n;n;w;w;w;n;ne;se;e}
     {fm}{s;w;w;w;s}}}
-{jb1}       {{long}{changjiangdukoubei1}{name}{³¤½­¶É¿Ú±±1} {trigger}{^%sÕâÀïÊÇ³¤½­±±°¶µÄ¶É¿Ú£¬¶óÊØÑïÖİµÄÃÅ»§}  {links}{
+{jb1}       {{long}{changjiangdukoubei1}{name}{é•¿æ±Ÿæ¸¡å£åŒ—1} {trigger}{^%sè¿™é‡Œæ˜¯é•¿æ±ŸåŒ—å²¸çš„æ¸¡å£ï¼Œæ‰¼å®ˆæ‰¬å·çš„é—¨æˆ·}  {links}{
     {jb2}{w;w;w;w;nw;w;w;w}
     {yz}{w;nd;nw;nd;n;n;n;n}
     {ssb}{w;nd;nw;wu;wu;n;n;n;ask liang about visit}
     {jn1}{xiaoyao.GuoJiang;stop}
     {qiu}{w;u}}}
-{jb2}       {{long}{changjiangdukoubei2}{name}{³¤½­¶É¿Ú±±2} {trigger}{^%sÕâÀïÊÇ³¤½­±±°¶µÄ¶É¿Ú£¬¶óÊØ½¨¿µ¸®µÄÃÅ»§}    {links}{
+{jb2}       {{long}{changjiangdukoubei2}{name}{é•¿æ±Ÿæ¸¡å£åŒ—2} {trigger}{^%sè¿™é‡Œæ˜¯é•¿æ±ŸåŒ—å²¸çš„æ¸¡å£ï¼Œæ‰¼å®ˆå»ºåº·åºœçš„é—¨æˆ·}    {links}{
     {jb1}{e;e;e;se;e;e;e;e}
     {jb3}{w;sw;sw;sw;w;nw;nw}
     {jn2}{xiaoyao.GuoJiang;stop}}}
-{jb3}       {{long}{changjiangdukoubei3}{name}{³¤½­¶É¿Ú±±3} {trigger}{^%sÕâÀïÊÇ³¤½­±±°¶µÄ¶É¿Ú¡£}    {links}{
+{jb3}       {{long}{changjiangdukoubei3}{name}{é•¿æ±Ÿæ¸¡å£åŒ—3} {trigger}{^%sè¿™é‡Œæ˜¯é•¿æ±ŸåŒ—å²¸çš„æ¸¡å£ã€‚}    {links}{
     {jb2}{se;se;e;ne;ne;ne;e}
     {jb4}{nw;w;w;sw;sw;sw;sw;w;w}
     {xiny}{n;nw;nu;n;n;n;n}
     {jn3}{xiaoyao.GuoJiang;stop}}}
-{jb4}       {{long}{changjiangdukoubei4}{name}{³¤½­¶É¿Ú±±4} {trigger}{^%sÕâÀïÊÇ³¤½­±±°¶µÄ¶É¿Ú¡£¶«Ãæ²»Ô¶¾ÍÊÇ»ªÈİµÀ£¬¹ØÓğÒåÊÍ²Ü²ÙµÄµØ·½}  {links}{
+{jb4}       {{long}{changjiangdukoubei4}{name}{é•¿æ±Ÿæ¸¡å£åŒ—4} {trigger}{^%sè¿™é‡Œæ˜¯é•¿æ±ŸåŒ—å²¸çš„æ¸¡å£ã€‚ä¸œé¢ä¸è¿œå°±æ˜¯åå®¹é“ï¼Œå…³ç¾½ä¹‰é‡Šæ›¹æ“çš„åœ°æ–¹}  {links}{
     {jb3}{e;e;ne;ne;ne;ne;e;e;se}
     {jzh}{e;n;nw;n}
     {jn4}{xiaoyao.GuoJiang;stop}}}
-{jn1}       {{long}{changjiangdukounan1}{name}{³¤½­¶É¿ÚÄÏ1} {trigger}{^%sÕâÀïÊÇ³¤½­ÄÏ°¶µÄ¶É¿Ú£¬¶óÊØÕò½­ÃÅ»§}    {links}{
+{jn1}       {{long}{changjiangdukounan1}{name}{é•¿æ±Ÿæ¸¡å£å—1} {trigger}{^%sè¿™é‡Œæ˜¯é•¿æ±Ÿå—å²¸çš„æ¸¡å£ï¼Œæ‰¼å®ˆé•‡æ±Ÿé—¨æˆ·}    {links}{
     {jn2}{w;w;w;w;nw;w;w;w}
     {zj}{w;se;se;e;e;e;e;n;e}
     {jb1}{xiaoyao.GuoJiang;stop}}}
-{jn2}       {{long}{changjiangdukounan2}{name}{³¤½­¶É¿ÚÄÏ2} {trigger}{^%sÕâÀïÊÇ³¤½­ÄÏ°¶µÄ¶É¿Ú£¬ÄÏ±ß¾ÍÊÇÖØÕò½¨¿µ¸®ÁË}    {links}{
+{jn2}       {{long}{changjiangdukounan2}{name}{é•¿æ±Ÿæ¸¡å£å—2} {trigger}{^%sè¿™é‡Œæ˜¯é•¿æ±Ÿå—å²¸çš„æ¸¡å£ï¼Œå—è¾¹å°±æ˜¯é‡é•‡å»ºåº·åºœäº†}    {links}{
     {jn1}{e;e;e;se;e;e;e;e}
     {jn3}{w;sw;sw;sw;w;nw;nw}
     {jb2}{xiaoyao.GuoJiang;stop}}}
-{jn3}       {{long}{changjiangdukounan3}{name}{³¤½­¶É¿ÚÄÏ3} {trigger}{^%sÕâÀïÊÇ³¤½­ÄÏ°¶µÄ¶É¿Ú¡£}    {links}{
+{jn3}       {{long}{changjiangdukounan3}{name}{é•¿æ±Ÿæ¸¡å£å—3} {trigger}{^%sè¿™é‡Œæ˜¯é•¿æ±Ÿå—å²¸çš„æ¸¡å£ã€‚}    {links}{
     {jn2}{se;se;e;ne;ne;ne;e}
     {jn4}{nw;w;w;sw;sw;sw;sw;w;w}
     {jz}{se;se;s;sw;sw;sw;sw;s;e;e}
     {jb3}{xiaoyao.GuoJiang;stop}}}
-{jn4}       {{long}{changjiangdukounan4}{name}{³¤½­¶É¿ÚÄÏ4} {trigger}{^%sÕâÀïÊÇ³¤½­ÄÏ°¶µÄ¶É¿Ú¡£ÄÏÃæ¾ÍÊÇ½­ººÍ¨Ç­¹óµÄÒª³å¡ª¡ªÔÀÑô}  {links}{
+{jn4}       {{long}{changjiangdukounan4}{name}{é•¿æ±Ÿæ¸¡å£å—4} {trigger}{^%sè¿™é‡Œæ˜¯é•¿æ±Ÿå—å²¸çš„æ¸¡å£ã€‚å—é¢å°±æ˜¯æ±Ÿæ±‰é€šé»”è´µçš„è¦å†²â€”â€”å²³é˜³}  {links}{
     {jn3}{e;e;ne;ne;ne;ne;e;e;se}
     {yy}{e;e;s;s;s;s}
     {jb4}{xiaoyao.GuoJiang;stop}}}
-{zj}        {{long}{zhenjiang}          {name}{Õò½­}        {room}{ÃÎÏªÔ°}         {links}{
+{zj}        {{long}{zhenjiang}          {name}{é•‡æ±Ÿ}        {room}{æ¢¦æºªå›­}         {links}{
     {sz}{s;e;e;e;se;se;s;sw;sw;s;se;s;s;s;s;s;s}
     {jn1}{w;s;w;w;w;w;nw;nw;e}}}
-{zx}        {{long}{zhuxi}              {name}{Öììä}        {room}{ÔÀÂ´ÊéÔº}       {links}{
+{zx}        {{long}{zhuxi}              {name}{æœ±ç†¹}        {room}{å²³éº“ä¹¦é™¢}       {links}{
     {nc}{out;sd;ed;ed;e;e;e;e;n}}}
-{zf}        {{long}{zhuangfu}           {name}{×¯¸®}        {room}{×¯¸®´óÃÅ}       {links}{
+{zf}        {{long}{zhuangfu}           {name}{åº„åºœ}        {room}{åº„åºœå¤§é—¨}       {links}{
     {bj}{s;s;sw;w;s;s;s;s;s;s;s;w;w;w;w;w}}}
-{tdf}       {{long}{tidufu}             {name}{Ìá¶½¸®}      {room}{Ìá¶½¸®ÕıÃÅ}     {links}{
+{tdf}       {{long}{tidufu}             {name}{æç£åºœ}      {room}{æç£åºœæ­£é—¨}     {links}{
     {hz}{e;n;w;n;e;n;n;n;nw}
     {lld}{e;su;wu}}}
-{xh}        {{long}{xihu}               {name}{Î÷ºş}        {room}{¹ÂÉ½}           {links}{
+{xh}        {{long}{xihu}               {name}{è¥¿æ¹–}        {room}{å­¤å±±}           {links}{
     {hz}{ne;ne;ne;n;e;e;e}
     {hhh}{nw;n;w;s;se;e;enter boat;stop;w;w;w;w;w;w}}}
-{hsz}       {{long}{hanshizhong}        {name}{º«ÊÀÖÒ}      {trigger}{^%sÕâÀïÊÇº«Íõ¸®µÄ´óÌü}{links}{
+{hsz}       {{long}{hanshizhong}        {name}{éŸ©ä¸–å¿ }      {trigger}{^%sè¿™é‡Œæ˜¯éŸ©ç‹åºœçš„å¤§å…}{links}{
     {hz}{s;out;s;w;w}}}
-{jnqz}      {{long}{jiangnanqianzhuang} {name}{½­ÄÏÇ®×¯}    {room}{½­ÄÏÇ®×¯}       {links}{
+{jnqz}      {{long}{jiangnanqianzhuang} {name}{æ±Ÿå—é’±åº„}    {room}{æ±Ÿå—é’±åº„}       {links}{
     {hz}{n;out;n;w;w}}}
-{hzbs}      {{long}{hangzhoubieshu}     {name}{º¼Öİ±ğÊû}    {room}{Ê¢²ıĞĞÁÙ°²¸®·Öµê} {links}{
+{hzbs}      {{long}{hangzhoubieshu}     {name}{æ­å·åˆ«å¢…}    {room}{ç››æ˜Œè¡Œä¸´å®‰åºœåˆ†åº—} {links}{
     {hz}{out;s;e;n;n;n;nw}}}
-{zuo}       {{long}{changlong}          {name}{²ıÂ¡ïÚ¾Ö}    {room}{²ıÂ¡ïÚ¾Ö}       {links}{
+{zuo}       {{long}{changlong}          {name}{æ˜Œéš†é•–å±€}    {room}{æ˜Œéš†é•–å±€}       {links}{
     {sz}{s;s;sw}}}
-{ct}        {{long}{chaoting}           {name}{³¯Í¢}        {room}{ÌüÌÃ}           {links}{
+{ct}        {{long}{chaoting}           {name}{æœå»·}        {room}{å…å ‚}           {links}{
     {zjk}{s;s;s;s;s;s;s;w;w;w;w;n;hire;qu zhangjiakou;stop;xia;e;n;n;n;n;n}}}
-{qiu}       {{long}{qiu}                {name}{ôÃÇ§ÕÉ}      {room}{Íû½­Í¤}         {links}{
+{qiu}       {{long}{qiu}                {name}{è£˜åƒä¸ˆ}      {room}{æœ›æ±Ÿäº­}         {links}{
     {jb1}{d;e}}}
-{kf}        {{long}{kangqinwangfu}      {name}{¿µÇ×Íõ¸®}    {room}{Íõ¸®´óÃÅ}       {links}{
+{kf}        {{long}{kangqinwangfu}      {name}{åº·äº²ç‹åºœ}    {room}{ç‹åºœå¤§é—¨}       {links}{
     {zjk}{n;nw;s;e;e;e;n;hire;qu zhangjiakou;stop;xia;e;n;n;n;n;n}
     {tt}{n;nw;s;s;s;s;s;e;e;e;e;e;e;eu}
     {zjc}{n;nw;s;e;e;e;e;n;n;n}}}
-{bofu}      {{long}{bofu}               {name}{²§·ò}        {room}{µîÇ°¹ã³¡}       {links}{
+{bofu}      {{long}{bofu}               {name}{é’µå¤«}        {room}{æ®¿å‰å¹¿åœº}       {links}{
     {xkt}{nu;n;n;nd}}}
-{fm}        {{long}{feima}              {name}{·ÉÂíïÚ¾Ö}    {room}{·ÉÂíïÚ¾Ö}       {links}{
+{fm}        {{long}{feima}              {name}{é£é©¬é•–å±€}    {room}{é£é©¬é•–å±€}       {links}{
     {ca}{n;e;e;e;n}}}
-{fh}        {{long}{feihu}              {name}{·É»¢ïÚ¾Ö}    {room}{·É»¢ïÚ¾Ö}       {links}{
+{fh}        {{long}{feihu}              {name}{é£è™é•–å±€}    {room}{é£è™é•–å±€}       {links}{
     {nc}{w;s;e;n}}}
-{ht}        {{long}{houtang}            {name}{ºóÌÃ}        {room}{ºóÌÃ}           {links}{
+{ht}        {{long}{houtang}            {name}{åå ‚}        {room}{åå ‚}           {links}{
     {wd}{s;s}}}
-{tf}        {{long}{tianfu}             {name}{Ìì¸£ïÚ¾Ö}    {room}{Ìì¸£ïÚ¾Ö}       {links}{
+{tf}        {{long}{tianfu}             {name}{å¤©ç¦é•–å±€}    {room}{å¤©ç¦é•–å±€}       {links}{
     {jz}{n;sw;s;e;e}}}
-{tt}        {{long}{tiantan}            {name}{µ¤±İÇÅ}      {room}{µ¤±İÇÅ}         {links}{
+{tt}        {{long}{tiantan}            {name}{ä¸¹é™›æ¡¥}      {room}{ä¸¹é™›æ¡¥}         {links}{
     {kf}{wd;w;w;w;w;w;w;n;n;n;n;n;se;s}}}
-{htt}       {{long}{hongshuitan}        {name}{ºñÍÁÌ³}      {trigger}{^%sÕâÊÇÃ÷½Ì×Ü¶æµÄµÚ¶şµÀ¹Ø¿¨£¬µØÊÆ¸üÎªÏÕÒª£¬ÈıÃæ»·É½£¬ÖĞ¼ä$}   {links}{
+{htt}       {{long}{hongshuitan}        {name}{åšåœŸå›}      {trigger}{^%sè¿™æ˜¯æ˜æ•™æ€»èˆµçš„ç¬¬äºŒé“å…³å¡ï¼Œåœ°åŠ¿æ›´ä¸ºé™©è¦ï¼Œä¸‰é¢ç¯å±±ï¼Œä¸­é—´$}   {links}{
     {hst}{n}
     {lht}{e}
     {jmt}{w}
     {rjt}{s}
     {mj}{sd;sd;sd}}}
-{hst}       {{long}{hongshuitan}        {name}{ºéË®Ì³}      {room}{ºéË®Ì³}         {links}{
+{hst}       {{long}{hongshuitan}        {name}{æ´ªæ°´å›}      {room}{æ´ªæ°´å›}         {links}{
     {htt}{s}}}
-{lht}       {{long}{hongshuitan}        {name}{ÁÒ»ğÌ³}      {room}{ÁÒ»ğÌ³}         {links}{
+{lht}       {{long}{hongshuitan}        {name}{çƒˆç«å›}      {room}{çƒˆç«å›}         {links}{
     {htt}{w}}}
-{jmt}       {{long}{hongshuitan}        {name}{¾ŞÄ¾Ì³}      {room}{¾ŞÄ¾Ì³}         {links}{
+{jmt}       {{long}{hongshuitan}        {name}{å·¨æœ¨å›}      {room}{å·¨æœ¨å›}         {links}{
     {htt}{e}}}
-{rjt}       {{long}{hongshuitan}        {name}{Èñ½ğÌ³}      {room}{Èñ½ğÌ³}         {links}{
+{rjt}       {{long}{hongshuitan}        {name}{é”é‡‘å›}      {room}{é”é‡‘å›}         {links}{
     {htt}{n}}}
-{cym}       {{long}{chaoyangmen}        {name}{³¯ÑôÃÅ}      {room}{³¯ÑôÃÅ}         {links}{
+{cym}       {{long}{chaoyangmen}        {name}{æœé˜³é—¨}      {room}{æœé˜³é—¨}         {links}{
     {sz}{e;ed;se;se;se;se;s;se;s;s;s;s;s;s}
     {scm}{nw;nw;sw;w;w;w;n;n;n;nw;n}
     {jk}{nw;nw;sw;sw;w;w}}}
-{scm}       {{long}{shencemen}          {name}{Éñ²ßÃÅ}      {room}{Éñ²ßÃÅ}         {links}{
+{scm}       {{long}{shencemen}          {name}{ç¥ç­–é—¨}      {room}{ç¥ç­–é—¨}         {links}{
     {jk}{s;se;s;s;s;s;s}
     {cym}{s;se;s;s;s;e;e;e;ne;se;se}}}
-{zjc}       {{long}{zijincheng}         {name}{¶ËÃÅ}        {room}{¶ËÃÅ}           {links}{
+{zjc}       {{long}{zijincheng}         {name}{ç«¯é—¨}        {room}{ç«¯é—¨}           {links}{
     {kf}{s;s;s;w;w;w;w;n;se;s}
     {bj}{s;s;s;s;s;s;s;s}}}
-{sd}        {{long}{andao}              {name}{Ê÷¶´ÄÚ²¿}    {room}{Ê÷¶´ÄÚ²¿}       {links}{
+{sd}        {{long}{andao}              {name}{æ ‘æ´å†…éƒ¨}    {room}{æ ‘æ´å†…éƒ¨}       {links}{
     {yz}{out}}}
-{kd}        {{long}{kedian}             {name}{¿Íµê}        {room}{¿Íµê}           {links}{
+{kd}        {{long}{kedian}             {name}{å®¢åº—}        {room}{å®¢åº—}           {links}{
     {yz}{w;s}}}
-{jk}        {{long}{jiankangfu}         {name}{½¨¿µ¸®}      {room}{ÖĞ³Ç}           {links}{
+{jk}        {{long}{jiankangfu}         {name}{å»ºåº·åºœ}      {room}{ä¸­åŸ}           {links}{
     {jkyp}{s;s;s;w;w}
     {cym}{e;e;ne;ne;se;se}
     {scm}{n;n;n;n;n;nw;n}}}
-{lanz}      {{long}{lanzhou}            {name}{À¼Öİ}        {room}{¸®Ç°¹ã³¡}       {links}{
+{lanz}      {{long}{lanzhou}            {name}{å…°å·}        {room}{åºœå‰å¹¿åœº}       {links}{
     {hb4}{w;w;w;w;se;se}
     {huangz}{w;w;w;w;nw;nw;w;w;w;s;s}}}
-{huangz}    {{long}{huangzhong}         {name}{äÒÖĞ}        {room}{¹¬³Ç}           {links}{
+{huangz}    {{long}{huangzhong}         {name}{æ¹Ÿä¸­}        {room}{å®«åŸ}           {links}{
     {lanz}{n;n;e;e;e;se;se;e;e;e;e}
     {xx}{n;n;nw;w;wd;wd}}}
-{lcf}       {{long}{luchengfeng}        {name}{Â½³Ë·ç}      {trigger}{^%sÕâÀïÊÇ¹éÔÆ×¯µÄ´óÌü}{links}{
+{lcf}       {{long}{luchengfeng}        {name}{é™†ä¹˜é£}      {trigger}{^%sè¿™é‡Œæ˜¯å½’äº‘åº„çš„å¤§å…}{links}{
     {gy}{w;w}}}
-{gsz}       {{long}{gongsunzhi}         {name}{¹«ËïÖ¹}      {trigger}{^%sÕâÀïÊÇÒ»´¦ÌüÌÃ£¬Ò»Î»ÖĞÄêÈË×øÔÚÌÃÖĞ¿´×ÅÊé¡£$} {links}{
+{gsz}       {{long}{gongsunzhi}         {name}{å…¬å­™æ­¢}      {trigger}{^%sè¿™é‡Œæ˜¯ä¸€å¤„å…å ‚ï¼Œä¸€ä½ä¸­å¹´äººååœ¨å ‚ä¸­çœ‹ç€ä¹¦ã€‚$} {links}{
     {xy}{s;s;s;s;s;w;xiaoyao.jqg;stop;se;e;e;e;e;e;e;n}}}
-{zym}       {{long}{zhengyangmen}       {name}{ÕıÑôÃÅ}      {room}{ÕıÑôÃÅ}         {links}{
+{zym}       {{long}{zhengyangmen}       {name}{æ­£é˜³é—¨}      {room}{æ­£é˜³é—¨}         {links}{
     {hz}{s;se;se;s;s;s;sw;s;s;s;s;s}
     {jx}{s;se;se;e;se;s;se;se;sd;e}}}
-{dmy}       {{long}{damoyuan}           {name}{´ïÄ¦Ôº}      {room}{´ïÄ¦Ôº¶şÂ¥}     {links}{
+{dmy}       {{long}{damoyuan}           {name}{è¾¾æ‘©é™¢}      {room}{è¾¾æ‘©é™¢äºŒæ¥¼}     {links}{
     {fzl}{d;sd;s}}}
-{cza}       {{long}{chuzuan}            {name}{³õ×æâÖÄÚ}    {room}{³õ×æâÖÄÚ}       {links}{
+{cza}       {{long}{chuzuan}            {name}{åˆç¥–åºµå†…}    {room}{åˆç¥–åºµå†…}       {links}{
     {wrf}{out;nu;nw;wu;sw;eu;ne;nu;nw}
     {fzl}{out;u;nw;wu;sw;su;se;su;sw;wu;d;sw;sd;se;ed;ne;ed;se;sd;w;sw;s;se;e;se;s;sw;s;sd;s;s}}}
-{wrf}       {{long}{ÎåÈé·å}             {name}{ÎåÈé·å}      {room}{ÎåÈé·å}       {links}{
+{wrf}       {{long}{äº”ä¹³å³°}             {name}{äº”ä¹³å³°}      {room}{äº”ä¹³å³°}       {links}{
     {slzl}{ne;e;se;s;e}
     {cza}{se;sd;sw;wd;ne;ed;se;sd;enter}}}
-{slzl}      {{long}{ÉÙÁÖÖñÁÖ}           {name}{ÉÙÁÖÖñÁÖ}    {trigger}{^%sÕâÊÇÒ»Æ¬ÃÜÃÜµÄÖñÁÖ¡£ÕâÀïÈË¼£º±ÖÁ£¬Î©ÎÅ×ãµ×ßµ»÷Â·Ãæ£¬ÓĞÉ®$}       {links}{
+{slzl}      {{long}{å°‘æ—ç«¹æ—}           {name}{å°‘æ—ç«¹æ—}    {trigger}{^%sè¿™æ˜¯ä¸€ç‰‡å¯†å¯†çš„ç«¹æ—ã€‚è¿™é‡Œäººè¿¹ç½•è‡³ï¼ŒæƒŸé—»è¶³åº•å©å‡»è·¯é¢ï¼Œæœ‰åƒ§$}       {links}{
     {wrf}{w;n;nw;w;sw}}}
-{jkyp}      {{long}{jiankangyaopu}      {name}{½¨¿µÒ©ÆÌ}    {trigger}{^%sÕâÀïÊÇĞÂ½ü¿ªµÄÒ»¼ÒÒ©ÆÌ£¬ÀÏ°å¾İËµÊÇÏàµ±ÓĞ¹ØÏµµÄÒ»¸öÈË¡£$}   {links}{
+{jkyp}      {{long}{jiankangyaopu}      {name}{å»ºåº·è¯é“º}    {trigger}{^%sè¿™é‡Œæ˜¯æ–°è¿‘å¼€çš„ä¸€å®¶è¯é“ºï¼Œè€æ¿æ®è¯´æ˜¯ç›¸å½“æœ‰å…³ç³»çš„ä¸€ä¸ªäººã€‚$}   {links}{
     {jk}{e;e;n;n;n}}}
-{hzyp}      {{long}{hangzhouyaopu}      {name}{ÁÙ°²Ò©ÆÌ}    {trigger}{^%sÕâÀïÊÇĞÂ½ü¿ªµÄÒ»¼ÒÒ©ÆÌ£¬Ò»½øÃÅ×ó²à·ÅÁËÒ»×ùÒ©ÍõÆĞÈøÏñ(xiang)¡£$}   {links}{
+{hzyp}      {{long}{hangzhouyaopu}      {name}{ä¸´å®‰è¯é“º}    {trigger}{^%sè¿™é‡Œæ˜¯æ–°è¿‘å¼€çš„ä¸€å®¶è¯é“ºï¼Œä¸€è¿›é—¨å·¦ä¾§æ”¾äº†ä¸€åº§è¯ç‹è©è¨åƒ(xiang)ã€‚$}   {links}{
     {hz}{w;s;s;s;w;w;w;w}}}
-{hzsj}      {{long}{hangzhoushiji}      {name}{ÁÙ°²ÊĞ¼¯}    {trigger}{^%sÕâÀïÊÇÁÙ°²³ÇÄÚÒ»¸ö·±Ã¦µÄÊĞ¼¯£¬ÀïÃæÈËÁ÷ÎõÎõÈÁÈÁ£¬$}    {links}{
+{hzsj}      {{long}{hangzhoushiji}      {name}{ä¸´å®‰å¸‚é›†}    {trigger}{^%sè¿™é‡Œæ˜¯ä¸´å®‰åŸå†…ä¸€ä¸ªç¹å¿™çš„å¸‚é›†ï¼Œé‡Œé¢äººæµç†™ç†™æ”˜æ”˜ï¼Œ$}    {links}{
     {hz}{s;e}}}
-{tms}       {{long}{dongtianmushan}     {name}{¶«ÌìÄ¿É½}    {room}{´óÊ¯}    {links}{
+{tms}       {{long}{dongtianmushan}     {name}{ä¸œå¤©ç›®å±±}    {room}{å¤§çŸ³}    {links}{
     {hz}{jump east;e;ne;e;n;n;n;nw}}}
-{hm}        {{long}{huangmei}           {name}{»ÆÃ¼É®}      {trigger}{^%sË®ÉùÔ½À´Ô½´ó£¬É½¼ä³äÂúÁËÅ¨Å¨µÄË®Æø¡£Ê¯½×ÉÏ£¬¶ÏÁÑµÄÉ½Ï¶ÖĞ£¬¶¼Á÷³öÒ»µÀµÀÏ¸Ï¸µÄÈªË®£¬»ã³É$} {links}{
+{hm}        {{long}{huangmei}           {name}{é»„çœ‰åƒ§}      {trigger}{^%sæ°´å£°è¶Šæ¥è¶Šå¤§ï¼Œå±±é—´å……æ»¡äº†æµ“æµ“çš„æ°´æ°”ã€‚çŸ³é˜¶ä¸Šï¼Œæ–­è£‚çš„å±±éš™ä¸­ï¼Œéƒ½æµå‡ºä¸€é“é“ç»†ç»†çš„æ³‰æ°´ï¼Œæ±‡æˆ$} {links}{
     {rz}{ed;sd;sd;e}
     {sl}{nu;nu;nu;e}}}
-{miej}      {{long}{miejue}             {name}{Ãğ¾øÊ¦Ì«}    {room}{¾²ĞŞâÖ}  {links}{
+{miej}      {{long}{miejue}             {name}{ç­ç»å¸ˆå¤ª}    {room}{é™ä¿®åºµ}  {links}{
     {qfa}{s;sw;sw;s;s;s;s;s;s}}}
-{wxd}       {{long}{wuxingdong}         {name}{ÎåĞĞ¶´}      {trigger}{^%sÕâÊÇÎåĞĞ¶´¡£½øÀ´¶Ù¾õÒ»¹ÉÈÈÀËÆËÃæ¶øÀ´£¬³åµÃÄã²îµãÔÎÁË$}    {links}{
+{wxd}       {{long}{wuxingdong}         {name}{äº”è¡Œæ´}      {trigger}{^%sè¿™æ˜¯äº”è¡Œæ´ã€‚è¿›æ¥é¡¿è§‰ä¸€è‚¡çƒ­æµªæ‰‘é¢è€Œæ¥ï¼Œå†²å¾—ä½ å·®ç‚¹æ™•äº†$}    {links}{
     {fzl}{n;w;n;e;s;u;out;e;n;n;nu;n;n}}}
 };
 
