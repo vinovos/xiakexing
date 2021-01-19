@@ -1,4 +1,9 @@
+#nop 设置小键盘行走
 #MACRO {\eOr} {south}
 #MACRO {\eOt} {west}
 #MACRO {\eOv} {east}
 #MACRO {\eOx} {north}
+#MACRO {\eOq} {southwest}
+#MACRO {\eOs} {southeast}
+#MACRO {\eOw} {northwest}
+#MACRO {\eOy} {northeast}
