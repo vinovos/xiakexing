@@ -4,13 +4,15 @@
 #class dazuo open
 
 dazuo max;dazuo 10;
-#act {你现在的气太少了，无法产生内息运行全身经脉}{n;w;sleep}
 #act {你刚刚睡过一觉, 多睡对身体有害无益} {
     #delay {3} {sleep}
 }
 #act {你一觉醒来，精神抖擞地活动了几下手脚}{
     e;eat;drink;
-    #delay 1 {s;dazuo max;dazuo 20;tuna max;tuna 20;}
+    #delay 1 {s;dazuo max;dazuo 20;}
 }
-#act {你运功完毕，深深吸了口气，站了起来}{dazuo max;dazuo 20;tuna max;tuna 20;}
+#act {你运功完毕，深深吸了口气，站了起来}{dazuo max;dazuo 20;}
+#act {你现在的气太少了，无法产生内息运行全身经脉}{tuna max;tuna 20}
+#act {你吐纳完毕，睁开双眼，站了起来}{tuna max;tuna 20}
+#act {你现在精不足，无法修行精力} {n;w;sleep}
 #class dazuo close
