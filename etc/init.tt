@@ -4,6 +4,4 @@
 #read etc/macro.tt
 #nop re plugins/xiaoyao.tin
 
-#class tmp open;
-#alias pku {#class tmp kill;#re utils/pku.tt};
-#class tmp close;
+#alias pku {#re utils/pku.tt};
