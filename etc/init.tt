@@ -2,7 +2,7 @@
 
 #read etc/config.tt
 #read etc/macro.tt
-#nop read etc/alias.tt
+#read etc/act.tt
 #nop re plugins/xiaoyao.tin
 
 #alias pku {#re utils/pku.tt};

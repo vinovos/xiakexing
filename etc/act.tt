@@ -1,4 +1,4 @@
-#nop 设置一些通用的alias
+#nop 设置一些通用的act
 
 #nop 获取score的信息到变量
 #var user.name {};
@@ -14,4 +14,5 @@
         #var {user.title} {%%1};
     };
     #class tmp close;
+    #delay 10 {#class tmp kill};
 };
