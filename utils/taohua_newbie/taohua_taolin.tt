@@ -1,11 +1,38 @@
 #nop 桃花新手走桃林迷宫任务；在陆乘风处触发
 
 #class taohua_taolin open
+#var {fangwei_table}{
+    {东} {e}
+    {南} {s}
+    {西} {w}
+    {北} {n}
+    {东南} {se}
+    {东北} {ne}
+    {西南} {sw}
+    {西北} {nw}
+}
 ask lu about job;
-#act {陆乘风说道：「贪睡虫，我为你占得一卦：巽风。」} {
+#act {陆乘风说道：「${user.name}，我为你占得一卦：%1。」} {
     look tu;
+    #var fangwei {%1}
+    #list walk_list {create}
+    #class tmp open
+    #act {$fangwei：%1 %2 %3 %4} {
+        #list walk_list add fangwei_table[%%1];
+        #list walk_list add fangwei_table[%%2];
+        #list walk_list add fangwei_table[%%3];
+        #list walk_list add fangwei_table[%%4];
+    }
+    #class tmp close
+    do 3 e;
+    #list {walk_list} {simplify}
+    #foreach walk_list {walk_direct} {#delay 1 walk_direct}
 }
 #act {天色大变，陆乘风给你算的卦也不那么准了} {
     leave;do 3 w;ask lu about job;
+}
+#nop 将从图上看来得方向转化为走路方向
+#function tranFangXiang(direction){
+    return
 }
 #class taohua_taolin close
