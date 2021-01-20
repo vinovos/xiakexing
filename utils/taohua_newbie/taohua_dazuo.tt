@@ -1,4 +1,6 @@
 #nop 打坐任务，需要条件1、读书任务已完成 2、去休息室睡觉触发
+#nop 建议打坐去帮派打坐。使用dazuo脚本，可以快速的进行
+#nop 此处打坐，会吃粮和牛肉汤（扬州醉仙楼和洛阳gt lywxl）
 
 #class taohua_dazuo kill
 #nop 关闭读书任务，避免冲突
@@ -13,7 +15,11 @@ jifa force bihai-shengong
     #delay {3} {sleep}
 }
 #act {你一觉醒来，精神抖擞地活动了几下手脚}{
-    eat liang;drink;dazuo max;dazuo 10;
+    eat liang;drink;dazuo 20;dazuo max;
 }
-#act {你运功完毕，深深吸了口气，站了起来}{dazuo max;dazuo 10;}
+#act {你运功完毕，深深吸了口气，站了起来}{dazuo 20;dazuo max;}
+#act {你的内力修为似乎已经达到了瓶颈} {
+    w;s; 
+    #read "utils/taohua_newbie/taohau_taolin.tt"
+}
 #class taohua_dazuo close

@@ -14,13 +14,14 @@
     #delay {2} {do 4 s;du $shu_taohua for 1;}
 }
 #act {你研读了一次有关奇门八卦的技巧，似乎有点心得}{du $shu_taohua for 1;}
-#act {你身上没有%*这种东西} {w;do 3 s;zhao}
+#act {你身上没有%*这种东西} {zhao}
 #act {你在这里找了半天，却什么都没有找到}{zhao}
 #act {你找到了一本%1，欣喜若狂} {
     #var shu_taohua $taohuashuji[%1];
     #delay {2} {du $shu_taohua for 1;}
 }
 #act {你的奇门八卦等级已经高于 100，没法再从%*学到任何东西了}{
+    dodo 3 n;e;
     #read "utils/taohua_newbie/taohua_dazuo.tt"
 }
 #class taohua close

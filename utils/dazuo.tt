@@ -1,4 +1,6 @@
 #nop 在帮派打坐
+#nop gt tlsy（了了提供城际通） 可以到达帮派桃林书院
+#nop 打坐时一般dazuo max;dazuo 10;但是在实际使用过程中，发现会出现打坐内力增长存在卡住的情况
 
 #class dazuo kill
 #class dazuo open
@@ -15,7 +17,6 @@ dazuo max;dazuo 10;
 #act {你一觉醒来，精神抖擞地活动了几下手脚}{
     e;eat;drink;
     #if {$dazuo_flag} {
-        #echo 111111111111111111;
         #delay 2 {s;tuna max;tuna 20;};
     };
     #else {

@@ -1,0 +1,17 @@
+#nop 设置一些通用的alias
+
+#nop 获取score的信息到变量
+#var user.name 0;
+#var user.id 0;
+#var user.title 0;
+
+#act {^≡%!*人物详情%!*≡} {
+    #class tmp open;
+    #act {^% 【%*】%*(%*)$} {
+        #echo "------";
+        #var {user.name} {%%3};
+        #var {user.id} {%%4};
+        #var {user.title} {%%1};
+    };
+    #class tmp close;
+};

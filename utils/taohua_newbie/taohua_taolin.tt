@@ -1,0 +1,11 @@
+#nop 桃花新手走桃林迷宫任务；在陆乘风处触发
+
+#class taohua_taolin open
+ask lu about job;
+#act {陆乘风说道：「贪睡虫，我为你占得一卦：巽风。」} {
+    look tu;
+}
+#act {天色大变，陆乘风给你算的卦也不那么准了} {
+    leave;do 3 w;ask lu about job;
+}
+#class taohua_taolin close

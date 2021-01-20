@@ -1,4 +1,4 @@
-#config {charset} {gbk1toutf8}
+#config {charset} {utf-8}
 #nop CONFIG           {COLOR PATCH}  {ON}
 #nop CONFIG           {PACKET PATCH}  {0.8}
 #nop CONFIG           {WORDWRAP}  {ON}
