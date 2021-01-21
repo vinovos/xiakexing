@@ -13,6 +13,7 @@
 }
 sc;
 ask lu about job;
+#var taolin_walk_flag 1;
 #act {陆乘风说道：「${user.name}，我为你占得一卦：」} {
     #delay {taolin_delay} {ask lu about job} {60};
 }
@@ -38,33 +39,11 @@ ask lu about job;
     #delay 3 {
         do 4 e;
         #echo "------------------";
-        #delay 1 $walk_list[+1];
-        #delay 4 $walk_list[+2];
-        #delay 7 $walk_list[+3];
-        #delay {10} $walk_list[+4];
-
-        #delay {13} $walk_list[+1];
-        #delay {16} $walk_list[+2];
-        #delay {19} $walk_list[+3];
-        #delay {22} $walk_list[+4];
-
-        #delay {25} $walk_list[+1];
-        #delay {28} $walk_list[+2];
-        #delay {31} $walk_list[+3];
-        #delay {34} $walk_list[+4];
-
-        #delay {37} $walk_list[+1];
-        #delay {40} $walk_list[+2];
-        #delay {43} $walk_list[+3];
-        #delay {47} $walk_list[+4];
-
-        #delay {50} $walk_list[+1];
-        #delay {53} $walk_list[+2];
-        #delay {56} $walk_list[+3];
-        #delay {59} $walk_list[+4];
+        walk_taolin;
     };
 }
 #act {天色大变，陆乘风给你算的卦也不那么准了} {
+    #var taolin_walk_flag 0;
     #class tmp open;
     #act {这里是归云庄的大厅，是庄主会客的地方，里面站着两排卫士}{
         #var current_position {归云庄};
@@ -74,7 +53,7 @@ ask lu about job;
     };
     #class tmp close;
     l;
-    #delay 2 {
+    #delay 10 {
         #if {"$current_position" == "桃花阵"} {leave;do 3 w;ask lu about job;} {};
         #if {"$current_position" == "归云庄"} {ask lu about job;} {};
     }
@@ -82,5 +61,13 @@ ask lu about job;
 #nop 将从图上看来得方向转化为走路方向
 #function tranFangXiang(direction){
     return
+}
+#alias {walk_taolin} {
+    #if {$taolin_walk_flag} {
+        #delay 1 $walk_list[+1];
+        #delay 4 $walk_list[+2];
+        #delay 7 $walk_list[+3];
+        #delay {10} {$walk_list[+4];walk_taolin;};
+    };
 }
 #class taohua_taolin close
