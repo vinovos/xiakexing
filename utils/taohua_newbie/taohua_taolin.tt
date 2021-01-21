@@ -13,7 +13,6 @@
 }
 sc;
 ask lu about job;
-#var taolin_walk_flag 1;
 #act {陆乘风说道：「${user.name}，我为你占得一卦：」} {
     #delay {taolin_delay} {ask lu about job} {60};
 }
@@ -24,6 +23,7 @@ ask lu about job;
         #var fangwei {%1};
 }
 #act {陆乘风用手指了指墙上的八卦图} {
+    #var taolin_walk_flag 1;
     look tu;
     #list walk_list {create};
     #class tmp open;
@@ -53,7 +53,7 @@ ask lu about job;
     };
     #class tmp close;
     l;
-    #delay 10 {
+    #delay 13 {
         #if {"$current_position" == "桃花阵"} {leave;do 3 w;ask lu about job;} {};
         #if {"$current_position" == "归云庄"} {ask lu about job;} {};
     }
@@ -65,9 +65,9 @@ ask lu about job;
 #alias {walk_taolin} {
     #if {$taolin_walk_flag} {
         #delay 1 $walk_list[+1];
-        #delay 4 $walk_list[+2];
-        #delay 7 $walk_list[+3];
-        #delay {10} {$walk_list[+4];walk_taolin;};
+        #delay 5 $walk_list[+2];
+        #delay 9 $walk_list[+3];
+        #delay {13} {$walk_list[+4];walk_taolin;};
     };
 }
 #class taohua_taolin close
