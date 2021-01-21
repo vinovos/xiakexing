@@ -29,8 +29,9 @@ ask lu about job;
         #list walk_list add fangwei_table[%%3];
         #list walk_list add fangwei_table[%%4];
         #class tmp kill
-    }
-    #delay 2 {
+    };
+    #class tmp 
+    #delay 3 {
         do 4 e;
         #echo "------------------";
         #delay 1 $walk_list[+1];
@@ -58,14 +59,12 @@ ask lu about job;
         #delay {56} $walk_list[+3];
         #delay {59} $walk_list[+4];
     };
-    #class tmp 
     
     do 3 e;
     #list {walk_list} {simplify}
     #foreach walk_list {walk_direct} {#delay 1 walk_direct}
 }
 #act {天色大变，陆乘风给你算的卦也不那么准了} {
-    #class tmp kill;
     #class tmp open;
     #act {这里是归云庄的大厅，是庄主会客的地方，里面站着两排卫士}{
         #var current_position {归云庄};
