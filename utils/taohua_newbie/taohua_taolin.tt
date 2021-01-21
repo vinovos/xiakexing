@@ -59,10 +59,6 @@ ask lu about job;
         #delay {56} $walk_list[+3];
         #delay {59} $walk_list[+4];
     };
-    
-    do 3 e;
-    #list {walk_list} {simplify}
-    #foreach walk_list {walk_direct} {#delay 1 walk_direct}
 }
 #act {天色大变，陆乘风给你算的卦也不那么准了} {
     #class tmp open;
