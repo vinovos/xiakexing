@@ -71,12 +71,13 @@ ask lu about job;
     };
     #act {这里是一大片的桃花阵，隐含八卦九宫位置。如果没有办法破解，你也可以选择离开} {
         #var current_position {桃花阵};
-        #class tmp kill;
     };
     #class tmp close;
     l;
-    #if {"$current_position" == "桃花阵"} {leave;do 3 w;ask lu about job;};
-    #if {"$current_position" == "归云庄"} {ask lu about job;};
+    #delay 2 {
+        #if {"$current_position" == "桃花阵"} {leave;do 3 w;ask lu about job;} {};
+        #if {"$current_position" == "归云庄"} {ask lu about job;} {};
+    }
 }
 #nop 将从图上看来得方向转化为走路方向
 #function tranFangXiang(direction){
