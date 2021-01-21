@@ -11,12 +11,17 @@
         #echo %1;
         #read utils/taohua_newbie/taohua_dazuo.tt
     };
+    #elseif {"%1" == "taolin"}{
+        #read utils/taohua_newbie/taohua_taolin.tt
+    }
     #else {
         #echo {%c%+2s 使用方法：taohua_newbie [du|dazuo|]} {light yellow};
         #echo {%c%+2s 说明：接取任务之后，请在归云庄休息厅，使用sleep开始} {light yellow};
         #echo {%c%+8s taohua_newbie du：从读书任务开始} {light yellow};
         #echo {%c%+8s taohua_newbie dazuo：从打坐任务开始} {light yellow};
+        #echo {%c%+8s taohua_newbie taolin：从桃林迷宫任务开始,请在归云庄大厅执行} {light yellow};
     };
 }
 
 #class taohua_newbie close
+

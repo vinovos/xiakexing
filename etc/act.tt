@@ -1,10 +1,6 @@
 #nop 设置一些通用的act
 
 #nop 获取score的信息到变量
-#var user.name {};
-#var user.id {};
-#var user.title {};
-
 #act {^≡%!*人物详情%!*≡} {
     #class tmp open;
     #act {^ 【%*】%!{.*} %*(%*)$} {

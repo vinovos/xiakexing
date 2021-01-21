@@ -12,6 +12,12 @@
     {西北} {nw}
 }
 ask lu about job;
+#act {陆乘风说道：「${user.name}，我为你占得一卦：」} {
+    #delay 60 {ask lu about job};
+}
+#act {陆乘风说道：「我不是刚给你占过一卦吗？」} {
+    #delay 60 {ask lu about job};
+}
 #act {陆乘风说道：「${user.name}，我为你占得一卦：%1。」} {
     look tu;
     #var fangwei {%1}
@@ -22,14 +28,57 @@ ask lu about job;
         #list walk_list add fangwei_table[%%2];
         #list walk_list add fangwei_table[%%3];
         #list walk_list add fangwei_table[%%4];
+        #class tmp kill
     }
-    #class tmp close
+    #delay 2 {
+        do 4 e;
+        #echo "------------------";
+        #delay 1 $walk_list[+1];
+        #delay 4 $walk_list[+2];
+        #delay 7 $walk_list[+3];
+        #delay {10} $walk_list[+4];
+
+        #delay {13} $walk_list[+1];
+        #delay {16} $walk_list[+2];
+        #delay {19} $walk_list[+3];
+        #delay {22} $walk_list[+4];
+
+        #delay {25} $walk_list[+1];
+        #delay {28} $walk_list[+2];
+        #delay {31} $walk_list[+3];
+        #delay {34} $walk_list[+4];
+
+        #delay {37} $walk_list[+1];
+        #delay {40} $walk_list[+2];
+        #delay {43} $walk_list[+3];
+        #delay {47} $walk_list[+4];
+
+        #delay {50} $walk_list[+1];
+        #delay {53} $walk_list[+2];
+        #delay {56} $walk_list[+3];
+        #delay {59} $walk_list[+4];
+    };
+    #class tmp 
+    
     do 3 e;
     #list {walk_list} {simplify}
     #foreach walk_list {walk_direct} {#delay 1 walk_direct}
 }
 #act {天色大变，陆乘风给你算的卦也不那么准了} {
-    leave;do 3 w;ask lu about job;
+    #class tmp kill;
+    #class tmp open;
+    #act {这里是归云庄的大厅，是庄主会客的地方，里面站着两排卫士}{
+        #var current_position {归云庄};
+        #class tmp kill;
+    };
+    #act {这里是一大片的桃花阵，隐含八卦九宫位置。如果没有办法破解，你也可以选择离开} {
+        #var current_position {桃花阵};
+        #class tmp kill;
+    };
+    #class tmp close;
+    l;
+    #if {"$current_position" == "桃花阵"} {leave;do 3 w;ask lu about job;};
+    #if {"$current_position" == "归云庄"} {ask lu about job;};
 }
 #nop 将从图上看来得方向转化为走路方向
 #function tranFangXiang(direction){

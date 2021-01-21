@@ -1,0 +1,7 @@
+#nop 一些全局通用变量
+#var current_position {};
+
+#nop 获取score的信息到变量
+#var user.name {};
+#var user.id {};
+#var user.title {};

@@ -1,6 +1,7 @@
 #!/usr/bin/env tt++
 
 #read etc/config.tt
+#read etc/var.tt
 #read etc/macro.tt
 #read etc/act.tt
 #nop re plugins/xiaoyao.tin
