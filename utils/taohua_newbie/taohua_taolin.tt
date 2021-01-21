@@ -11,26 +11,30 @@
     {西南} {sw}
     {西北} {nw}
 }
+sc;
 ask lu about job;
 #act {陆乘风说道：「${user.name}，我为你占得一卦：」} {
-    #delay 60 {ask lu about job};
+    #delay {taolin_delay} {ask lu about job} {60};
 }
 #act {陆乘风说道：「我不是刚给你占过一卦吗？」} {
-    #delay 60 {ask lu about job};
+    #delay {taolin_delay} {ask lu about job} {60};
 }
-#act {陆乘风说道：「${user.name}，我为你占得一卦：%1。」} {
+#act {陆乘风说道：「${user.name}，我为你占得一卦：%*。」} {
+        #var fangwei {%1};
+}
+#act {陆乘风用手指了指墙上的八卦图} {
     look tu;
-    #var fangwei {%1}
-    #list walk_list {create}
-    #class tmp open
-    #act {$fangwei：%1 %2 %3 %4} {
-        #list walk_list add fangwei_table[%%1];
-        #list walk_list add fangwei_table[%%2];
-        #list walk_list add fangwei_table[%%3];
-        #list walk_list add fangwei_table[%%4];
-        #class tmp kill
+    #list walk_list {create};
+    #class tmp open;
+    #act {$fangwei：%* %* %* %*} {
+        #list walk_list add $fangwei_table[%%1];
+        #list walk_list add $fangwei_table[%%2];
+        #list walk_list add $fangwei_table[%%3];
+        #list walk_list add $fangwei_table[%%4];
+	#echo "-----taohua tmp-----";
+	#class tmp kill;
     };
-    #class tmp 
+    #class tmp close;
     #delay 3 {
         do 4 e;
         #echo "------------------";
@@ -64,7 +68,6 @@ ask lu about job;
     #class tmp open;
     #act {这里是归云庄的大厅，是庄主会客的地方，里面站着两排卫士}{
         #var current_position {归云庄};
-        #class tmp kill;
     };
     #act {这里是一大片的桃花阵，隐含八卦九宫位置。如果没有办法破解，你也可以选择离开} {
         #var current_position {桃花阵};
