@@ -1,6 +1,7 @@
 #nop 桃花新手走桃林迷宫任务；在陆乘风处触发
 
-#class taohua_taolin open
+#class taohua_taolin kill;
+#class taohua_taolin open;
 #var {fangwei_table}{
     {东} {e}
     {南} {s}
@@ -19,6 +20,11 @@ ask lu about job;
 #act {陆乘风说道：「我不是刚给你占过一卦吗？」} {
     #delay {taolin_delay} {ask lu about job} {60};
 }
+#act {你向陆乘风打听有关『job』的消息。} {
+    #act {陆乘风说道：「没看我正忙着嘛？」} {
+        #delay {taolin_delay} {ask lu about job} {60};
+    }
+}
 #act {陆乘风说道：「${user.name}，我为你占得一卦：%*。」} {
     #var fangwei {%1};
     #act {陆乘风用手指了指墙上的八卦图} {
@@ -31,6 +37,7 @@ ask lu about job;
             #list walk_list add $fangwei_table[%%%2];
             #list walk_list add $fangwei_table[%%%3];
             #list walk_list add $fangwei_table[%%%4];
+            #class tmp kill
         };
         #class tmp close;
         #delay 3 {
