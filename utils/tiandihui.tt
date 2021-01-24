@@ -1,0 +1,19 @@
+#alias {tiandihui_xue %1 } {
+    
+    #if {"%1" == "stop"}{
+        #class tiandihui_xue kill;
+    };
+    #elseif {@checkNum{%1}} {
+        #var xue_max_level %1;
+        #read utils/tiandihui/skills.tt;
+    };
+    #elseif {"%1" == ""} {
+        #unvar xue_max_level;
+        #read utils/tiandihui/skills.tt;
+    }
+    #else {
+        #echo  {%c%+2s tiandihui_xue：学习技能到当前可学习最大技能} {light yellow};
+        #echo  {%c%+2s tiandihui_xue 数字：学习到数字(技能最大等级)} {light yellow};
+        #echo  {%c%+2s tiandihui_xue stop：停止学习技能} {light yellow};
+    };
+};

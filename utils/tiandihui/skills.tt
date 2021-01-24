@@ -1,7 +1,66 @@
-
 #nop 天地会学技能
-#alias {tiandihui_xue } {
-    #act {^│□浩气苍冥功%s│cangming-gong%s│%*│%d} {
-        #var tdh_cangming_level %4;
+
+
+#class tiandihui_xue open;
+#var {tdh_skills_level} {};
+#list tdh_skills_learn_list create;
+#var tdh_xue_flag 1;
+
+tdh_xue;
+
+#alias tdh_xue {
+    cha;
+    #act {^你目前所学过的技能：}{
+        #class tmp open;
+        #act {^│□浩气苍冥功%s│cangming-gong%s│%*│%d} {
+            #var {tdh_skills_level[cangming-gong]} %4;
+        }
+        #act {^猴拳%s│houquan%s│%*│%d} {
+            #var {tdh_skills_level[houquan]} %4;
+        }
+        #act {^│□零丁飘洋%s│lingding-piao%s│%*│%d} {
+            #var {tdh_skills_level[lingding-piao]} %4;
+        }
+        #act {^│□基本拳法%s│cuff%s│%*│%d} {
+            #var {tdh_skills_level[cuff]} %4;
+        }
+        #act {^│□基本轻功%s│dodge%s│%*│%d} {
+            #var {tdh_skills_level[dodge]} %4;
+        }
+        #act {^│□基本内功%s│force%s│%*│%d} {
+            #var {tdh_skills_level[force]} %4;
+        }
+        #act {^│□基本招架%s│parry%s│%*│%d} {
+            #var {tdh_skills_level[parry]} %4;
+        }
+        #class tmp close;
+        #delay 0.5 tmp kill;
     }
+
+    #nop 找出需要学习的技能
+    #foreach *{tdh_skills_level[]} {skill} {
+        #if {${tdh_skills_level[$skill]} < xue_max_level} {
+            #list tdh_skills_learn_list add $skill;
+        };
+    };
+
+    #nop 学习技能
+    #foreach *{tdh_skills_learn_list[]} {skill}{
+        #if {$tdh_xue_flag} {
+            xue xu for $tdh_skills_learn_list[$skill] 50;
+            xue xu for $tdh_skills_learn_list[$skill] 30;
+        };
+    };
+}
+
+#action {^你今天太累了，结果什么也没有学到。} {
+    #var tdh_xue_flag 0;
+    s;up;sleep;
 };
+
+#action {^你一觉醒来，精神抖擞地活动了几下手脚} {
+    #var tdh_xue_flag 1;
+    d;n;tdh_xue;
+};
+
+#class tiandihui_xue close;

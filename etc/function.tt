@@ -1,0 +1,12 @@
+#nop 公共函数
+#function {checkNum} {
+    #regex {%0} {^%+1..4d$} {#var check_num_result 1;} {#var check_num_result 0};
+    #if {check_num_result} {
+        #unvar check_num_result
+        #return 1;
+    };
+    #else {
+        #unvar check_num_result
+        #return 0;
+    };
+}
