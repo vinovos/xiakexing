@@ -5,10 +5,12 @@
     };
     #elseif {@checkNum{%1}} {
         #var xue_max_level %1;
+        #class tiandihui_xue kill;
         #read utils/tiandihui/skills.tt;
     };
     #elseif {"%1" == ""} {
         #unvar xue_max_level;
+        #class tiandihui_xue kill;
         #read utils/tiandihui/skills.tt;
     };
     #else {

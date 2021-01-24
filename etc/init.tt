@@ -6,6 +6,7 @@
 #read etc/act.tt
 #read etc/alias.tt
 #read etc/event.tt
+#read etc/function.tt
 #nop re plugins/xiaoyao.tin
 
 #read utils/taohua.tt
