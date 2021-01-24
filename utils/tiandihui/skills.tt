@@ -21,16 +21,16 @@ tdh_xue;
         #act {^│□零丁飘洋%s│lingding-piao%s│%*│%d} {
             #var {tdh_skills_level[lingding-piao]} %%4;
         };
-        #act {^│□基本拳法%s│cuff%s│%*│%d} {
+        #act {^  基本拳法%s│cuff%s│%*│%d} {
             #var {tdh_skills_level[cuff]} %%4;
         };
-        #act {^│□基本轻功%s│dodge%s│%*│%d} {
+        #act {^  基本轻功%s│dodge%s│%*│%d} {
             #var {tdh_skills_level[dodge]} %%4;
         };
-        #act {^│□基本内功%s│force%s│%*│%d} {
+        #act {^  基本内功%s│force%s│%*│%d} {
             #var {tdh_skills_level[force]} %%4;
         };
-        #act {^│□基本招架%s│parry%s│%*│%d} {
+        #act {^  基本招架%s│parry%s│%*│%d} {
             #var {tdh_skills_level[parry]} %%4;
         };
         #class tmp close;
