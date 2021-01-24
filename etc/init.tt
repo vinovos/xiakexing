@@ -4,6 +4,10 @@
 #read etc/var.tt
 #read etc/macro.tt
 #read etc/act.tt
+#read etc/alias.tt
+#read etc/event.tt
 #nop re plugins/xiaoyao.tin
+
+#read utils/taohua.tt
 
 #alias pku {#re utils/pku.tt};

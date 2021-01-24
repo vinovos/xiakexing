@@ -1,0 +1,28 @@
+#nop full 技能
+#class taohua_skills_newbie open;
+#var taohua_xue_newbieflag 1;
+taohua_xue_newbie;
+#action {^你今天太累了，结果什么也没有学到。} {
+    #if {$taohua_xue_newbieflag} {
+        #var taohua_xue_newbieflag 0;
+        n;e;sleep;
+    };
+};
+#action {^你一觉醒来，精神抖擞地活动了几下手脚} {
+    #var taohua_xue_newbieflag 1;
+    w;s;taohua_xue_newbie
+};
+#act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay {3} {sleep}};
+
+#alias taohua_xue_newbie {
+        xue lu for fuxue-shou 5;
+        xue lu for yuxiao-jian 5;
+        xue lu for sword 5;
+        xue lu for parry 5;
+        xue lu for fuxue-shou 5;
+        xue lu for yuxiao-jian 5;
+        xue lu for sword 5;
+        xue lu for parry 5;
+};
+
+#class taohua_skills_newbie close;

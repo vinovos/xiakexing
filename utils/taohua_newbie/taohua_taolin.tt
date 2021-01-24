@@ -14,6 +14,10 @@
 };
 sc;
 ask lu about job;
+#act {^陆乘风说道：「庄子附近最近来一位女飞贼，你还是先去练练功夫吧，以免碰到被人耻笑} {
+    #line {log} {logs/event.log} {"开始出飞贼啦，准备学技能"};
+    #read utils/taohua_newbie/taohua_taolin.tt;
+}
 #act {陆乘风说道：「${user.name}，我为你占得一卦：」} {
     #delay {taolin_delay} {ask lu about job} {60};
 }
@@ -25,27 +29,31 @@ ask lu about job;
         #delay {taolin_delay} {ask lu about job} {60};
     }
 }
+
+#var taolin_walk_flag 0;
+#list taolin_walk_list {create};
+
 #act {陆乘风说道：「${user.name}，我为你占得一卦：%*。」} {
     #var fangwei {%1};
+    #class tmp open;
     #act {陆乘风用手指了指墙上的八卦图} {
         #var taolin_walk_flag 1;
         look tu;
-        #list walk_list {create};
-        #class tmp open;
+        #list taolin_walk_list {create};
         #act {$fangwei：%* %* %* %*} {
-            #list walk_list add $fangwei_table[%%%1];
-            #list walk_list add $fangwei_table[%%%2];
-            #list walk_list add $fangwei_table[%%%3];
-            #list walk_list add $fangwei_table[%%%4];
-            #class tmp kill
+            #list taolin_walk_list add $fangwei_table[%%%1];
+            #list taolin_walk_list add $fangwei_table[%%%2];
+            #list taolin_walk_list add $fangwei_table[%%%3];
+            #list taolin_walk_list add $fangwei_table[%%%4];
         };
-        #class tmp close;
         #delay 3 {
             do 4 e;
             #echo "------------------";
             walk_taolin;
         };
-    }
+        #class tmp kill;
+    };
+    #class tmp close;
 }
 
 #act {天色大变，陆乘风给你算的卦也不那么准了} {
@@ -59,18 +67,18 @@ ask lu about job;
     };
     #class tmp close;
     l;
-    #delay 13 {
+    #delay 10 {
         #if {"$current_position" == "桃花阵"} {leave;do 3 w;ask lu about job;};
         #if {"$current_position" == "归云庄"} {ask lu about job;};
     }
 }
-#nop 将从图上看来得方向转化为走路方向
+
 #alias {walk_taolin} {
     #if {$taolin_walk_flag} {
-        #delay {2.5} $walk_list[+1];
-        #delay 5 $walk_list[+2];
-        #delay {7.5} $walk_list[+3];
-        #delay {10} {$walk_list[+4]; walk_taolin;};
+        #delay {2.5} $taolin_walk_list[+1];
+        #delay 5 $taolin_walk_list[+2];
+        #delay {7.5} $taolin_walk_list[+3];
+        #delay {10} {$taolin_walk_list[+4]; walk_taolin;};
     };
 }
 #class taohua_taolin close

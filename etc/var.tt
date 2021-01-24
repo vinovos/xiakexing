@@ -5,3 +5,4 @@
 #var user.name {};
 #var user.id {};
 #var user.title {};
+#var user.menpai {};

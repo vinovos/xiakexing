@@ -1,4 +1,5 @@
 #config {charset} {utf-8}
+#config {log mode} {plain}
 #nop CONFIG           {COLOR PATCH}  {ON}
 #nop CONFIG           {PACKET PATCH}  {0.8}
 #nop CONFIG           {WORDWRAP}  {ON}

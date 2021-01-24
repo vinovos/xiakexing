@@ -1,0 +1,7 @@
+
+#nop 天地会学技能
+#alias {tiandihui_xue } {
+    #act {^│□浩气苍冥功%s│cangming-gong%s│%*│%d} {
+        #var tdh_cangming_level %4;
+    }
+};

@@ -1,0 +1,37 @@
+#ALIAS {log}
+{
+	#if {"%0" == "on"}
+	{
+		#if {"$logging" != "on"}
+		{
+			#format {logfile} {logs/%l/%t.log} {${user.id}} {%Y-%m-%d};
+            #event {DAY} {
+                #format {logfile} {logs/%l/%t.log} {${user.id}} {%Y-%m-%d};
+                #log append $logfile;
+            };
+            #echo {"log file name is $logfile"};
+			#log append $logfile;
+			#variable logging on;
+		};
+		#else
+		{
+			#showme You are already logging.
+		}
+	};
+	#elseif {"%0" == "off"}
+	{
+		#if {"$logging" == "on"}
+		{
+			#log off;
+			#variable logging off
+		};
+		#else
+		{
+			#showme You are not logging.
+		}
+	};
+	#else
+	{
+		#showme Turn logging on or off?
+	}
+}

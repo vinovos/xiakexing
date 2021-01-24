@@ -1,5 +1,19 @@
 #nop 设置一些通用的act
 
+#nop 初次连线，需要做的事情
+#act {{^(您上次是在.*连线进入，请及时核对|重新连线完毕)}} {
+    login_init;
+};
+#act {^重新连线完毕} {
+};
+
+#alias login_init {
+    sc;
+    log on;
+};
+
+#act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay 3 sleep};
+
 #nop 获取score的信息到变量
 #act {^≡%!*人物详情%!*≡} {
     #class tmp open;
@@ -8,6 +22,9 @@
         #var {user.name} {%%2};
         #var {user.id} {%%3};
         #var {user.title} {%%1};
+    };
+    #act {^%s你是%*第%*代弟子} {
+        #var {user.menpai} {%%2};
     };
     #class tmp close;
     #delay 10 {#class tmp kill};
