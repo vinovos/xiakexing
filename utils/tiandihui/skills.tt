@@ -13,44 +13,46 @@ tdh_xue;
     #act {^你目前所学过的技能：}{
         #class tmp open;
         #act {^│□浩气苍冥功%s│cangming-gong%s│%*│%d} {
-            #var {tdh_skills_level[cangming-gong]} %4;
-        }
-        #act {^猴拳%s│houquan%s│%*│%d} {
-            #var {tdh_skills_level[houquan]} %4;
-        }
+            #var {tdh_skills_level[cangming-gong]} %%4;
+        };
+        #act {^│□猴拳%s│houquan%s│%*│%d} {
+            #var {tdh_skills_level[houquan]} %%4;
+        };
         #act {^│□零丁飘洋%s│lingding-piao%s│%*│%d} {
-            #var {tdh_skills_level[lingding-piao]} %4;
-        }
+            #var {tdh_skills_level[lingding-piao]} %%4;
+        };
         #act {^│□基本拳法%s│cuff%s│%*│%d} {
-            #var {tdh_skills_level[cuff]} %4;
-        }
+            #var {tdh_skills_level[cuff]} %%4;
+        };
         #act {^│□基本轻功%s│dodge%s│%*│%d} {
-            #var {tdh_skills_level[dodge]} %4;
-        }
+            #var {tdh_skills_level[dodge]} %%4;
+        };
         #act {^│□基本内功%s│force%s│%*│%d} {
-            #var {tdh_skills_level[force]} %4;
-        }
+            #var {tdh_skills_level[force]} %%4;
+        };
         #act {^│□基本招架%s│parry%s│%*│%d} {
-            #var {tdh_skills_level[parry]} %4;
-        }
+            #var {tdh_skills_level[parry]} %%4;
+        };
         #class tmp close;
-        #delay 0.5 tmp kill;
+        #delay 3 {#class tmp close;};
+    };
+
+    #delay 3 {
+        #nop 找出需要学习的技能;
+        #foreach *{tdh_skills_level[]} {skill} {
+            #if {${tdh_skills_level[$skill]} < $xue_max_level} {
+                #list tdh_skills_learn_list add $skill;
+            };
+        };
+
+        #nop 学习技能;
+        #foreach *{tdh_skills_learn_list[]} {skill}{
+            #if {$tdh_xue_flag} {
+                xue xu for $tdh_skills_learn_list[$skill] 50;
+                xue xu for $tdh_skills_learn_list[$skill] 30;
+            };
+        };
     }
-
-    #nop 找出需要学习的技能
-    #foreach *{tdh_skills_level[]} {skill} {
-        #if {${tdh_skills_level[$skill]} < xue_max_level} {
-            #list tdh_skills_learn_list add $skill;
-        };
-    };
-
-    #nop 学习技能
-    #foreach *{tdh_skills_learn_list[]} {skill}{
-        #if {$tdh_xue_flag} {
-            xue xu for $tdh_skills_learn_list[$skill] 50;
-            xue xu for $tdh_skills_learn_list[$skill] 30;
-        };
-    };
 }
 
 #action {^你今天太累了，结果什么也没有学到。} {

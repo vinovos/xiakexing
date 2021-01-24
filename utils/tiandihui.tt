@@ -1,6 +1,6 @@
-#alias {tiandihui_xue %1 } {
-    
+#alias {tiandihui_xue} {
     #if {"%1" == "stop"}{
+        #unvar xue_max_level;
         #class tiandihui_xue kill;
     };
     #elseif {@checkNum{%1}} {
@@ -10,7 +10,7 @@
     #elseif {"%1" == ""} {
         #unvar xue_max_level;
         #read utils/tiandihui/skills.tt;
-    }
+    };
     #else {
         #echo  {%c%+2s tiandihui_xue：学习技能到当前可学习最大技能} {light yellow};
         #echo  {%c%+2s tiandihui_xue 数字：学习到数字(技能最大等级)} {light yellow};
