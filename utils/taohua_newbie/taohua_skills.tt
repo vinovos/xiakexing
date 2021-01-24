@@ -15,14 +15,14 @@ taohua_xue_newbie;
 #act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay {3} {sleep}};
 
 #alias taohua_xue_newbie {
-        xue lu for fuxue-shou 5;
-        xue lu for yuxiao-jian 5;
-        xue lu for sword 5;
-        xue lu for parry 5;
-        xue lu for fuxue-shou 5;
-        xue lu for yuxiao-jian 5;
-        xue lu for sword 5;
-        xue lu for parry 5;
+        xue lu for fuxue-shou 50;
+        xue lu for yuxiao-jian 50;
+        xue lu for sword 50;
+        xue lu for parry 50;
+        xue lu for fuxue-shou 50;
+        xue lu for yuxiao-jian 50;
+        xue lu for sword 50;
+        xue lu for parry 50;
 };
 
 #class taohua_skills_newbie close;
