@@ -69,5 +69,7 @@
     d;n;tdh_xue;
 };
 
+#act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay 20 sleep};
+
 tdh_xue;
 #class tiandihui_xue close;

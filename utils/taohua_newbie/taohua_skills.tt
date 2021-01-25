@@ -1,7 +1,7 @@
 #nop full 技能
 #class taohua_skills_newbie open;
 #var taohua_xue_newbieflag 1;
-taohua_xue_newbie;
+
 #action {^你今天太累了，结果什么也没有学到。} {
     #if {$taohua_xue_newbieflag} {
         #var taohua_xue_newbieflag 0;
@@ -12,7 +12,7 @@ taohua_xue_newbie;
     #var taohua_xue_newbieflag 1;
     w;s;taohua_xue_newbie
 };
-#act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay {3} {sleep}};
+#act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay {5} {sleep}};
 
 #alias taohua_xue_newbie {
         xue lu for fuxue-shou 50;
@@ -33,5 +33,5 @@ taohua_xue_newbie;
         xue lu for bihai-shengong 50;
         xue lu for luoying-shenfa 50;
 };
-
+taohua_xue_newbie;
 #class taohua_skills_newbie close;

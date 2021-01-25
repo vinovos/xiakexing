@@ -12,8 +12,6 @@
     #delay 2 log on;
 };
 
-#act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay 30 sleep};
-
 #nop 获取score的信息到变量
 #act {^≡%!*人物详情%!*≡} {
     #class tmp open;
