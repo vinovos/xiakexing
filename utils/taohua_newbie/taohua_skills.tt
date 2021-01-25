@@ -19,10 +19,19 @@ taohua_xue_newbie;
         xue lu for yuxiao-jian 50;
         xue lu for sword 50;
         xue lu for parry 50;
+        xue lu for force 50;
+        xue lu for dodge 50;
+        xue lu for bihai-shengong 50;
+        xue lu for luoying-shenfa 50;
+        
         xue lu for fuxue-shou 50;
         xue lu for yuxiao-jian 50;
         xue lu for sword 50;
         xue lu for parry 50;
+        xue lu for force 50;
+        xue lu for dodge 50;
+        xue lu for bihai-shengong 50;
+        xue lu for luoying-shenfa 50;
 };
 
 #class taohua_skills_newbie close;
