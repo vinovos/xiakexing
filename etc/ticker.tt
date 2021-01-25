@@ -1,1 +1,1 @@
-
+#ticker {keepalive} {response keepalive} {60};
