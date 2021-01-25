@@ -1,15 +1,14 @@
 #nop 设置一些通用的act
+#alias login_init {
+    sc;
+    #delay 3 log on;
+};
 
 #nop 初次连线，需要做的事情
 #act {{^(您上次是在.*连线进入，请及时核对|重新连线完毕)}} {
     login_init;
 };
 #act {^重新连线完毕} {
-};
-
-#alias login_init {
-    sc;
-    #delay 3 log on;
 };
 
 #nop 获取score的信息到变量
