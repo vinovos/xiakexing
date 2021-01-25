@@ -1,0 +1,23 @@
+yingxiong-jianfa
+#class yxj open;
+
+#act {^你目前所学过的技能}{
+    #act {^│  英雄剑法%s│yingxiong-jianfa%s│%*│%d} {
+        #var yxj_level %%4;
+    };
+};
+
+#act {你现在过于疲倦，无法专心下来研读新知} {sleep;}
+#act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay {5} {sleep}};
+#action {^你一觉醒来，精神抖擞地活动了几下手脚} {du_yxj};
+
+#alias du_yxj {
+    cha;
+    #delay 3 {
+        #if {$yxj_level < 55} {
+            du book for 50;
+            du book for 50;
+        };
+    };
+};
+#class yxj close;
