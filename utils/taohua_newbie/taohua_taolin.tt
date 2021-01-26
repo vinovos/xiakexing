@@ -16,7 +16,7 @@ sc;
 ask lu about job;
 #act {^陆乘风说道：「庄子附近最近来一位女飞贼，你还是先去练练功夫吧，以免碰到被人耻笑} {
     #line {log} {logs/event.log} {"开始出飞贼啦，准备学技能"};
-    #read utils/taohua_newbie/taohua_taolin.tt;
+    #read utils/taohua_newbie/taohua_skills.tt;
 }
 #act {陆乘风说道：「${user.name}，我为你占得一卦：」} {
     #delay {taolin_delay} {ask lu about job} {60};
@@ -68,9 +68,13 @@ ask lu about job;
     #class tmp close;
     l;
     #delay 10 {
-        #if {"$current_position" == "桃花阵"} {leave;do 3 w;ask lu about job;};
+        #if {"$current_position" == "桃花阵"} {leave;do 3 w;gf bosss;ask lu about job;};
         #if {"$current_position" == "归云庄"} {ask lu about job;};
     }
+}
+
+#act {一个女飞贼冲了出来，似乎来意不善。}{
+    kill all;
 }
 
 #alias {walk_taolin} {
