@@ -68,13 +68,32 @@ ask lu about job;
     #class tmp close;
     l;
     #delay 10 {
-        #if {"$current_position" == "桃花阵"} {leave;do 3 w;gf bosss;ask lu about job;};
+        #if {"$current_position" == "桃花阵"} {leave;do 3 w;n;e;sleep;};
         #if {"$current_position" == "归云庄"} {ask lu about job;};
     }
 }
 
+#act {你一觉醒来，精神抖擞地活动了几下手脚}{
+    w;s;gf bosss;ask lu about job;
+}
+
+#class taolin_feizei_temp open;
 #act {一个女飞贼冲了出来，似乎来意不善。}{
-    kill all;
+    #var taolin_walk_flag 0;
+    #act {不解决了%*，你恐怕很难离开}{
+        #var taolin_feizei %%1;
+        id here;
+        #act {$taolin_feizei%s=%*,%*} {
+            kill %%%3;
+        }
+    }
+}
+#class taolin_feizei_temp close;
+
+#act {你已经通过桃花岛入门任务获得了}{
+    #var taolin_walk_flag 1;
+    #class taolin_feizei_temp kill;
+    walk_taolin;
 }
 
 #alias {walk_taolin} {
