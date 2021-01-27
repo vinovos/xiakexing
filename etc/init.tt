@@ -3,8 +3,8 @@
 #read etc/config.tt
 #read etc/var.tt
 #read etc/macro.tt
-#read etc/act.tt
 #read etc/alias.tt
+#read etc/act.tt
 #read etc/event.tt
 #read etc/function.tt
 #read etc/ticker.tt
