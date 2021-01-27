@@ -58,6 +58,11 @@ ask lu about job;
 
 #act {天色大变，陆乘风给你算的卦也不那么准了} {
     #var taolin_walk_flag 0;
+    #undelay taolin_delay1;
+    #undelay taolin_delay2;
+    #undelay taolin_delay3;
+    #undelay taolin_delay4;
+
     #class tmp open;
     #act {这里是归云庄的大厅，是庄主会客的地方，里面站着两排卫士}{
         #var current_position {归云庄};
@@ -67,11 +72,13 @@ ask lu about job;
     };
     #class tmp close;
     l;
-    #delay 10 {
+    #delay 2 {
         #if {"$current_position" == "桃花阵"} {leave;do 3 w;n;e;sleep;};
         #if {"$current_position" == "归云庄"} {ask lu about job;};
     }
 }
+
+#act {你刚刚睡过一觉, 多睡对身体有害无益} {#delay 20 sleep};
 
 #act {你一觉醒来，精神抖擞地活动了几下手脚}{
     w;s;gf bosss;ask lu about job;
@@ -81,13 +88,23 @@ ask lu about job;
 #act {一个女飞贼冲了出来，似乎来意不善。}{
     #var taolin_walk_flag 0;
     #act {不解决了%*，你恐怕很难离开}{
+        #undelay taolin_delay1;
+        #undelay taolin_delay2;
+        #undelay taolin_delay3;
+        #undelay taolin_delay4;
+
+        #echo {"飞贼名字为%%1"};
         #var taolin_feizei %%1;
         id here;
-        #act {$taolin_feizei%s=%*,%*} {
+        #act {$taolin_feizei%s={.*},%*} {
+            #echo {"飞贼id为%%%3"};
+            #var taolin_feizei_id %%%3;
+            yun qi;
             kill %%%3;
-        }
-    }
-}
+            #delay 1 {kill %%%3;};
+        };
+    };
+};
 #class taolin_feizei_temp close;
 
 #act {你已经通过桃花岛入门任务获得了}{
@@ -97,11 +114,13 @@ ask lu about job;
 }
 
 #alias {walk_taolin} {
-    #if {$taolin_walk_flag} {
-        #delay {2.5} $taolin_walk_list[+1];
-        #delay 5 $taolin_walk_list[+2];
-        #delay {7.5} $taolin_walk_list[+3];
-        #delay {10} {$taolin_walk_list[+4]; walk_taolin;};
+    #delay 1 {
+        #if {$taolin_walk_flag} {
+            #delay {taolin_delay1} {$taolin_walk_list[+1]} {2.5};
+            #delay {taolin_delay2} {$taolin_walk_list[+2]} 5;
+            #delay {taolin_delay3} {$taolin_walk_list[+3]} {7.5};
+            #delay {taolin_delay4} {$taolin_walk_list[+4]; walk_taolin;} {10};
+        };
     };
 }
 #class taohua_taolin close
