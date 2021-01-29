@@ -26,7 +26,7 @@ ask lu about job;
 }
 #act {你向陆乘风打听有关『job』的消息。} {
     #act {陆乘风说道：「没看我正忙着嘛？」} {
-        #delay {taolin_delay} {ask lu about job} {60};
+        #delay {taolin_delay} {ask lu about job} {5};
     }
 }
 
@@ -73,7 +73,7 @@ ask lu about job;
     #class tmp close;
     l;
     #delay 2 {
-        #if {"$current_position" == "桃花阵"} {leave;do 3 w;n;e;sleep;};
+        #if {"$current_position" == "桃花阵"} {leave;do 3 w;ask lu about job;};
         #if {"$current_position" == "归云庄"} {ask lu about job;};
     }
 }
@@ -84,8 +84,8 @@ ask lu about job;
     w;s;gf bosss;ask lu about job;
 }
 
-#class taolin_feizei_temp open;
 #act {一个女飞贼冲了出来，似乎来意不善。}{
+    #class taolin_feizei_temp open;
     #var taolin_walk_flag 0;
     #act {不解决了%*，你恐怕很难离开}{
         #undelay taolin_delay1;
@@ -103,15 +103,16 @@ ask lu about job;
             kill %%%3;
             #delay 1 {kill %%%3;};
         };
-    };
-};
-#class taolin_feizei_temp close;
 
-#act {你已经通过桃花岛入门任务获得了}{
-    #var taolin_walk_flag 1;
-    #class taolin_feizei_temp kill;
-    walk_taolin;
-}
+        #act {你战胜了$taolin_feizei} {
+            #delay 1 kill $taolin_feizei_id;
+            #var taolin_walk_flag 1;
+            #delay 1 {#class taolin_feizei_temp kill};
+            #delay 2 walk_taolin;
+        }
+    };
+    #class taolin_feizei_temp close;
+};
 
 #alias {walk_taolin} {
     #delay 1 {
@@ -123,4 +124,17 @@ ask lu about job;
         };
     };
 }
+
+#act {^陆乘风道：“师父喜爱古玩字画，我搜集一些古玩字画在书房} {
+    s;s;na;
+    #act {^你拣起了一套古玩} { jianding guwan; };
+    #act {^你拣起了一套字画} { jianding zihua; };
+    #act {^你发现手中的竟是%*}{
+        n;n;w;w;give lu all;
+    };
+    #act {^陆冠英接过你手里的%*，道：不错，这是太师父喜欢的东西} {#delay 1 {e;e;ask lu about job} };
+}
+
+#act {^陆乘风说道：「你刚做完鉴定任务，先去休息一会吧。」} {#delay 10 {ask lu about job}};
+
 #class taohua_taolin close

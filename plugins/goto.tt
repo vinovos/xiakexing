@@ -35,6 +35,7 @@
 201305   原作者 by Alucar@pkuxkx;
 };
 
+#class gt1 open;
 #nop 走路速度控制,分别为每秒上限步数、超限等待时间、正常行走间隔时间;
 #var xiaoyao.accu 12;
 #var xiaoyao.delay_long 0.5;
@@ -1363,3 +1364,4 @@
 #act {^│%s%s基本轻功%s│dodge%*│%*│%1│%2│$} {#var mydodgelv @int{%1}};
 
 #nop ==个人信息结束=;
+#class gt1 close;

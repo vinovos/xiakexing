@@ -1,3 +1,11 @@
+#alias {chat-log} {
+   #local type {%1};
+   #local text {};
+   #format {text} {%t %s<070>} {%H:%M:%S} {%2};
+   #line log {logs/chat.log} {$text};
+   #line gag;
+};
+
 #ALIAS {log}
 {
 	#if {"%0" == "on"}
@@ -33,5 +41,5 @@
 	#else
 	{
 		#showme Turn logging on or off?
-	}
-}
+	};
+};
