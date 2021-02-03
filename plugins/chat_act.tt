@@ -1,0 +1,12 @@
+#action {~^{$COLOR}【闲聊】{$COLOR}%+1..10u{$COLOR}({[a-z A-Z]+}){$COLOR}: %*$}    { chat-log chat {%0} } {4};
+#action {~^{$COLOR}【闲聊】%*$}     { chat-log-multi-line chat {%0} };
+#action {~^{$COLOR}【求助】{$COLOR}%+1..10u{$COLOR}({[a-z A-Z]+}){$COLOR}: %*$}    { chat-log helpme {%0} } {4};
+#action {~^{$COLOR}【求助】%*$}     { chat-log-multi-line helpme {%0} };
+#action {~^{$COLOR}【谣言】{$COLOR}%+1..10u{$COLOR}({[a-z A-Z]+}){$COLOR}: %*$}    { chat-log rumor {%0} } {4};
+#action {~^{$COLOR}【谣言】%*$}     { chat-log-multi-line rumor {%0} };
+#action {~^{$COLOR}【队伍】{$COLOR}%+1..10u{$COLOR}({[a-z A-Z]+}){$COLOR}: %*$}    { chat-log tt {%0} } {4};
+#action {~^{$COLOR}【队伍】%*$}     { chat-log-multi-line tt {%0} };
+#action {~^{$COLOR}【门派】{$COLOR}%+1..10u{$COLOR}({[a-z A-Z]+}){$COLOR}: %*$}    { chat-log mp {%0} } {4};
+#action {~^{$COLOR}【门派】%*$}     { chat-log-multi-line mp {%0} };
+#action {~^{$COLOR}【本地】{$COLOR}%+1..10u{$COLOR}({[a-z A-Z]+}){$COLOR}: %*$}    { chat-log bd {%0} } {4};
+#action {~^{$COLOR}【本地】%*$}     { chat-log-multi-line bd {%0} };

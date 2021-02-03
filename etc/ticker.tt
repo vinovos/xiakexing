@@ -1,1 +1,3 @@
 #ticker {keepalive} {response keepalive} {60};
+#ticker {eatliang} {eat liang} {120};
+#ticker {drink} {drink} {120};
