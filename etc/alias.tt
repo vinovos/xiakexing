@@ -3,7 +3,7 @@
    #local text {};
    #format {text} {%t %s<070>} {%H:%M:%S} {%2};
    #line log {logs/chat.log} {$text};
-   #line gag;
+   #nop line gag;
 };
 
 #ALIAS {log}
