@@ -72,7 +72,7 @@ ask lu about job;
     };
     #class tmp close;
     l;
-    #delay 2 {
+    #delay 3 {
         #if {"$current_position" == "桃花阵"} {leave;do 3 w;ask lu about job;};
         #if {"$current_position" == "归云庄"} {ask lu about job;};
     }
