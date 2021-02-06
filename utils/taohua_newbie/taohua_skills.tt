@@ -1,4 +1,5 @@
 #nop full 技能
+#class taohua_taolin kill;
 #class taohua_skills_newbie open;
 #var taohua_xue_newbieflag 1;
 
